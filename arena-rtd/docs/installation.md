@@ -195,7 +195,7 @@ We recommend you use Visual Studio Code as your programming environment. Please 
 # Installation
 
 !!! note
-    Make sure your machine fullfils all the mandatory requirements listed above.
+    Make sure your machine fulfills all the mandatory requirements listed above.
 
 ###### 1. Create catkin workspace
 ```
