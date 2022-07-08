@@ -20,6 +20,6 @@ python:
   install:
     - requirements: docs/requirements.txt
 
-formats:
-  - pdf
-  - epub
+# formats:
+#   - pdf
+#   - epub
