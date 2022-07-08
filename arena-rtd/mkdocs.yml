@@ -1,1 +1,9 @@
-site_name: My Docs
+site_name: arena-rosnav wiki
+nav:
+  - Home: 'index.md'
+  - Installation: 'installation.md'
+  - Modules: 'modules.md'
+  - Get Started: 'get_started.md'
+
+markdown_extensions:
+  - admonition
