@@ -1,9 +1,12 @@
 site_name: arena-rosnav wiki
 nav:
   - Home: 'index.md'
-  - Installation: 'installation.md'
   - Modules: 'modules.md'
+  - Installation: 'installation.md'
   - Get Started: 'get_started.md'
 
 markdown_extensions:
   - admonition
+
+theme:
+  name: readthedocs

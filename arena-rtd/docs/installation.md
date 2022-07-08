@@ -1,13 +1,15 @@
-# Requirements
+# Installation
+
+## Requirements
 Arena-rosnav is currently developed in and for Ubuntu 20.04.
 
-## Git
+### Git
 
 ```
 sudo apt update && sudo apt install -y git
 ```
 
-## ROS - Robot Operating System
+### ROS - Robot Operating System
 ###### 1. Configure your Ubuntu repositories
 
 ```
@@ -83,16 +85,16 @@ ros-noetic-lms1xx \
 ros-noetic-velodyne-description
 ```
 
-## Python Poetry
+### Python Poetry
 
 ```
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -
 source $HOME/.poetry/env
 ```
 
-# Recommendations (Optional)
+## Recommendations (Optional)
 
-## oh-my-zsh
+### oh-my-zsh
 We recommend using oh-my-zsh. You can set up oh-my-zsh with the following steps.
 ###### 1. Install zsh
 ```
@@ -102,7 +104,7 @@ sudo apt install zsh
 ```
 sudo apt install curl
 ```
-###### 3. Install ohmyzsh
+###### 3. Install oh-my-zsh
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
@@ -132,12 +134,12 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 ```
 - In your zshrc, search for ZSH_THEME, set ZSH_THEME="powerlevel10k/powerlevel10k", and follow install wizard.
 
-## Visual Studio Code
+### Visual Studio Code
 We recommend using VSC as your programming environment. You can download VSC from the [official site](https://code.visualstudio.com/download).
 
-# For Windows Users
+## For Windows Users
 
-## WSL2 (Windows-Subsystem for Linux)
+### WSL2 (Windows-Subsystem for Linux)
 Please follow the steps in this [WSL installation guide for Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10) to install WSL2 on your computer.
 
 !!! note 
@@ -153,7 +155,7 @@ Please follow the steps in this [WSL installation guide for Windows 10](https://
     This problem can be resolved by enabling CPU virtualization in your BIOS. How you can achieve this depends on your hardware.
     [This guide from bleepingcomputer](https://www.bleepingcomputer.com/tutorials/how-to-enable-cpu-virtualization-in-your-computer-bios/) might help you with that.
 
-## Windows-X-Server
+### Windows-X-Server
 To use WSL with graphical programs, an X-server will need to be installed on the Windows 10 system and the DISPLAY variable will need to be set in Bash/Zsh.
 One possible program to use is [VcXsrv](https://sourceforge.net/projects/vcxsrv/).
 
@@ -189,10 +191,10 @@ One possible program to use is [VcXsrv](https://sourceforge.net/projects/vcxsrv/
 
     Another problem might occur because of inbound rules from Windows Defender Firewall. Go to Windows Defender Firewall -> Advanced Settings -> Inbound -> Delete every rule for VcXsrv.
 
-## Visual Studio Code plus WSL Extension
+### Visual Studio Code plus WSL Extension
 We recommend you use Visual Studio Code as your programming environment. Please follow the instructions in this [VS Code with WSL tutorial](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
 
-# Installation
+## Installation
 
 !!! note
     Make sure your machine fulfills all the mandatory requirements listed above.
