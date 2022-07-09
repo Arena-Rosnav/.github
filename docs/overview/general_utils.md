@@ -27,7 +27,7 @@ Creates random static and dynamic obstacles when a new task is started. When sta
 
 Manual task mode is the same as the random task beside that a goal can be set manually via the rviz 2D goal button.
 
-> TODO IMAGE
+![image](../images/manual_task.png)
 
 ###### Staged Task
 
