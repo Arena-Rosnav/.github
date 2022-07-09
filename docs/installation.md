@@ -1,7 +1,7 @@
-# Installation
+# Installation Guide
 
 ## Requirements
-Arena-rosnav is currently developed in and for Ubuntu 20.04.
+Arena-Rosnav is currently developed in and for Ubuntu 20.04.
 
 ### Git
 
@@ -91,6 +91,59 @@ ros-noetic-velodyne-description
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -
 source $HOME/.poetry/env
 ```
+
+## Installation
+
+!!! note
+    Make sure your machine fulfills all the mandatory requirements listed above.
+
+###### 1. Create catkin workspace
+```
+mkdir -p catkin_ws/src # name of the workspace can be arbitrary
+cd catkin_ws/src
+```
+
+###### 2. Clone Arena-Rosnav repository
+```
+git clone https://github.com/Arena-Rosnav/arena-rosnav
+cd arena-rosnav
+```
+
+###### 3. Update the ROS workspace
+```
+rosws update
+```
+
+###### 4. Install python packages with poetry
+```
+poetry shell && poetry install
+```
+
+###### 5. Install stable-baselines3
+```
+cd ../forks/stable-baselines3 && pip install -e .
+```
+
+###### 6. Build your workspace
+```
+cd ../../.. && catkin_make
+```
+
+!!! note
+    If packages are missing during the build process, simply add them with
+    ``` poetry add <package_name>```.
+
+###### 7. Source the build
+```
+source devel/setup.zsh # for zsh
+```
+
+```
+source devel/setup.bash # for bash
+```
+
+
+Finished! Check out the [Quickstart Guides](get_started.md) to start using Arena-Rosnav.
 
 ## Recommendations (Optional)
 
@@ -194,45 +247,90 @@ One possible program to use is [VcXsrv](https://sourceforge.net/projects/vcxsrv/
 ### Visual Studio Code plus WSL Extension
 We recommend you use Visual Studio Code as your programming environment. Please follow the instructions in this [VS Code with WSL tutorial](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
 
-## Installation
+## Docker
+We provide a Docker file to run our code on other operating systems.
 
-!!! note
-    Make sure your machine fulfills all the mandatory requirements listed above.
+### Introduction
+There are two containers in one docker network. One of them contains the ros melodic environment and all dependencies of arena-rosnav. The other one is used to forward the graphic siganl of the previous container to make GUI such as rviz visible in the browser.
 
-###### 1. Create catkin workspace
-```
-mkdir -p catkin_ws/src # name of the workspace can be arbitrary
-cd catkin_ws/src
-```
+### Install docker
+Ubuntu:
+https://cnvrg.io/how-to-setup-docker-and-nvidia-docker-2-0-on-ubuntu-18-04/
 
-###### 2. Clone arena-rosnav repository
+Mac:
+https://docs.docker.com/docker-for-mac/install/
+
+Windows:
+https://docs.docker.com/docker-for-windows/install/
+
+
+### Create containers
+###### 1. Clone the repository
 ```
-git clone https://github.com/Arena-Rosnav/arena-rosnav
+git clone https://github.com/ignc-research/arena-rosnav
+```
+###### 2. Go into the arena-rosnav folder
+```
 cd arena-rosnav
 ```
+###### 3. Create network for two containers
+```
+docker network create -d bridge x11
+```
+###### 4. Run the first container for ros
+```
+docker run -d \
+--name ros \
+--network=x11 \
+-e DISPLAY=novnc:0.0 \
+-v $PWD:/root/arena_ws/src/arena-rosnav \
+llalal/docker:arena-rosnav \
+tail -f /dev/null
+```
+###### 5. Run the second container for display
+```
+docker run -d \
+--name novnc \
+--network=x11 \
+-e DISPLAY_WIDTH=1920 \
+-e DISPLAY_HEIGHT=1080 \
+-e RUN_XTERM=no \
+-p 8080:8080 \
+theasp/novnc:latest
+```
+###### 6. Run `docker ps` to check if two containers are already running
 
-###### 3. Update the ROS workspace
+### Enter and exit ros container
+###### 1. Enter the ros container
 ```
-rosws update
+docker exec -it ros /bin/zsh
+```
+For cases where multiple terminals need to be opened for testing, open multiple local terminals and enter the container with the same command (It's better to use VS Code, which is more convenient. The instruction is at the end)
+
+###### 2. Exit the container
+Input `exit` in the command line
+###### 3. Stop the container (exit the container firstly)
+```
+docker stop ros
+```
+###### 4. Restart the container if it exists already
+```
+docker restart ros
 ```
 
-###### 4. Install python packages with poetry
-```
-poetry shell && poetry install
-```
+### Show GUI in browser
+1. Open http://localhost:8080/vnc.html (If you run docker on the remote host, open http://YOUR_HOST_IP_ADDRESS:8080/vnc.html )
+2. You can adjust the window size to automatic local scale or set fullscreen through the side bar on the left
 
-###### 5. Install stable-baselines3
-```
-cd ../forks/stable-baselines3 && pip install -e .
-```
 
-###### 6. Build your workspace
-```
-cd ../../.. && catkin_make
-```
+### Develop in VS Code
+###### 1. Necessary extensions in VS Code  
+   + Remote Development  
+   + Docker  
+###### 2. After executing steps in "Create containers" part, enter the container by VS Code  
+    a) Open Command Palette by `F1` or `CMD + Shift + p` (windows `Ctrl + Shift + p`)  
+    b) Input `Attach to Running Container` and select Remote-Containers: Attach to Running Container  
+    c) Then select container named /ros  
+   Now the VS Code will open a new window  
+    d) Select and open the folder you want by `CMD + o` (windows `Ctrl + o`)
 
-!!! note
-    If packages are missing during the build process, simply add them with
-    ``` poetry add <package_name>```.
-
-Finished! Check out the [Quickstart Guides](get_started.md) to start using arena-rosnav.

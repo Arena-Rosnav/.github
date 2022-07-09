@@ -1,14 +1,23 @@
 # mkdocs.yml
-site_name: arena-rosnav wiki
+site_name: Arena-Rosnav wiki
 
 nav:
-  - Home: 'index.md'
-  - Modules: 'modules.md'
-  - Installation: 'installation.md'
-  - Get Started: 'get_started.md'
-
+  - User Guides:
+    - Installation: 'installation.md'
+    - Get Started: 'get_started.md'
+    - Error Handling: 'error_handling.md'
+  - Arena-Rosnav Overview:
+    - Modular Structure: 'overview/modular_structure.md'
+    - Planners: 'overview/planners.md'
+    - Simulation Environments: 'overview/simulation_environments.md'
+    - General Utils: 'overview/general_utils.md'
+  - Core Functionalities:
+    - Deployment: "core_functionalities/deployment.md"
+    - Training: "core_functionalities/training.md"
+    - Evaluation: "core_functionalities/evaluation.md"
 markdown_extensions:
   - admonition
+  - tables
 
 theme:
   name: readthedocs

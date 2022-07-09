@@ -1,8 +1,8 @@
-# Welcome to the arena-rosnav wiki!
+# Welcome to the Arena-Rosnav wiki!
 ## Introduction
-Arena-rosnav is a flexible, high-performance 2D simulator with configurable agents, multiple sensors, and benchmark scenarios for testing robotic navigation. Arena-Rosnav uses [Flatland](https://github.com/avidbots/flatland) as the core simulator and is a modular high-level library for end-to-end experiments in embodied AI -- defining embodied AI tasks (e.g. navigation, obstacle avoidance, behavior cloning), training agents (via imitation or reinforcement learning, or no learning at all using conventional approaches like DWA, TEB or MPC), and benchmarking their performance on the defined tasks using standard metrics.
+[Arena-Rosnav](https://github.com/Arena-Rosnav/arena-rosnav) is a flexible, high-performance 2D simulator with configurable agents, multiple sensors, and benchmark scenarios for testing robotic navigation. Arena-Rosnav uses [Flatland](https://github.com/avidbots/flatland) as the core simulator and is a modular high-level library for end-to-end experiments in embodied AI -- defining embodied AI tasks (e.g. navigation, obstacle avoidance, behavior cloning), training agents (via imitation or reinforcement learning, or no learning at all using conventional approaches like DWA, TEB or MPC), and benchmarking their performance on the defined tasks using standard metrics.
 
-## What is arena-rosnav for?
+## What is Arena-Rosnav for?
 Train DRL agents on ROS compatible simulations for autonomous navigation in highly dynamic environments. Flatland-DRL integration is inspired by Ronja Gueldenring's work: [drl_local_planner_ros_stable_baselines](https://github.com/RGring/drl_local_planner_ros_stable_baselines.git). Test state of the art local and global planners in ROS environments both in simulation and on real hardware. Following features are included:
 
 - Setup to train a local planner with reinforcement learning approaches from [stable baselines3](https://github.com/DLR-RM/stable-baselines3.git)
@@ -12,3 +12,15 @@ Train DRL agents on ROS compatible simulations for autonomous navigation in high
 - Implementation of intermediate planner classes to combine local DRL planner with global map-based planning of ROS Navigation stack
 - Testing a variety of planners (learning based and model based) within specific scenarios in test mode
 - Modular structure for extension of new functionalities and approaches
+
+## Citing Arena-Rosnav
+To cite this project in publications:
+```
+@inproceedings{kastner2021arena,
+  title={Arena-Rosnav: Towards Deployment of Deep-Reinforcement-Learning-Based Obstacle Avoidance into Conventional Autonomous Navigation Systems},
+  author={K{\"a}stner, Linh and Buiyan, Teham and Jiao, Lei and Le, Tuan Anh and Zhao, Xinlin and Shen, Zhengcheng and Lambrecht, Jens},
+  booktitle={2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={6456--6463},
+  organization={IEEE}
+}
+```
