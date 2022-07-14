@@ -12,12 +12,18 @@ nav:
     - Simulation Environments: 'overview/simulation_environments.md'
     - General Utils: 'overview/general_utils.md'
   - Core Functionalities:
-    - Deployment: "core_functionalities/deployment.md"
-    - Training: "core_functionalities/training.md"
-    - Evaluation: "core_functionalities/evaluation.md"
+    - Launching Arena-Rosnav Simulation: "core_functionalities/launch_simulation.md"
+    - Training an Agent: "core_functionalities/training.md"
+    - Evaluating Planner Performance: "core_functionalities/evaluation.md"
+    - Arena Tools: "core_functionalities/arena-tools.md"
 markdown_extensions:
   - admonition
   - tables
 
 theme:
   name: readthedocs
+
+plugins:
+  - mkdocs-video:
+      is_video: true
+      video_type: webm

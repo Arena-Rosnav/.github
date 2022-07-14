@@ -14,48 +14,6 @@ As a fundament for our Deep Reinforcement Learning approaches, [StableBaselines3
 - Enable and modify a custom training curriculum
 - Multiprocessed rollout collection for training
 
-**Table of Contents**
-
-- [DRL Agent Training](#drl-agent-training)
-    - [Quick Start](#quick-start)
-    - [Training Script](#training-script)
-      - [Usage](#usage)
-      - [Examples](#examples)
-        - [Training with a predefined DNN](#training-with-a-predefined-dnn)
-        - [Load a DNN for training](#load-a-dnn-for-training)
-        - [Training with a custom MLP](#training-with-a-custom-mlp)
-      - [Multiprocessed Training](#multiprocessed-training)
-    - [Hyperparameters](#hyperparameters)
-    - [Reward Functions](#reward-functions)
-    - [Training Curriculum](#training-curriculum)
-    - [Run the trained Agent](#run-the-trained-agent)
-      - [Test Agents in Main Simulation](#test-agents-in-main-simulation)
-      - [Test Agents in Training Simulation](#test-agents-in-training-simulation)
-        - [Sequential Evaluation of multiple Agents](#sequential-evaluation-of-multiple-agents)
-    - [Pipeline Components](#pipeline-components)
-    - [Important Directories](#important-directories)
-
-### Quick Start
-
-!!! warning
-    commands our outdated
-    > TODO
-
-- In one terminnal, start the arena simulation:
-
-```bash
-roslaunch arena_bringup start_arena_flatland.launch  train_mode:=true 	use_viz:=true
-```
-
-- In a second terminal, run the train script:
-
-```
-roscd arena_local_planner_drl
-python scripts/training/train_agent.py --agent AGENT_22
-```
-
-This will start a single simulation environment with our custom network architecture "_AGENT_22_". As default robot model, the turtlebot3 model is used.
-
 ### Training Script
 
 #### Usage
