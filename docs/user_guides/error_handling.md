@@ -24,10 +24,10 @@ source devel/setup.zsh # if you use bash: source devel/setup.bash
 ```
 
 !!! note
-    After any changes inside a subdirectory of the forks directory the workspace needs to be build and sourced again.
+    After any changes inside a subdirectory of the utils directory the workspace needs to be build and sourced again.
 
-## Updating the forks of the workspace
-Sometimes your forks directory is outdated or defective. In these cases, simply updating or deleting the forks folder and updating the workspace might do the trick.
+## Updating the utils of the workspace
+Sometimes your utils directory is outdated or defective. In these cases, simply updating or deleting the utils folder and updating the workspace might do the trick.
 ```
 cd arena-rosnav # navigate to the arena-rosnav
 rosws update
@@ -38,6 +38,6 @@ rosws update
 
 ## Updating stable-baselines3
 ```
-cd caktin_ws/src/forks/stable-baselines3 # navigate to the stable-baselines3 directory
+cd caktin_ws/src/utils/stable-baselines3 # navigate to the stable-baselines3 directory
 pip install -e.
 ```

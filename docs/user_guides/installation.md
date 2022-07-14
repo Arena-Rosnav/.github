@@ -116,7 +116,7 @@ poetry shell && poetry install
 
 ###### 5. Install stable-baselines3
 ```
-cd ../forks/stable-baselines3 && pip install -e .
+cd ../utils/stable-baselines3 && pip install -e .
 ```
 
 ###### 6. Build your workspace
