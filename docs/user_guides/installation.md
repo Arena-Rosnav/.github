@@ -221,17 +221,17 @@ One possible program to use is [VcXsrv](https://sourceforge.net/projects/vcxsrv/
 - Choose Option: Multiple Windows
 - Set Display Number to 0
 
-![image](images/display_settings.png)
+![image](../images/display_settings.png)
 
 ###### 4. Client Settings
 - Choose Option: Start no Client
 
-![image](images/client_settings.png)
+![image](../images/client_settings.png)
 
 ###### 5. Extra Settings
 - Choose Option: Disable access control
 
-![image](images/extra_settings.png)
+![image](../images/extra_settings.png)
 
 !!! note
     If you encounter problems, you might go to Windows Defender Firewall -> Communication between Applications and Windows Firewall.

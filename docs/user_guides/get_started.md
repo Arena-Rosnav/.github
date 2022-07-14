@@ -24,7 +24,7 @@ Here is a list of common options to configure the simulation:
 - `scenario_file` - scenario file defining a scenario task
 - `use_recorder` - default is `false`, option to record measurements during simulation
 
-For further information on the deployment refer to the [Launch a Simulation](./core_functionalities/launch_simulation.md) page.
+For further information on the deployment refer to the [Launch a Simulation](../core_functionalities/launch_simulation.md) page.
 
 ## Quickstart Training 2D
 To start a training procedure you need two terminals.
@@ -46,4 +46,4 @@ Here is a list of common options to configure the training:
 - ```--load```: loads an already existing, trained agent
 - ```--custom-mlp```: initializes custom MLP according to given parameters
 
-For further information on the training procedure refer to the [Training an Agent](./core_functionalities/training.md) page.
+For further information on the training procedure refer to the [Training an Agent](../core_functionalities/training.md) page.
