@@ -1,2 +1,3 @@
 mkdocs==1.3.0
 jinja2==3.0.0
+mkdocs-video==1.3.0
