@@ -3,9 +3,10 @@ site_name: Arena-Rosnav wiki
 
 nav:
   - User Guides:
-    - Installation: 'installation.md'
-    - Get Started: 'get_started.md'
-    - Error Handling: 'error_handling.md'
+    - Installation: 'user_guides/installation.md'
+    - Get Started: 'user_guides/get_started.md'
+    - Error Handling: 'user_guides/error_handling.md'
+    - Arena Tools: "user_guides/arena-tools.md"
   - Arena-Rosnav Overview:
     - Modular Structure: 'overview/modular_structure.md'
     - Planners: 'overview/planners.md'
@@ -15,7 +16,7 @@ nav:
     - Launching Arena-Rosnav Simulation: "core_functionalities/launch_simulation.md"
     - Training an Agent: "core_functionalities/training.md"
     - Evaluating Planner Performance: "core_functionalities/evaluation.md"
-    - Arena Tools: "core_functionalities/arena-tools.md"
+
 markdown_extensions:
   - admonition
   - tables

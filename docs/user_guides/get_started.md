@@ -46,4 +46,4 @@ Here is a list of common options to configure the training:
 - ```--load```: loads an already existing, trained agent
 - ```--custom-mlp```: initializes custom MLP according to given parameters
 
-For further information on the deployment refer to the [Training an Agent](./core_functionalities/training.md) page.
+For further information on the training procedure refer to the [Training an Agent](./core_functionalities/training.md) page.

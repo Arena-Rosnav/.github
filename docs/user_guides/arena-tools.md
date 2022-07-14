@@ -89,7 +89,7 @@ roscd arena-tools && python FlatlandModelEditor.py
 ```
 ### Load and Save Models
 Click on File->Open or File->Save.
-## Add Bodies
+### Add Bodies
 Click on 'Add Body'.
 ### Flatland Body Editor
 
@@ -105,5 +105,5 @@ Click on the 'edit'-Button of the Body you want to edit. The Flatland Body Edito
 - Set position of each vertice by holding the mouse near the vertice (cursor should change) and dragging the vertice.
 - Duplicate footprint by selecting it in the scene and then pressing SHIFT + D
 - Save body by clicking 'Save and Close'
-### Circle Footprints
+#### Circle Footprints
 Comin soon ..

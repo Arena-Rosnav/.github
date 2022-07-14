@@ -14,9 +14,22 @@ As a fundament for our Deep Reinforcement Learning approaches, [StableBaselines3
 - Enable and modify a custom training curriculum
 - Multiprocessed rollout collection for training
 
-### Training Script
+## Start the Training
+To start a training procedure you need two terminals.
 
-#### Usage
+In terminal 1 start the simulation environment:
+```
+roslaunch arena_bringup start_training.launch
+```
+In terminal 2 run the training script:
+```
+cd arena-rosnav # navigate to the arena-rosnav directory
+python training/scripts/train_agent.py --agent AGENT_22
+```
+
+## Training Script
+
+### Usage
 
 **Generic program call**:
 
@@ -47,9 +60,9 @@ _Custom Multilayer Perceptron_ parameters will only be considered when `--custom
 | `--no-gpu`                                   | disables training with GPU                                                                                                                                                                                                                      |
 | `--num_envs {integer}`                       | number of environments to collect experiences from for training (for more information refer to [Multiprocessed Training](#multiprocessed-training))                                                                                             |
 
-#### Examples
+### Examples
 
-##### Training with a predefined DNN
+#### Training with a predefined DNN
 
 Currently you can choose between several different Deep Neural Networks each of which have been object of research projects, for example:
 
@@ -67,7 +80,7 @@ train_agent.py --agent MLP_ARENA2D
 
 You can find the most recently implemented neural network architectures in: [custom_policy.py](/arena-rosnav/arena_navigation/arena_local_planner/learning_based/arena_local_planner_drl/scripts/custom_policy.py)
 
-##### Load a DNN for training
+#### Load a DNN for training
 
 In order to differentiate between agents with similar architectures but from different runs a unique agent name will be generated when using either `--agent` or `--custom-mlp` mode (when train from scratch).
 
@@ -85,7 +98,7 @@ train_agent.py --load MLP_ARENA2D_2021_01_19__03_20
 
 **Note**: currently only agents which were trained with PPO given by StableBaselines3 are compatible with the training script.
 
-##### Training with a custom MLP
+#### Training with a custom MLP
 
 Instantiating a MLP architecture with an arbitrary number of layers and neurons for training was made as simple as possible by providing the option of using the `--custom-mlp` flag. By typing in the flag additional flags for the architecture of latent layers get accessible ([see above](#program-arguments)).
 
@@ -113,7 +126,7 @@ program must be invoked as follows:
 train_agent.py --custom-mlp --body 256-128 --pi 256 --vf 16 --act_fn relu
 ```
 
-#### Multiprocessed Training
+### Multiprocessed Training
 
 We provide for either testing and training purposes seperate launch scripts:
 
@@ -169,7 +182,7 @@ Time passed: {time in seconds}s
 Training script will be terminated
 ```
 
-### Hyperparameters
+## Hyperparameters
 
 The training script will consider the hyperparameter yaml file which was specified with the `--config` flag. The default configuration file is named `default.yaml` and can be found at:
 
@@ -207,7 +220,7 @@ Following hyperparameters can be adapted:
 
 **Note**: For now further parameters like the threshold type for the curriculum or the number of eval episodes need to be specified inline in the training script.
 
-### Reward Functions
+## Reward Functions
 
 The reward functions are defined in:
 ```
@@ -308,7 +321,7 @@ At present, one can chose between five reward functions which can be set in the 
 </tr>
 </table>
 
-### Training Curriculum
+## Training Curriculum
 
 For the purpose of speeding up the training, an exemplary training currucilum was implemented. But what exactly is a training curriculum you may ask. We basically divide the training process in difficulty levels, here the so called _stages_, in which the agent will meet an arbitrary number of obstacles depending on its learning progress. Different metrics can be taken into consideration to measure an agents performance.
 
@@ -328,7 +341,7 @@ Exemplary training curriculum:
 
 For an explicit example, [click here](/arena-rosnav/arena_navigation/arena_local_planner/learning_based/arena_local_planner_drl/configs/training_curriculum_map1small.yaml).
 
-### Run the trained Agent
+## Run the trained Agent
 
 Now that you've trained your agent, you surely want to deploy and evaluate it. For that purpose we've implemented a specific task mode in which you can specify your scenarios in a .json file. The agent will then be challenged according to the scenarios defined in the file. Please refer to https://github.com/ignc-research/arena-scenario-gui/ in order to read about the process of creating custom scenarios.
 Moreover, you can test your agent on custom maps in randomly generated scenarios with a predefined number of dynamic obstacles.
@@ -343,7 +356,7 @@ As with the training script, one can start the testing simulation environment wi
   - One can test multiple agents sequentially with _run_script.py_. This feature is only realized with this launch file, as _start_arena_flatland.launch_ starts an own plan manager which interfers with the plan manager of the run script. Both plan managers have their own goal radius and thus might detect an end of episode differently. This potentially adulterates the logged statistics.
   - Episode information can optionally be logged in a csv file by setting the `--log` flag for the run script dedicated plan manager to control the episodes.
 
-#### Test Agents in Main Simulation
+### Test Agents in Main Simulation
 
 The deployment can be simply initiated through one command:
 
@@ -355,7 +368,7 @@ roslaunch arena_bringup start_arena_flatland.launch map_file:="map1"  disable_sc
 **Note**:
 You need to adjust the parameters of the command according to your desired deployment configuration.
 
-#### Test Agents in Training Simulation
+### Test Agents in Training Simulation
 
 Firstly, you need to start the _simulation environment_:
 
@@ -405,7 +418,7 @@ python run_agent.py --load DRL_LOCAL_PLANNER_2021_03_22__19_33 -s obstacle_map1_
 - Make sure that the simulation speed doesn't overlap the agent's action calculation time (an obvious indicator: same action gets published multiple times successively and thus the agent moves unreasonably)
 - If your agent was trained with normalized observations, it's necessary to provide the _vec_normalize.pkl_
 
-##### Sequential Evaluation of multiple Agents
+#### Sequential Evaluation of multiple Agents
 
 For automatic testing of several agents in a sequence, one can specify a list containing an arbitrary number of agent names in [run_script.py](/arena-rosnav/arena_navigation/arena_local_planner/learning_based/arena_local_planner_drl/scripts/deployment/run_agent.py).
 
@@ -414,11 +427,11 @@ For automatic testing of several agents in a sequence, one can specify a list co
 - Guaranteed execution of each agent is currently only provided with the _start_training.launch_ as simulation launcher
 - `--load` flag has to be set _None_, otherwise the script will only consider the agent provided with the flag.
 
-### Pipeline Components
+## Pipeline Components
 
 ![drl_training_modules](../images/drl_training_modules.png)
 
-### Important Directories
+## Important Directories
 
 | Path                                       | Description                                                                                                                             |
 | ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
