@@ -17,6 +17,8 @@ git clone git@github.com:Arena-Rosnav/arena-bench.git
 
 For running Arena Benchmark you need a set of other packages. The majority of them can be installed and cloned directly with ROS. Therefore, you should navigate into the newly cloned repository and run following command:
 
+###### 3. Set up your keys
+
 ```bash
 rosws update
 ```
@@ -51,6 +53,41 @@ cd ../utils/stable-baselines3 && pip install -e .
 
 ## Build your workspace
 
+!!! note
+Make sure your machine fulfills all the mandatory requirements listed above.
+
+###### 1. Create catkin workspace
+
+```
+mkdir -p catkin_ws/src # name of the workspace can be arbitrary
+cd catkin_ws/src
+```
+
+###### 2. Clone Arena-Rosnav repository
+
+```
+git clone https://github.com/Arena-Rosnav/arena-rosnav
+cd arena-rosnav
+```
+
+###### 3. Update the ROS workspace
+
+```
+rosws update
+```
+
+###### 4. Install python packages with poetry
+
+```
+poetry shell && poetry install
+```
+
+###### 5. Install stable-baselines3
+
+```
+cd ../utils/stable-baselines3 && pip install -e .
+```
+
 ```
 cd ../../.. && catkin_make
 ```
@@ -68,3 +105,7 @@ source devel/setup.bash
 Finished! Check out the [Usage](usage.md) to start using Arena Benchmark.
 
 Remenber to always have the poetry shell active and the catkin workspace sourced when using Arena Benchmark.
+
+### Visual Studio Code plus WSL Extension
+
+We recommend you use Visual Studio Code as your programming environment. Please follow the instructions in this [VS Code with WSL tutorial](https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode).
