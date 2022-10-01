@@ -3,23 +3,24 @@ site_name: Arena-Rosnav wiki
 
 nav:
   - User Guides:
-    - Installation: 'user_guides/installation.md'
-    - Get Started: 'user_guides/get_started.md'
-    - Error Handling: 'user_guides/error_handling.md'
-    - Arena Tools: "user_guides/arena-tools.md"
+      - Installation: "user_guides/installation.md"
+      - Get Started: "user_guides/get_started.md"
+      - Error Handling: "user_guides/error_handling.md"
+      - Arena Tools: "user_guides/arena-tools.md"
   - Arena-Rosnav Overview:
-    - Modular Structure: 'overview/modular_structure.md'
-    - Planners: 'overview/planners.md'
-    - Simulation Environments: 'overview/simulation_environments.md'
-    - General Utils: 'overview/general_utils.md'
+      - Modular Structure: "overview/modular_structure.md"
+      - Planners: "overview/planners.md"
+      - Simulation Environments: "overview/simulation_environments.md"
+      - General Utils: "overview/general_utils.md"
   - Core Functionalities:
-    - Launching Arena-Rosnav Simulation: "core_functionalities/launch_simulation.md"
-    - Training an Agent: "core_functionalities/training.md"
-    - Evaluating Planner Performance: "core_functionalities/evaluation.md"
+      - Launching Arena-Rosnav Simulation: "core_functionalities/launch_simulation.md"
+      - Training an Agent: "core_functionalities/training.md"
+      - Evaluating Planner Performance: "core_functionalities/evaluation.md"
 
 markdown_extensions:
   - admonition
   - tables
+  - codehilite
 
 theme:
   name: readthedocs
@@ -28,3 +29,10 @@ plugins:
   - mkdocs-video:
       is_video: true
       video_type: webm
+
+extra_css:
+  - css/extra.css
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.0/clipboard.min.js
+  - js/cpybtn.js
