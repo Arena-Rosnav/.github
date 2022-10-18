@@ -48,7 +48,31 @@ sudo apt update && sudo apt install -y libopencv-dev liblua5.2-dev \
 In order to run the trainings process, you need to have our fork of the stable baselines 3 library installed.
 
 ```
+<<<<<<< HEAD
 cd ../utils/stable-baselines3 && pip install -e .
+=======
+sudo apt update && sudo apt install -y \
+libopencv-dev \
+liblua5.2-dev \
+screen \
+python3-rosdep \
+python3-rosinstall \
+python3-rosinstall-generator \
+python3-wstool \
+build-essential \
+python3-rospkg-modules \
+ros-noetic-navigation \
+ros-noetic-teb-local-planner \
+ros-noetic-mpc-local-planner \
+libarmadillo-dev \
+ros-noetic-nlopt \
+ros-noetic-turtlebot3-description \
+ros-noetic-turtlebot3-navigation \
+ros-noetic-lms1xx \
+ros-noetic-velodyne-description \
+ros-noetic-hector-gazebo \
+ros-noetic-ira-laser-tools
+>>>>>>> e0a7f74 (Adding another package to installation)
 ```
 
 ## Build your workspace
