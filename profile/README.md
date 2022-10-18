@@ -18,13 +18,16 @@ Planners are essential packages and control the robot, which is simulated in the
 We offer the following planners:
 
 - ROSNav: Our own planner based on neural networks.
-- Dragon: TODO
-- Trail: TODO
-- Applr: TODO
-- RLCA-ROS: TODO
-- CADRL: TODO
-- SARL-Star: TODO
-- Crowdnav-ROS
+- Dragon: from the [BARN challenge](https://www.cs.utexas.edu/~xiao/BARN_Challenge/BARN_Challenge.html) 
+- Trail: from the [BARN challenge](https://www.cs.utexas.edu/~xiao/BARN_Challenge/BARN_Challenge.html) 
+- Applr: a hybrid approach by [Xuesu et al.](https://arxiv.org/abs/2105.07620) 
+- RLCA-ROS: a DRL-based colision avoidance approach from [Long et al.](https://github.com/Acmece/rl-collision-avoidance)
+- CADRL: a DRL-based colision avoidance approach from [Everett et al.](https://github.com/mit-acl/cadrl_ros)
+- SARL-Star
+- Crowdnav-ROS: a DRL-based colision avoidance approach from [Chen et al.](https://github.com/vita-epfl/CrowdNav)
+- TEB: a classic approach by [Rösmann et al.](https://github.com/rst-tu-dortmund/teb_local_planner) 
+- DWA: the standard ROS local planning approach by [Marder-Eppstein et al.](http://wiki.ros.org/dwa_local_planner)
+- MPC: a classic approach by [Rösmann et al.](https://github.com/rst-tu-dortmund/teb_local_planner)
 
 ### Simulation and Training environment
 
