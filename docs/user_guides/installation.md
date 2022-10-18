@@ -71,7 +71,8 @@ ros-noetic-turtlebot3-description \
 ros-noetic-turtlebot3-navigation \
 ros-noetic-lms1xx \
 ros-noetic-velodyne-description \
-ros-noetic-hector-gazebo
+ros-noetic-hector-gazebo \
+ros-noetic-ira-laser-tools
 ```
 
 ###### 7. Initialize rosdep
