@@ -1,21 +1,39 @@
 # mkdocs.yml
-site_name: Arena-Rosnav wiki
+site_name: Arena Benchmark | Docs
 
 nav:
+  - Introduction: "index.md"
+  - Publications: "publications.md"
+  - Contribute: "contribute.md"
+
   - User Guides:
-    - Installation: 'user_guides/installation.md'
-    - Get Started: 'user_guides/get_started.md'
-    - Error Handling: 'user_guides/error_handling.md'
-    - Arena Tools: "user_guides/arena-tools.md"
-  - Arena-Rosnav Overview:
-    - Modular Structure: 'overview/modular_structure.md'
-    - Planners: 'overview/planners.md'
-    - Simulation Environments: 'overview/simulation_environments.md'
-    - General Utils: 'overview/general_utils.md'
-  - Core Functionalities:
-    - Launching Arena-Rosnav Simulation: "core_functionalities/launch_simulation.md"
-    - Training an Agent: "core_functionalities/training.md"
-    - Evaluating Planner Performance: "core_functionalities/evaluation.md"
+      - Installation: "user_guides/installation.md"
+      - Usage: "user_guides/usage.md"
+
+  - Packages:
+      - Task Manager: "packages/task_generator.md"
+      - Arena Simulation Setup: "packages/arena_simulation_setup.md"
+      - Arena Utils: "packages/arena_utils.md"
+      - ROSNav: "packages/rosnav.md"
+
+  - Tutorials:
+      - Add new environment: "tutorials/add_new_environment.md"
+      - Train an agent with different observation spaces: "tutorials/train_agent_with_different_observation_spaces.md"
+
+  # - User Guides:
+  #     - Installation: "user_guides/installation.md"
+  #     - Get Started: "user_guides/get_started.md"
+  #     - Error Handling: "user_guides/error_handling.md"
+  #     - Arena Tools: "user_guides/arena-tools.md"
+  # - Arena-Rosnav Overview:
+  #     - Modular Structure: "overview/modular_structure.md"
+  #     - Planners: "overview/planners.md"
+  #     - Simulation Environments: "overview/simulation_environments.md"
+  #     - General Utils: "overview/general_utils.md"
+  # - Core Functionalities:
+  #     - Launching Arena-Rosnav Simulation: "core_functionalities/launch_simulation.md"
+  #     - Training an Agent: "core_functionalities/training.md"
+  #     - Evaluating Planner Performance: "core_functionalities/evaluation.md"
 
 markdown_extensions:
   - admonition
