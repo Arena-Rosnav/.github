@@ -6,14 +6,22 @@ Arena Benchmark offers a complete evaluation pipeline for benchmarking the perfo
 
 ## Features
 
-- Integration of [Flatland](#TODO) for training new agents and [Flatland]() and [Gazebo]() for evaluating existing approaches.
+- Integration of [Flatland](https://flatland-simulator.readthedocs.io/en/latest/index.html) for training new agents and [Flatland]() and [Gazebo](https://classic.gazebosim.org/) for evaluating existing approaches.
 - Variety of planners, robots and worlds
 - Pipeline for training planner agents based on reinforcement learning approaches from [stable baselines3](https://github.com/DLR-RM/stable-baselines3.git)
-- [Task manager]() for managing highly dynamic and custom environments.
-- Our own DRL planner [ROSNav]()
+- [Task generator](packages/task_generator.md) for managing highly dynamic and custom environments.
+- Our own DRL planner [ROSNav](packages/rosnav.md)
 - Pipeline for evaluating approaches and analysing them based on standard metrics with our [Arena Evaluation](packages/arena_evaluation.md) package.
 - Modular structure for extension of new functionalities and approaches
 - Evaluation of multiple robots and planners in the same simulation
+
+|       Multiple agents in one simulation       |           Random task mode with one robot            |
+| :-------------------------------------------: | :--------------------------------------------------: |
+| <img width="400" src="/images/gifs/marl.gif"> | <img width="400" src="/images/gifs/random_task.gif"> |
+
+|                      Simulation in Gazebo                      |
+| :------------------------------------------------------------: |
+| <img width="400" src="/images/gifs/random-mode-warehouse.gif"> |
 
 ### Planners
 
@@ -35,24 +43,46 @@ We offer the following planners:
 
 ### Robots
 
-- AGV-Ota
-- Turtlebot3 Burger
-- Care-O-bot 4
-- Dingo
-- Jackal
-- Ridgeback
-- RTO
-- Tiago
-- Turtlebot3 Waffle
-- YouBot
+We support different robots:
+
+|                     _turtlebot3-burger_                      |                     _jackal_                      |                      _ridgeback_                      |                     _agv-ota_                      |                     _tiago_                      |
+| :----------------------------------------------------------: | :-----------------------------------------------: | :---------------------------------------------------: | :------------------------------------------------: | :----------------------------------------------: |
+| <img width="250" src="/images/robots/turtlebot3-burger.jpg"> | <img width="250" src="/images/robots/jackal.jpg"> | <img width="250"  src="/images/robots/ridgeback.jpg"> | <img width="250" src="/images/robots/agv-ota.png"> | <img width="250" src="/images/robots/tiago.jpg"> |
+
+|                _Robotino(rto)_                 |                     _youbot_                      |                      _turtlebot3_waffle_pi_                      |               _Car-O-Bot4 (cob4)_               |                     _dingo_                      |
+| :--------------------------------------------: | :-----------------------------------------------: | :--------------------------------------------------------------: | :---------------------------------------------: | :----------------------------------------------: |
+| <img width="250" src="/images/robots/rto.jpg"> | <img width="250" src="/images/robots/youbot.jpg"> | <img width="250"  src="/images/robots/turtlebot3_waffle_pi.jpg"> | <img width="250" src="/images/robots/cob4.jpg"> | <img width="250" src="/images/robots/dingo.jpg"> |
+
+All robots are equipped with a laser scanner. The robots differ in size, laser-range etc. See below table for more detailed information on each robot:
+
+| Name                            | Max Speed (v*x) [\_m/s*] | Max Speed (v*y) [\_m/s*] | Max Rotational Speed (θ*y) [\_rad/s*] | Radius [_m_] | Laser-range [_m_] |
+| :------------------------------ | :----------------------: | :----------------------: | :-----------------------------------: | :----------: | :---------------: |
+| _turtlebot3-burger (burger)_    |           0.22           |           0.0            |                 2.84                  |    0.113     |        3.5        |
+| _jackal_                        |           2.0            |           0.0            |                  4.0                  |    0.267     |       30.0        |
+| _ridgeback_                     |           1.1            |           0.5            |                  2.0                  |    0.625     |       10.0        |
+| _agv-ota (agvota)_              |           0.5            |           0.0            |                  0.4                  |    0.629     |        5.0        |
+| _rto_                           |           2.78           |           2.78           |                  1.0                  |    0.225     |        5.6        |
+| _youbot_                        |           0.8            |           0.8            |                  1.2                  |    0.347     |        5.6        |
+| _turtlebot3_waffle_pi (waffle)_ |           0.26           |           0.0            |                 1.82                  |    0.208     |        3.5        |
+| _Car-O-Bot4 (cob4)_             |           1.1            |           0.2            |                  0.8                  |     0.36     |       29.5        |
+| _dingo_                         |           1.3            |           0.0            |                 (4.0)                 |    0.378     |       30.0        |
+| _tiago_                         |           1.5            |           0.0            |                  2.0                  |     0.27     |       25.0        |
 
 ### Environments
 
 For training:
 
-- Flatland
+- [Flatland](https://flatland-simulator.readthedocs.io/en/latest/index.html)
 
 For evaluation:
 
-- Flatland
-- Gazebo
+- [Flatland](https://flatland-simulator.readthedocs.io/en/latest/index.html)
+- [Gazebo](https://classic.gazebosim.org/)
+
+### Evaluation
+
+To benchmark the performance of your simulation and visualize your results with qualitative and quantitative plots like in the example below, see the documentation [here](packages/arena_evaluation.md)
+
+| <img width="600" height=350 src="images/qualitative_plot.png"> | <img width="650" height=350 src="images/quantitativ_plots.png"> |
+| :------------------------------------------------------------: | :-------------------------------------------------------------: |
+|                  _Exemplary qualitative plot_                  |                  _Exemplary quantitative plot_                  |

@@ -4,6 +4,8 @@
 
 Arena Benchmark offers a complete evaluation pipeline for benchmarking the performance of robots and planners based on standard metrics, and a trainings pipeline for navigational models based on DRL and PPO. With this pipeline our own DRL planner [ROSNav](packages/rosnav.md) was created.
 
+> Please refer to the official documentation to find detailed instructions on how to install and use the _Arena Benchmark_ project. You can find the documentation by following [this](#TODO) link.
+
 ### Features
 
 - Integration of [Flatland](#TODO) for training new agents and [Flatland]() and [Gazebo]() for evaluating existing approaches.
@@ -15,9 +17,19 @@ Arena Benchmark offers a complete evaluation pipeline for benchmarking the perfo
 - Modular structure for extension of new functionalities and approaches
 - Evaluation of multiple robots and planners in the same simulation
 
-## Documentation
+|   Multiple agents in one simulation   |       Random task mode with one robot        |                  Simulation in Gazebo                  |
+| :-----------------------------------: | :------------------------------------------: | :----------------------------------------------------: |
+| <img width="250" src="gifs/marl.gif"> | <img width="250" src="gifs/random_task.gif"> | <img width="250" src="gifs/random-mode-warehouse.gif"> |
 
-Please refer to the official documentation to find detailed instructions on how to install and use the _Arena Benchmark_ project. You can find the documentation by following [this](#TODO) link.
+## Supported Robots
+
+|                 _turtlebot3-burger_                  |                 _jackal_                  |                  _ridgeback_                  |                 _agv-ota_                  |                 _tiago_                  |
+| :--------------------------------------------------: | :---------------------------------------: | :-------------------------------------------: | :----------------------------------------: | :--------------------------------------: |
+| <img width="250" src="robots/turtlebot3-burger.jpg"> | <img width="250" src="robots/jackal.jpg"> | <img width="250"  src="robots/ridgeback.jpg"> | <img width="250" src="robots/agv-ota.png"> | <img width="250" src="robots/tiago.jpg"> |
+
+|            _Robotino(rto)_             |                 _youbot_                  |                  _turtlebot3_waffle_pi_                  |           _Car-O-Bot4 (cob4)_           |                 _dingo_                  |
+| :------------------------------------: | :---------------------------------------: | :------------------------------------------------------: | :-------------------------------------: | :--------------------------------------: |
+| <img width="250" src="robots/rto.jpg"> | <img width="250" src="robots/youbot.jpg"> | <img width="250"  src="robots/turtlebot3_waffle_pi.jpg"> | <img width="250" src="robots/cob4.jpg"> | <img width="250" src="robots/dingo.jpg"> |
 
 ## Recent Publications
 

@@ -1,5 +1,5 @@
 # mkdocs.yml
-site_name: Arena Benchmark | Docs
+site_name: Arena Benchmark
 
 nav:
   - Introduction: "index.md"
@@ -11,7 +11,7 @@ nav:
       - Usage: "user_guides/usage.md"
 
   - Packages:
-      - Task Manager: "packages/task_generator.md"
+      - Task Generator: "packages/task_generator.md"
       - Arena Simulation Setup: "packages/arena_simulation_setup.md"
       - Arena Utils: "packages/arena_utils.md"
       - ROSNav: "packages/rosnav.md"
