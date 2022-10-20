@@ -19,7 +19,7 @@ Arena Benchmark offers a complete evaluation pipeline for benchmarking the perfo
 
 |   Multiple agents in one simulation   |       Random task mode with one robot        |                  Simulation in Gazebo                  |
 | :-----------------------------------: | :------------------------------------------: | :----------------------------------------------------: |
-| <img width="250" src="gifs/marl.gif"> | <img width="250" src="gifs/random_task.gif"> | <img width="250" src="gifs/random-mode-warehouse.gif"> |
+| <img width="250" src="profile/gifs/marl.gif"> | <img width="250" src="gifs/random_task.gif"> | <img width="250" src="gifs/random-mode-warehouse.gif"> |
 
 ## Supported Robots
 
