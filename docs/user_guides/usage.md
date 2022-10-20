@@ -43,4 +43,4 @@ python training/scripts/train_agent.py
 
 Remember to active the poetry shell in both terminals.
 
-TODO
+You can find more informations about the trainings process [here](training.md).

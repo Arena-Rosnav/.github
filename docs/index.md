@@ -86,3 +86,15 @@ To benchmark the performance of your simulation and visualize your results with 
 | <img width="600" height=350 src="images/qualitative_plot.png"> | <img width="650" height=350 src="images/quantitativ_plots.png"> |
 | :------------------------------------------------------------: | :-------------------------------------------------------------: |
 |                  _Exemplary qualitative plot_                  |                  _Exemplary quantitative plot_                  |
+
+#### Worlds
+
+We provide the following and mony more worlds:
+
+| <img width="150" height="140" src="images/aws_house-2.png"> | <img width="150" height="140" src="images/turtlebot3_house.png"> | <img width="150" height="140" src="images/small_warehouse-2.png"> | <img width="150" height="140" src="images/outside.png"> | <img width="150" height="140" src="images/factory.png"> |
+| :---------------------------------------------------------: | :--------------------------------------------------------------: | :---------------------------------------------------------------: | :-----------------------------------------------------: | :-----------------------------------------------------: |
+|                         _aws_house_                         |                        _turtlebot3_house_                        |                         _small_warehouse_                         |                     _random world_                      |                        _factory_                        |
+
+| <img width="150" height="140" src="images/hospital.jpg"> | <img width="150" height="140" src="images/experiment_rooms.jpg"> | <img width="150" height="140" src="images/bookstore.jpeg"> | <img width="150" height="140" src="images/tb_world.jpg"> |
+| :------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------: | :------------------------------------------------------: |
+|                        _hospital_                        |                        _experiment_rooms_                        |                        _bookstore_                         |                    _turtlebot3_world_                    |

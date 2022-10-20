@@ -9,6 +9,7 @@ nav:
   - User Guides:
       - Installation: "user_guides/installation.md"
       - Usage: "user_guides/usage.md"
+      - Training: "user_guides/training.md"
 
   - Packages:
       - Task Generator: "packages/task_generator.md"
