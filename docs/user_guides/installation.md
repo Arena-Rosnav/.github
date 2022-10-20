@@ -38,7 +38,8 @@ sudo apt update && sudo apt install -y libopencv-dev liblua5.2-dev \
     ros-noetic-navigation ros-noetic-teb-local-planner \
     ros-noetic-mpc-local-planner libarmadillo-dev ros-noetic-nlopt \
     ros-noetic-turtlebot3-description ros-noetic-turtlebot3-navigation \
-    ros-noetic-lms1xx ros-noetic-velodyne-description
+    ros-noetic-lms1xx ros-noetic-velodyne-description ros-noetic-hector-gazebo \
+    ros-noetic-ira-laser-tools
 ```
 
 ## Install stable-baselines3
@@ -67,4 +68,4 @@ source devel/setup.bash
 
 Finished! Check out the [Usage](usage.md) to start using Arena Benchmark.
 
-Remenber to always have the poetry shell active and the catkin workspace sourced when using Arena Benchmark.
+Remember to always have the poetry shell active and the catkin workspace sourced when using Arena Benchmark.
