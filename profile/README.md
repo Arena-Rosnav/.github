@@ -23,9 +23,9 @@ Arena Benchmark offers a complete evaluation pipeline for benchmarking the perfo
 
 ## Supported Robots
 
-|                       _turtlebot3-burger_                        |                       _jackal_                        |                  _ridgeback_                  |                 _agv-ota_                  |                 _tiago_                  |
-| :--------------------------------------------------------------: | :---------------------------------------------------: | :-------------------------------------------: | :----------------------------------------: | :--------------------------------------: |
-| <img width="250" src="docs/images/robots/turtlebot3-burger.jpg"> | <img width="250" src="docs/images/robots/jackal.jpg"> | <img width="250"  src="robots/ridgeback.jpg"> | <img width="250" src="robots/agv-ota.png"> | <img width="250" src="robots/tiago.jpg"> |
+|                       _turtlebot3-burger_                        |                       _jackal_                        |                        _ridgeback_                        |                       _agv-ota_                        |                       _tiago_                        |
+| :--------------------------------------------------------------: | :---------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: |
+| <img width="250" src="docs/images/robots/turtlebot3-burger.jpg"> | <img width="250" src="docs/images/robots/jackal.jpg"> | <img width="250"  src="docs/images/robots/ridgeback.jpg"> | <img width="250" src="docs/images/robots/agv-ota.png"> | <img width="250" src="docs/images/robots/tiago.jpg"> |
 
 |                  _Robotino(rto)_                   |                       _youbot_                        |                        _turtlebot3_waffle_pi_                        |                 _Car-O-Bot4 (cob4)_                 |                       _dingo_                        |
 | :------------------------------------------------: | :---------------------------------------------------: | :------------------------------------------------------------------: | :-------------------------------------------------: | :--------------------------------------------------: |
