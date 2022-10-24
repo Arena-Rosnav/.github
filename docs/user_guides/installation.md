@@ -27,7 +27,7 @@ rosws update
 You should also install the necessary Python packages. You can do so by first activating the poetry shell and then installing all packages listed in the _pyproject.toml_.
 
 ```bash
-poetry shell && poetry install
+source $(poetry env info --path)/bin/activate && poetry install # Run inside arena-bench folder
 ```
 
 ## Install additional Packages
