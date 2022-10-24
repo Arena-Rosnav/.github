@@ -29,6 +29,10 @@ You should also install the necessary Python packages. You can do so by first ac
 ```bash
 source $(poetry env info --path)/bin/activate && poetry install # Run inside arena-bench folder
 ```
+Use this poetry activation method only for the initial installation, afterwards the usual way to activate the poetry shell should be to run:
+```bash
+poetry shell # Run inside arena-bench folder
+```
 
 ## Install additional Packages
 
