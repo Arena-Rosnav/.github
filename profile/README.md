@@ -4,15 +4,15 @@
 
 Arena Benchmark offers a complete evaluation pipeline for benchmarking the performance of robots and planners based on standard metrics, and a trainings pipeline for navigational models based on DRL and PPO. With this pipeline our own DRL planner [ROSNav](packages/rosnav.md) was created.
 
-> Please refer to the official documentation to find detailed instructions on how to install and use the _Arena Benchmark_ project. You can find the documentation by following [this](#TODO) link.
+> Please refer to the official documentation to find detailed instructions on how to install and use the _Arena Benchmark_ project. You can find the documentation by following [this](https://arena-rosnav-wiki.readthedocs.io/) link.
 
 ### Features
 
-- Integration of [Flatland](#TODO) for training new agents and [Flatland]() and [Gazebo]() for evaluating existing approaches.
+- Integration of [Flatland](https://flatland-simulator.readthedocs.io/en/latest/index.html) for training new agents and [Flatland](https://flatland-simulator.readthedocs.io/en/latest/index.html) and [Gazebo](https://gazebosim.org/home) for evaluating existing approaches.
 - Variety of planners, robots and worlds
 - Pipeline for training planner agents based on reinforcement learning approaches from [stable baselines3](https://github.com/DLR-RM/stable-baselines3.git)
 - [Task manager]() for managing highly dynamic and custom environments.
-- Our own DRL planner [ROSNav]()
+- Our own DRL planner [ROSNav](packages/rosnav.md)
 - Pipeline for evaluating approaches and analysing them based on standard metrics with our [Arena Evaluation](packages/arena_evaluation.md) package.
 - Modular structure for extension of new functionalities and approaches
 - Evaluation of multiple robots and planners in the same simulation
