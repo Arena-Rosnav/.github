@@ -6,22 +6,27 @@ Arena Benchmark offers a complete evaluation pipeline for benchmarking the perfo
 
 ## Features
 
-- Integration of [Flatland](https://flatland-simulator.readthedocs.io/en/latest/index.html) for training new agents and [Flatland]() and [Gazebo](https://classic.gazebosim.org/) for evaluating existing approaches.
+- Integration of [Flatland](https://flatland-simulator.readthedocs.io/en/latest/) to train new agents and [Flatland](https://flatland-simulator.readthedocs.io/en/latest/) and [Gazebo](https://classic.gazebosim.org/) for evaluating existing approaches.
 - Variety of planners, robots and worlds
-- Pipeline for training planner agents based on reinforcement learning approaches from [stable baselines3](https://github.com/DLR-RM/stable-baselines3.git)
-- [Task generator](packages/task_generator.md) for managing highly dynamic and custom environments.
+- Pipeline to train planner agents based on reinforcement learning approaches from [stable baselines3](https://github.com/DLR-RM/stable-baselines3.git)
+- [Task generator](packages/task_generator.md) for managing highly dynamic and custom environments
 - Our own DRL planner [ROSNav](packages/rosnav.md)
 - Pipeline for evaluating approaches and analysing them based on standard metrics with our [Arena Evaluation](packages/arena_evaluation.md) package.
 - Modular structure for extension of new functionalities and approaches
 - Evaluation of multiple robots and planners in the same simulation
+- Dynamic rviz config file creation for visualization
 
-|       Multiple agents in one simulation       |           Random task mode with one robot            |
-| :-------------------------------------------: | :--------------------------------------------------: |
-| <img width="400" src="/images/gifs/marl.gif"> | <img width="400" src="/images/gifs/random_task.gif"> |
+|      Multiple agents in one simulation       |
+| :------------------------------------------: |
+| <img src="images/gifs/marl_custom_rviz.gif"> |
 
-|                      Simulation in Gazebo                      |
-| :------------------------------------------------------------: |
-| <img width="400" src="/images/gifs/random-mode-warehouse.gif"> |
+|               Simulation in Gazebo                |
+| :-----------------------------------------------: |
+| <img src="images/gifs/random-mode-warehouse.gif"> |
+
+|             Simulation in Flatland              |
+| :---------------------------------------------: |
+| <img src="images/gifs/flatland_simulation.gif"> |
 
 ### Planners
 
@@ -45,13 +50,13 @@ We offer the following planners:
 
 We support different robots:
 
-|                     _turtlebot3-burger_                      |                     _jackal_                      |                      _ridgeback_                      |                     _agv-ota_                      |                     _tiago_                      |
-| :----------------------------------------------------------: | :-----------------------------------------------: | :---------------------------------------------------: | :------------------------------------------------: | :----------------------------------------------: |
-| <img width="250" src="/images/robots/turtlebot3-burger.jpg"> | <img width="250" src="/images/robots/jackal.jpg"> | <img width="250"  src="/images/robots/ridgeback.jpg"> | <img width="250" src="/images/robots/agv-ota.png"> | <img width="250" src="/images/robots/tiago.jpg"> |
+|                     _turtlebot3-burger_                     |                     _jackal_                     |                     _ridgeback_                      |                     _agv-ota_                     |                     _tiago_                     |
+| :---------------------------------------------------------: | :----------------------------------------------: | :--------------------------------------------------: | :-----------------------------------------------: | :---------------------------------------------: |
+| <img width="250" src="images/robots/turtlebot3-burger.jpg"> | <img width="250" src="images/robots/jackal.jpg"> | <img width="250"  src="images/robots/ridgeback.jpg"> | <img width="250" src="images/robots/agv-ota.png"> | <img width="250" src="images/robots/tiago.jpg"> |
 
-|                _Robotino(rto)_                 |                     _youbot_                      |                      _turtlebot3_waffle_pi_                      |               _Car-O-Bot4 (cob4)_               |                     _dingo_                      |
-| :--------------------------------------------: | :-----------------------------------------------: | :--------------------------------------------------------------: | :---------------------------------------------: | :----------------------------------------------: |
-| <img width="250" src="/images/robots/rto.jpg"> | <img width="250" src="/images/robots/youbot.jpg"> | <img width="250"  src="/images/robots/turtlebot3_waffle_pi.jpg"> | <img width="250" src="/images/robots/cob4.jpg"> | <img width="250" src="/images/robots/dingo.jpg"> |
+|                _Robotino(rto)_                |                     _youbot_                     |                     _turtlebot3_waffle_pi_                      |              _Car-O-Bot4 (cob4)_               |                     _dingo_                     |
+| :-------------------------------------------: | :----------------------------------------------: | :-------------------------------------------------------------: | :--------------------------------------------: | :---------------------------------------------: |
+| <img width="250" src="images/robots/rto.jpg"> | <img width="250" src="images/robots/youbot.jpg"> | <img width="250"  src="images/robots/turtlebot3_waffle_pi.jpg"> | <img width="250" src="images/robots/cob4.jpg"> | <img width="250" src="images/robots/dingo.jpg"> |
 
 All robots are equipped with a laser scanner. The robots differ in size, laser-range etc. See below table for more detailed information on each robot:
 
@@ -89,12 +94,16 @@ To benchmark the performance of your simulation and visualize your results with 
 
 #### Worlds
 
-We provide the following and mony more worlds:
+We provide the following and many more worlds:
 
-| <img width="150" height="140" src="images/aws_house-2.png"> | <img width="150" height="140" src="images/turtlebot3_house.png"> | <img width="150" height="140" src="images/small_warehouse-2.png"> | <img width="150" height="140" src="images/outside.png"> | <img width="150" height="140" src="images/factory.png"> |
-| :---------------------------------------------------------: | :--------------------------------------------------------------: | :---------------------------------------------------------------: | :-----------------------------------------------------: | :-----------------------------------------------------: |
-|                         _aws_house_                         |                        _turtlebot3_house_                        |                         _small_warehouse_                         |                     _random world_                      |                        _factory_                        |
+| <img width="150" height="140" src="images/worlds/aws_house.png"> | <img width="150" height="140" src="images/worlds/turtlebot3_house.png"> | <img width="150" height="140" src="images/worlds/small_warehouse.png"> | <img width="150" height="140" src="images/worlds/factory.png"> |
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: | :--------------------------------------------------------------------: | :------------------------------------------------------------: |
+|                           _aws_house_                            |                           _turtlebot3_house_                            |                           _small_warehouse_                            |                           _factory_                            |
 
-| <img width="150" height="140" src="images/hospital.jpg"> | <img width="150" height="140" src="images/experiment_rooms.jpg"> | <img width="150" height="140" src="images/bookstore.jpeg"> | <img width="150" height="140" src="images/tb_world.jpg"> |
-| :------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------: | :------------------------------------------------------: |
-|                        _hospital_                        |                        _experiment_rooms_                        |                        _bookstore_                         |                    _turtlebot3_world_                    |
+| <img width="150" height="140" src="images/worlds/hospital.jpg"> | <img width="150" height="140" src="images/worlds/exp1.jpg"> | <img width="150" height="140" src="images/worlds/bookstore.jpeg"> | <img width="150" height="140" src="images/worlds/tb_world.jpg"> |
+| :-------------------------------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------------------: | :-------------------------------------------------------------: |
+|                           _hospital_                            |                     _experiment_rooms_                      |                            _bookstore_                            |                       _turtlebot3_world_                        |
+
+| <img width="150" height="140" src="images/worlds/exp2.jpg"> | <img width="150" height="140" src="images/worlds/exp3.jpg"> | <img width="150" height="140" src="images/worlds/exp4.jpg"> |
+| :---------------------------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------------: |
+|                    _experiment_rooms_2_                     |                    _experiment_rooms_3_                     |                    _experiment_rooms_4_                     |
