@@ -8,7 +8,7 @@ button.copybtn {
   right: 0.3em;
   width: 1.7em;
   height: 1.7em;
-  opacity: 0;
+  opacity: 0.2;
   transition: opacity 0.3s, border 0.3s, background-color 0.3s;
   user-select: none;
   padding: 0;
