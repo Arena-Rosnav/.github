@@ -16,17 +16,21 @@ Arena Benchmark offers a complete evaluation pipeline for benchmarking the perfo
 - Evaluation of multiple robots and planners in the same simulation
 - Dynamic rviz config file creation for visualization
 
-|      Multiple agents in one simulation       |
-| :------------------------------------------: |
-| <img src="images/gifs/marl_custom_rviz.gif"> |
+|        Warehouse environment in Gazebo        |
+| :-------------------------------------------: |
+| <img src="images/gifs/gazebo_simulation.gif"> |
 
-|               Simulation in Gazebo                |
-| :-----------------------------------------------: |
-| <img src="images/gifs/random-mode-warehouse.gif"> |
+|       Hospital environment in Gazebo        |
+| :-----------------------------------------: |
+| <img src="images/gifs/hospital_gazebo.gif"> |
 
 |             Simulation in Flatland              |
 | :---------------------------------------------: |
 | <img src="images/gifs/flatland_simulation.gif"> |
+
+<!-- |      Multiple agents in one simulation       |
+| :------------------------------------------: |
+| <img src="images/gifs/marl_custom_rviz.gif"> | -->
 
 ### Planners
 
