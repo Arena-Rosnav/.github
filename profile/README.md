@@ -6,7 +6,7 @@ Arena Benchmark offers a complete evaluation pipeline for benchmarking the perfo
 
 > Please refer to the official documentation to find detailed instructions on how to install and use the _Arena Benchmark_ project. You can find the documentation by following [this](https://arena-benchmark.readthedocs.io/en/latest/) link.
 
-<img src="docs/images/gifs/marl_custom_rviz.gif">
+<img src="docs/images/gifs/hospital_gazebo.gif">
 
 ### Features
 
