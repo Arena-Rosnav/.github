@@ -28,9 +28,9 @@ Arena Benchmark offers a complete evaluation pipeline for benchmarking the perfo
 | :---------------------------------------------: |
 | <img src="images/gifs/flatland_simulation.gif"> |
 
-<!-- |      Multiple agents in one simulation       |
+|      Multiple agents in one simulation       |
 | :------------------------------------------: |
-| <img src="images/gifs/marl_custom_rviz.gif"> | -->
+| <img src="images/gifs/marl_custom_rviz.gif"> |
 
 ### Planners
 
