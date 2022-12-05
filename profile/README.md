@@ -8,12 +8,12 @@ Arena Benchmark offers a complete evaluation pipeline for benchmarking the perfo
 
 |        Warehouse environment in Gazebo        |        Hospital environment in Gazebo           |
 | :-------------------------------------------: |  :-------------------------------------------:  |
-| <img src="images/gifs/gazebo_simulation.gif"> |  <img src="images/gifs/hospital_gazebo.gif">    |
+| <img src="docs/images/gifs/gazebo_simulation.gif"> |  <img src="docs/images/gifs/hospital_gazebo.gif">    |
 <br/>    
 
 |             Simulation in Flatland              |      Multiple agents in one simulation       |
 | :---------------------------------------------: | :------------------------------------------: |
-| <img src="images/gifs/flatland_simulation.gif" > | <img src="images/gifs/marl_custom_rviz.gif" > |
+| <img src="docs/images/gifs/flatland_simulation.gif" > | <img src="docs/images/gifs/marl_custom_rviz.gif" > |
 
 ### Features
 
