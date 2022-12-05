@@ -6,7 +6,14 @@ Arena Benchmark offers a complete evaluation pipeline for benchmarking the perfo
 
 > Please refer to the official documentation to find detailed instructions on how to install and use the _Arena Benchmark_ project. You can find the documentation by following [this](https://arena-benchmark.readthedocs.io/en/latest/) link.
 
-<img src="docs/images/gifs/hospital_gazebo.gif">
+|        Warehouse environment in Gazebo        |        Hospital environment in Gazebo           |
+| :-------------------------------------------: |  :-------------------------------------------:  |
+| <img src="images/gifs/gazebo_simulation.gif"> |  <img src="images/gifs/hospital_gazebo.gif">    |
+<br/>    
+
+|             Simulation in Flatland              |      Multiple agents in one simulation       |
+| :---------------------------------------------: | :------------------------------------------: |
+| <img src="images/gifs/flatland_simulation.gif" > | <img src="images/gifs/marl_custom_rviz.gif" > |
 
 ### Features
 
