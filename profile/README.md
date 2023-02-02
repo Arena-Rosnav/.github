@@ -2,9 +2,9 @@
 
 [Arena Rosnav](https://github.com/Arena-Rosnav/arena-rosnav) is a set of tools to train and evaluate navigational algorithms for obstacle avoidance. Arena Rosnav is modular and flexible and allows to easily integrate new environments and planners, as well as running existing planners and models in predefined benchmark scenarios and evaluating the performance with ease. Next to the planners and environments we offer a wide variety of different robots and worlds for your use.
 
-Arena Rosnav offers a complete evaluation pipeline for benchmarking the performance of robots and planners based on standard metrics, and a trainings pipeline for navigational models based on DRL and PPO. With this pipeline our own DRL planner [ROSNavRL](packages/rosnavrl.md) was created.
+Arena Rosnav offers a complete evaluation pipeline for benchmarking the performance of robots and planners based on standard metrics, and a trainings pipeline for navigational models based on DRL and PPO. With this pipeline our own DRL planner [ROSNavRL](https://github.com/Arena-Rosnav/rosnav-rl) was created.
 
-> Please refer to the official documentation to find detailed instructions on how to install and use the _Arena Benchmark_ project. You can find the documentation by following [this](https://arena-benchmark.readthedocs.io/en/latest/) link.
+> Please refer to the official documentation to find detailed instructions on how to install and use the _Arena Rosnav_ project. You can find the documentation by following [this](https://arena-rosnav.readthedocs.io/en/latest/) link.
 
 |          Warehouse environment in Gazebo           |          Hospital environment in Gazebo          |
 | :------------------------------------------------: | :----------------------------------------------: |
