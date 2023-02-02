@@ -10,7 +10,7 @@
 Clone the Arena Benchmark repository in any existing **catkin workspace** or [create a new workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace).
 
 ```bash
-git clone git@github.com:Arena-Rosnav/arena-bench.git
+git clone git@github.com:Arena-Rosnav/arena-rosnav.git
 ```
 
 ## Update ROS workspace

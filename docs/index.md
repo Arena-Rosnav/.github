@@ -2,7 +2,7 @@
 
 [Arena Rosnav](https://github.com/Arena-Rosnav/arena-rosnav) is a set of tools for training and evaluating of navigational algorithms for obstacle avoidance. Arena Rosnav is modular and flexible and allows to easily integrate new environments and planners, as well as running existing planners and models in predefined benchmark scenarios and evaluating the performance with ease. Next to the planners and environments we offer a wide variety of different robots and worlds for your use.
 
-Arena Rosnav offers a complete evaluation pipeline for benchmarking the performance of robots and planners based on standard metrics, and a trainings pipeline for navigational models based on DRL and PPO. With this pipeline our own DRL planner [ROSNavRL](packages/rosnav.md) was created.
+Arena Rosnav offers a complete evaluation pipeline for benchmarking the performance of robots and planners based on standard metrics, and a trainings pipeline for navigational models based on DRL and PPO. With this pipeline our own DRL planner [ROSNavRL](packages/rosnavrl.md) was created.
 
 ## Features
 
@@ -10,8 +10,8 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 - Variety of planners, robots and worlds
 - Pipeline to train planner agents based on reinforcement learning approaches from [stable baselines3](https://github.com/DLR-RM/stable-baselines3.git)
 - [Task generator](packages/task_generator.md) for managing highly dynamic and custom environments
-- Our own DRL planner [ROSNav](packages/rosnav.md)
-- Pipeline for evaluating approaches and analysing them based on standard metrics with our [Arena Evaluation](packages/arena_evaluation.md) package.
+- Our own DRL planner [ROSNavRL](packages/rosnavrl.md)
+- Pipeline for evaluating approaches and analysing them based on standard metrics with our [Evaluation](packages/evaluation.md) package.
 - Modular structure for extension of new functionalities and approaches
 - Evaluation of multiple robots and planners in the same simulation
 - Dynamic rviz config file creation for visualization
