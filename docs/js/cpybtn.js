@@ -119,9 +119,15 @@ const addCopyButtonToCodeCells = () => {
   // Add copybuttons to all of our code cells
   const codeCells = document.querySelectorAll("pre");
   codeCells.forEach((codeCell, index) => {
+    var parent = codeCell.parentNode;
+    var wrapper = document.createElement("div");
+    wrapper.classList.add("codehilite");
+    // set the wrapper as child (instead of the element)
+    parent.replaceChild(wrapper, codeCell);
+    // set element as child of wrapper
+    wrapper.appendChild(codeCell);
     const id = codeCellId(index);
     codeCell.setAttribute("id", id);
-    console.log("Hello");
     const clipboardButton = (id) =>
       `<button class="copybtn o-tooltip--left" data-tooltip="${messages[locale]["copy"]}" data-clipboard-target="#${id}">
       ${iconCopy}

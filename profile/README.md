@@ -6,7 +6,15 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 
 > Please refer to the official documentation to find detailed instructions on how to install and use the _Arena Benchmark_ project. You can find the documentation by following [this](https://arena-benchmark.readthedocs.io/en/latest/) link.
 
-<img src="docs/images/gifs/marl_custom_rviz.gif">
+|          Warehouse environment in Gazebo           |          Hospital environment in Gazebo          |
+| :------------------------------------------------: | :----------------------------------------------: |
+| <img src="docs/images/gifs/gazebo_simulation.gif"> | <img src="docs/images/gifs/hospital_gazebo.gif"> |
+
+<br/>
+
+|                Simulation in Flatland                 |         Multiple agents in one simulation          |
+| :---------------------------------------------------: | :------------------------------------------------: |
+| <img src="docs/images/gifs/flatland_simulation.gif" > | <img src="docs/images/gifs/marl_custom_rviz.gif" > |
 
 ### Features
 
@@ -46,6 +54,6 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 
 ## Recent Publications
 
-- [Arena-Bench](https://arxiv.org/abs/2206.05728): A Benchmarking Suite for Obstacle Avoidance Approaches in Highly Dynamic Environments
-- [Arena-Rosnav](https://ieeexplore.ieee.org/document/9636226/authors#authors): Towards Deployment of Deep-Reinforcement-Learning-Based Obstacle Avoidance into Conventional Autonomous Navigation Systems
-- [All-in-One](https://ieeexplore.ieee.org/document/9811797): A DRL-based Control Switch Combining State-of-the-art Navigation Planners
+- [Arena-Bench (RA-L+ IROS22)](https://arxiv.org/abs/2206.05728): A Benchmarking Suite for Obstacle Avoidance Approaches in Highly Dynamic Environments
+- [Arena-Rosnav (IROS21)](https://ieeexplore.ieee.org/document/9636226/authors#authors): Towards Deployment of Deep-Reinforcement-Learning-Based Obstacle Avoidance into Conventional Autonomous Navigation Systems
+- [All-in-One (ICRA22)](https://ieeexplore.ieee.org/document/9811797): A DRL-based Control Switch Combining State-of-the-art Navigation Planners
