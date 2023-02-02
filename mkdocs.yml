@@ -1,5 +1,5 @@
 # mkdocs.yml
-site_name: Arena Benchmark
+site_name: Arena Rosnav
 
 nav:
   - Introduction: "index.md"

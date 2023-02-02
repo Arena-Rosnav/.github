@@ -1,6 +1,6 @@
 # Task Generator
 
-The task generator is a major part of the _Arena Benchmark_ infrastructure. The main tasks of this package are:
+The task generator is a major part of the _Arena Rosnav_ infrastructure. The main tasks of this package are:
 
 - Create and manager dynamic and static obstacles
 - Create new goals and starting positions for every robot in the simulation

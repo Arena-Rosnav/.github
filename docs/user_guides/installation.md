@@ -66,6 +66,6 @@ cd ../../.. && catkin_make
 source devel/setup.bash
 ```
 
-Finished! Check out the [Usage](usage.md) to start using Arena Benchmark.
+Finished! Check out the [Usage](usage.md) to start using Arena Rosnav.
 
-Remember to always have the poetry shell active and the catkin workspace sourced when using Arena Benchmark.
+Remember to always have the poetry shell active and the catkin workspace sourced when using Arena Rosnav.
