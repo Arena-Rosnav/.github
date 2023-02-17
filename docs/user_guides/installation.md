@@ -65,6 +65,8 @@ cd ../../.. && catkin_make
 ```
 source devel/setup.bash
 ```
+## Install local planners
+#### Please refer to our [planners overview](planners_overview.md) for installation steps of the local planners.
 
 Finished! Check out the [Usage](usage.md) to start using Arena Rosnav.
 
