@@ -22,7 +22,7 @@ The launch file takes following parameters:
 | show_rviz        | true                    | bool             | Activates rviz when using gazebo                                                                                                                                                                                                                                   |
 | scenario_file    | test_scenario.json      | string           | Name of the scenario file.<br /> Must be located in<br /> /task-generator/scenarios                                                                                                                                                                                |
 | map_file         | map0                    | string           | Name of the map. The map must <br />be located in<br /> /arena_simulation_setup/maps                                                                                                                                                                               |
-| record_data      | false                   | bool             | Wether you want to record the<br /> robot data during the run for <br />later evaluations with the <br />[arena_evaluation](#TODO) package.                                                                                                                        |
+| record_data      | false                   | bool             | Wether you want to record the<br /> robot data during the run for <br />later evaluations with the <br />[arena_evaluation](packages/arena_evaluation.md) package.                                                                                                 |
 
 ## Training
 

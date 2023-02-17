@@ -11,7 +11,7 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 - Pipeline to train planner agents based on reinforcement learning approaches from [stable baselines3](https://github.com/DLR-RM/stable-baselines3.git)
 - [Task generator](packages/task_generator.md) for managing highly dynamic and custom environments
 - Our own DRL planner [ROSNavRL](packages/rosnavrl.md)
-- Pipeline for evaluating approaches and analysing them based on standard metrics with our [Evaluation](packages/evaluation.md) package.
+- Pipeline for evaluating approaches and analysing them based on standard metrics with our [Evaluation](packages/arena_evaluation.md) package.
 - Modular structure for extension of new functionalities and approaches
 - Evaluation of multiple robots and planners in the same simulation
 - Dynamic rviz config file creation for visualization
