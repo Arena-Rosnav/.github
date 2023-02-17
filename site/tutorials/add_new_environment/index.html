@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Add new environment - Arena Rosnav</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Add new environment";
+        var mkdocs_page_input_path = "tutorials/add_new_environment.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Arena Rosnav
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../publications/">Publications</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../contribute/">Contribute</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user_guides/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user_guides/usage/">Usage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../user_guides/training/">Training</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Packages</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../packages/task_generator/">Task Generator</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../packages/arena_simulation_setup/">Arena Simulation Setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../packages/arena_evaluation/">Evaluation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../packages/rosnavrl/">ROSNavRL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tutorials</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Add new environment</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#new-environment-in-task-generator">New environment in task generator</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#before_reset_task">before_reset_task</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#after_reset_task">after_reset_task</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#remove_all_obstacles">remove_all_obstacles</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#spawn_random_dynamic_obstacle">spawn_random_dynamic_obstacle</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#spawn_random_static_obstacles">spawn_random_static_obstacles</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#publish_goal">publish_goal</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#move_robot">move_robot</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#spawn_robot">spawn_robot</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#spawn_obstacle">spawn_obstacle</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#launch-file-for-environment">Launch file for environment</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../train_agent_with_different_observation_spaces/">Train an agent with different observation spaces</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Arena Rosnav</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Tutorials &raquo;</li><li>Add new environment</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="add-new-environment">Add new environment</h1>
+<p>To add a new environment to <em>Arena Rosnav</em>, you mainly have to do two seperate things. At first, you have to create a new environment adapter for the task manager. Additionally, you have to create and integrate a new launch file for your environment.</p>
+<h2 id="new-environment-in-task-generator">New environment in task generator</h2>
+<p>In order to use a custom environment with <em>Arena Rosnav</em>, you have to create an interface between environment and our task generator. Therefore, you will implement your own environment class in <a href="https://github.com/Arena-Rosnav/task-generator/tree/dev/task_generator/environments">task_generator/task_generator/environments/</a>, deriving from <code>BaseEnvironemnt</code>. See the <a href="https://github.com/Arena-Rosnav/task-generator/tree/dev/task_generator/environments/flatland_environment.py"><code>flatland_environment.py</code></a> as an example.</p>
+<p>In your environment interface you have to implement following methods:</p>
+<h4 id="before_reset_task">before_reset_task</h4>
+<p>Function that is run before the task is resetted. This can be used to stop the simulation.</p>
+<h4 id="after_reset_task">after_reset_task</h4>
+<p>Function that is run after the task is resetted. This can be used to start the simulation again.</p>
+<h4 id="remove_all_obstacles">remove_all_obstacles</h4>
+<p>Remove all obstacles from the current simulation.</p>
+<h4 id="spawn_random_dynamic_obstacle">spawn_random_dynamic_obstacle</h4>
+<p>Used to spawn new dynamic obstacles.</p>
+<p><strong>Arguments:</strong></p>
+<ul>
+<li>position <code>[float, float, float]</code>: denoting x, y and angle</li>
+<li>min_radius <code>float</code>: minimal radius of the obstacle</li>
+<li>max_radius <code>float</code>: maximal radius of the obstacle</li>
+<li>linear_vel <code>float</code>: linear velocity</li>
+<li>angular_vel_max <code>float</code>: maximal angular velocity</li>
+</ul>
+<h4 id="spawn_random_static_obstacles">spawn_random_static_obstacles</h4>
+<p>Used to spawn new static obstacles.</p>
+<p><strong>Arguments:</strong></p>
+<ul>
+<li>position <code>[float, float, float]</code>: denoting x, y and angle</li>
+<li>min_radius <code>float</code>: minimal radius of the obstacle</li>
+<li>max_radius <code>float</code>: maximal radius of the obstacle</li>
+</ul>
+<h4 id="publish_goal">publish_goal</h4>
+<p>Publish the goal to desired subscribers.</p>
+<p><strong>Arguments:</strong></p>
+<ul>
+<li>goal <code>[float, float]</code> denoting x, y</li>
+</ul>
+<h4 id="move_robot">move_robot</h4>
+<p>Move a robot, speicified by its name, to a given position.</p>
+<p><strong>Arguments:</strong></p>
+<ul>
+<li>position <code>[float, float]</code>: denoting x, y</li>
+<li>name <code>string</code>: denoting the name of the robot that should be moved</li>
+</ul>
+<h4 id="spawn_robot">spawn_robot</h4>
+<p>Spawn a new robot in the environment.</p>
+<p><strong>Arguments:</strong></p>
+<ul>
+<li>name <code>string</code>: Name the robot.</li>
+<li>robot_model <code>string</code>: The name of the robot you want to spawn. (rto, jackal, ...)</li>
+<li>namespace <code>string</code>: Namespace of the spawned robot.</li>
+</ul>
+<h4 id="spawn_obstacle">spawn_obstacle</h4>
+<p><strong>TODO</strong></p>
+<h2 id="launch-file-for-environment">Launch file for environment</h2>
+<p>To launch the environment with all other packages, you should create a custom launch file in the <code>arena_bringup</code> package. Refer to the <a href="https://github.com/Arena-Rosnav/arena-rosnav/blob/dev/arena_bringup/launch/testing/flatland_simulator.launch"><code>flatland_environment.launch</code></a> to see how we did this with flatland. You should then include your launch file into the main <code>start_arena.launch</code> and only launch your environment when the environment argument is equal to your environment name.</p>
+<pre><code class="language-xml">  &lt;!-- Flatland --&gt;
+  &lt;include file=&quot;$(find arena_bringup)/launch/testing//simulators/flatland.launch&quot; if=&quot;$(eval arg('environment') == 'flatland')&quot;&gt;
+    &lt;arg name=&quot;visualization&quot; default=&quot;$(arg visualization)&quot; /&gt;
+    &lt;arg name=&quot;rviz_file&quot; value=&quot;$(arg rviz_file)&quot; /&gt;
+    &lt;arg name=&quot;model&quot; value=&quot;$(arg model)&quot; /&gt;
+  &lt;/include&gt;
+
+  &lt;!-- Gazebo --&gt;
+  &lt;include file=&quot;$(find arena_bringup)/launch/testing/simulators/gazebo.launch&quot; if=&quot;$(eval arg('environment') == 'gazebo')&quot;&gt;
+    &lt;arg name=&quot;model&quot; value=&quot;$(arg model)&quot; /&gt;
+    &lt;arg name=&quot;rviz_file&quot; value=&quot;$(arg rviz_file)&quot; /&gt;
+    &lt;arg name=&quot;show_rviz&quot; default=&quot;$(arg show_rviz)&quot; /&gt;
+    &lt;arg name=&quot;headless&quot; default=&quot;false&quot;/&gt;
+    &lt;arg name=&quot;gui&quot; default=&quot;true&quot;/&gt;
+    &lt;arg name=&quot;world&quot; default=&quot;$(arg world_file)&quot; /&gt;
+  &lt;/include&gt;
+
+  &lt;!-- YOUR NEW ENVIRONEMENT --&gt;
+  &lt;include file=&quot;$(find arena_bringup)/launch/testing/simulators/gazebo.launch&quot; if=&quot;$(eval arg('environment') == 'YOUR_ENVIRONMENT_NAME')&quot;&gt;
+    &lt;!-- LIST OF ALL ARGUMENTS YOU NEED TO LAUNCH YOUR ENVIRONMENT APPROPRIATELY --&gt;
+  &lt;/include&gt;
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../packages/rosnavrl/" class="btn btn-neutral float-left" title="ROSNavRL"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../train_agent_with_different_observation_spaces/" class="btn btn-neutral float-right" title="Train an agent with different observation spaces">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../packages/rosnavrl/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../train_agent_with_different_observation_spaces/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.0/clipboard.min.js" defer></script>
+      <script src="../../js/cpybtn.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
