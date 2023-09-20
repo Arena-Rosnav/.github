@@ -11,7 +11,11 @@ nav:
       - Planners: "user_guides/planners_overview.md"
       - Usage: "user_guides/usage.md"
       - Training: "user_guides/training.md"
-
+  -System Design:
+      - Overall System Design: "system/system-desing.md"
+      - Training Pipeline: "system/training-design.md"
+      - Launch File System: "system/launch-file-design.md"
+      - Evaluation/Benchmarking Pipeline: "system/eval-design.md"
   - Packages:
       - Task Generator: "packages/task_generator.md"
       - Arena Simulation Setup: "packages/arena_simulation_setup.md"
@@ -21,7 +25,7 @@ nav:
   - Tutorials:
       - Add new environment: "tutorials/add_new_environment.md"
       - Train an agent with different observation spaces: "tutorials/train_agent_with_different_observation_spaces.md"
-
+  
   # - User Guides:
   #     - Installation: "user_guides/installation.md"
   #     - Get Started: "user_guides/get_started.md"
