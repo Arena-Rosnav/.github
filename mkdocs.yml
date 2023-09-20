@@ -12,7 +12,7 @@ nav:
       - Usage: "user_guides/usage.md"
       - Training: "user_guides/training.md"
   -System Design:
-      - Overall System Design: "system/system-desing.md"
+      - Overall System Design: "system/system-design.md"
       - Training Pipeline: "system/training-design.md"
       - Launch File System: "system/launch-file-design.md"
       - Evaluation/Benchmarking Pipeline: "system/eval-design.md"
