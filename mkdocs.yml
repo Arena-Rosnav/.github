@@ -11,11 +11,13 @@ nav:
       - Planners: "user_guides/planners_overview.md"
       - Usage: "user_guides/usage.md"
       - Training: "user_guides/training.md"
-  -System Design:
+
+  - System Design:
       - Overall System Design: "system/system-design.md"
       - Training Pipeline: "system/training-design.md"
       - Launch File System: "system/launch-file-design.md"
       - Evaluation/Benchmarking Pipeline: "system/eval-design.md"
+
   - Packages:
       - Task Generator: "packages/task_generator.md"
       - Arena Simulation Setup: "packages/arena_simulation_setup.md"
