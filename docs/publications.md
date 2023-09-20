@@ -1,7 +1,7 @@
 # Publications
 The Arena-Rosnav Platform and its extensions have been incrementally developed and published through a number of publications.
  
- ## [Arena Rosnav (IROS 2021, Praque, Czech)](https://ieeexplore.ieee.org/document/9636226/authors#authors)
+## [Arena Rosnav (IROS 2021, Praque, Czech)](https://ieeexplore.ieee.org/document/9636226/authors#authors)
 
 ```
 @inproceedings{kastner2021arena,
