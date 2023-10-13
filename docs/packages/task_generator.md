@@ -14,6 +14,12 @@ The Task Generator is a critical component of the Arena Rosnav infrastructure. I
 
 The Task Generator operates in three primary modes, each serving a distinct purpose:
 
+**Staged Mode:**
+   - The staged task mode is designed for the trainings process of arena-rosnav.
+   - In general, it behaves like the random task mode but there are multiple stages between one can switch.
+   - Between the stages, the amount of static and dynamic obstacles changes.
+   - The amount of obstacles is defined in a curriculum file, the path to said file is a key in the paths parameter.
+
 **Random Mode:**
    - In this mode, each simulation run features random starting positions and goals for the robots.
    - The mode also involves the random placement of static, interactive, and dynamic obstacles within the environment.
