@@ -1,14 +1,42 @@
+It appears that you want to structure information about a task generator component within the "Arena Rosnav" infrastructure, along with its various task modes, and the details of scenario and robot setup files. Below is the information presented in the requested format:
+
+---
+
 # Task Generator
 
-The task generator is a major part of the _Arena Rosnav_ infrastructure. The main tasks of this package are:
+The Task Generator is a critical component of the Arena Rosnav infrastructure. Its primary functions include:
 
-- Create and manager dynamic and static obstacles
-- Create new goals and starting positions for every robot in the simulation
-- Set up all robots for one simulation based on robot setup files
-- Read and set up existing setup files correctly
+1. **Creating and Managing Obstacles:** This component is responsible for both dynamic and static obstacles within the simulation environment.
+
+2. **Generating Starting Positions and Goals:** It generates new starting positions and goals for every robot participating in the simulation.
+
+3. **Setting Up Robots:** It prepares all the robots for a simulation based on robot setup files.
+
+4. **Reading and Configuring Setup Files:** The Task Generator can read and correctly set up existing configuration files for various simulation parameters.
 
 ## Task Modes
 
-## Scenario file
+The Task Generator operates in three primary modes, each serving a distinct purpose:
 
-## Robot setup file
+1. **Random Mode:**
+   - In this mode, each simulation run features random starting positions and goals for the robots.
+   - The mode also involves the random placement of static, interactive, and dynamic obstacles within the environment.
+   - The number of obstacles is randomly determined for each run.
+
+2. **Scenario Mode:**
+   - This mode utilizes a predefined scenario that is repeated for each run.
+   - It requires a scenario file that specifies the initial positions of all robots, obstacles, waypoints, and goals.
+   
+3. **Random Scenario Mode:**
+   - In this mode, obstacles are spawned at random locations.
+   - Waypoints are also placed randomly.
+   - However, the type and number of obstacles are predefined within an XML configuration file.
+
+## Scenario File
+
+The scenario file is a critical component for the "Scenario Mode" of the Task Generator. It contains information about the initial setup of a simulation run, including the positions of robots, obstacles, waypoints, and goals. This file provides a consistent environment for repeated simulations based on a predefined scenario.
+
+## Robot Setup File
+
+The robot setup file is essential for configuring the robots participating in the simulation. It contains details about each robot's characteristics, such as its model, sensors, capabilities, and initial settings. This file is used by the Task Generator to set up and configure the robots correctly for a simulation run.
+
