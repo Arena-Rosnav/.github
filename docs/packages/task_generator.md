@@ -1,7 +1,3 @@
-It appears that you want to structure information about a task generator component within the "Arena Rosnav" infrastructure, along with its various task modes, and the details of scenario and robot setup files. Below is the information presented in the requested format:
-
----
-
 # Task Generator
 
 The Task Generator is a critical component of the Arena Rosnav infrastructure. Its primary functions include:
