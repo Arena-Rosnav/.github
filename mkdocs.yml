@@ -21,6 +21,9 @@ nav:
   - Packages:
       - Task Generator: "packages/task_generator.md"
       - Pedsim Manager: "packages/pedsim_manager.md"
+      - Flatland Simulator: "packages/flatland_simulator.md"
+      - Gazebo Simulator: "packages/gazebo_simulator.md"
+      - Pedsim Manager: "packages/pedsim_manager.md"
       - Arena Simulation Setup: "packages/arena_simulation_setup.md"
       - Evaluation: "packages/arena_evaluation.md"
       - ROSNavRL: "packages/rosnavrl.md"
