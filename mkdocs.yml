@@ -20,6 +20,7 @@ nav:
 
   - Packages:
       - Task Generator: "packages/task_generator.md"
+      - Pedsim Manager: "packages/pedsim_manager.md"
       - Arena Simulation Setup: "packages/arena_simulation_setup.md"
       - Evaluation: "packages/arena_evaluation.md"
       - ROSNavRL: "packages/rosnavrl.md"
