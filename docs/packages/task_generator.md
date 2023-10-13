@@ -14,16 +14,16 @@ The Task Generator is a critical component of the Arena Rosnav infrastructure. I
 
 The Task Generator operates in three primary modes, each serving a distinct purpose:
 
-1. **Random Mode:**
+**Random Mode:**
    - In this mode, each simulation run features random starting positions and goals for the robots.
    - The mode also involves the random placement of static, interactive, and dynamic obstacles within the environment.
    - The number of obstacles is randomly determined for each run.
 
-2. **Scenario Mode:**
+ **Scenario Mode:**
    - This mode utilizes a predefined scenario that is repeated for each run.
    - It requires a scenario file that specifies the initial positions of all robots, obstacles, waypoints, and goals.
    
-3. **Random Scenario Mode:**
+**Random Scenario Mode:**
    - In this mode, obstacles are spawned at random locations.
    - Waypoints are also placed randomly.
    - However, the type and number of obstacles are predefined within an XML configuration file.
