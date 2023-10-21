@@ -109,7 +109,7 @@ cd ../utils-extern/misc/stable-baselines3/ && pip install -e .
 ## Build your workspace
 
 ```
-cd ../../.. && catkin_make
+cd ../../../.. && catkin_make
 ```
 
 !!! note
