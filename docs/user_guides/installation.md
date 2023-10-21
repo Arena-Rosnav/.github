@@ -103,7 +103,7 @@ In order to run the trainings process, you need to have our fork of the stable b
 
 ```
 pip install setuptools==57.1.0 psutil==5.9.4 wheel==0.41.2
-cd ../utils/stable-baselines3 && pip install -e .
+cd ../utils-extern/misc/stable-baselines3/ && pip install -e .
 ```
 
 ## Build your workspace
