@@ -1,6 +1,14 @@
 # Installation Guide
 
-## Requirements
+## Automatic Installation
+To automatically install Arena-Rosnav and its dependencies, just run our install script:
+```bash
+curl https://raw.githubusercontent.com/Arena-Rosnav/arena-rosnav/master/install.sh | bash
+```
+
+## Advanced Installation
+
+### Requirements
 
 - ROS: Arena-Rosnav is developed for Ubuntu 20.04. That means, for running Arena Benchmark you need to have [ROS Noetic](http://wiki.ros.org/noetic/Installation) installed.
 - [Poetry](https://python-poetry.org/) and [PyEnv](https://github.com/pyenv/pyenv): we recommend you to use a dependency manager for Python. We use Poetry because its easy to set up and easy to use, but you are open to use any other manager or virtual environment provider.
