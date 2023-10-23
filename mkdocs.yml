@@ -8,6 +8,8 @@ nav:
 
   - User Guides:
       - Installation: "user_guides/installation.md"
+      - Models: "user_guides/models.md"
+      - Task Modes: "user_guides/task_modes.md"
       - Planners: "user_guides/planners_overview.md"
       - Usage: "user_guides/usage.md"
       - Training: "user_guides/training.md"

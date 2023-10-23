@@ -1,0 +1,3 @@
+### dynamic_map_staged
+
+The dynamic_map_staged task behaves like the [staged task](task_modes/staged.md) but creates a dynamic map. The configuations depend similiar to the staged task on the parameters `task_mode/scenario/staged` and `task_mode/random` in `src/arena-rosnav/arena_bringup/configs/task_generator.yaml`. The generated map can be also configured in the curriculum file for each stage with the parameter map_generator.
