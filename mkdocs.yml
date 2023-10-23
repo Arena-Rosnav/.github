@@ -20,14 +20,16 @@ nav:
 
   - Packages:
       - Task Generator: "packages/task_generator.md"
-      - Pedsim Manager: "packages/pedsim_manager.md"
       - Flatland Simulator: "packages/flatland_simulator.md"
       - Gazebo Simulator: "packages/gazebo_simulator.md"
+      - Unity Simulator: "packages/unity_simulator.md"
       - Pedsim Manager: "packages/pedsim_manager.md"
       - Arena Tools: "packages/arena_tools.md"
       - Arena Simulation Setup: "packages/arena_simulation_setup.md"
       - Evaluation: "packages/arena_evaluation.md"
       - ROSNavRL: "packages/rosnavrl.md"
+  - World Generation:
+      - Introduction: "world_gen/intro.md"
 
   - Tutorials:
       - Add new environment: "tutorials/add_new_environment.md"
