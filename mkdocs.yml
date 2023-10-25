@@ -30,6 +30,7 @@ nav:
       - Arena Simulation Setup: "packages/arena_simulation_setup.md"
       - Evaluation: "packages/arena_evaluation.md"
       - ROSNavRL: "packages/rosnavrl.md"
+      - pedsim_waypoint_plugin: "packages/pedsim_waypoint_plugin/pedsim_waypoint_plugin.md"
   - World Generation:
       - Introduction: "world_gen/intro.md"
 
