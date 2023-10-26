@@ -10,6 +10,8 @@ Overriding pedsim calculations is achieved by forwarding the output of the `peds
 
 ![architecture](./architecture.png "Architecture")
 
+_note_: this is purely prescriptive for the feedback loop, any other communication between plugins/simulators can be implemented using additional rostopics
+
 ### Data Flow
 
 In order to allow sophisticated calculations (equal-or-better philosophy against pedsim), the basic `simulated_agents` data is complemented by additional pre-calculation data and packaged into a `WaypointPluginDataframe` message (defined at `pedsim_ros/pedsim_msgs/msg/WaypointPluginDataframe.msg`).
