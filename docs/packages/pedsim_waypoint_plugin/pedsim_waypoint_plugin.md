@@ -86,3 +86,5 @@ Apart from this basic structure, the content of your plugin's folder is free to 
 2. Make each actor walk in a "figure 8" (stateful).
 
 A reference implementation for 1. is provided in the `spinny` plugin.
+
+![spinny](./spinny.gif "Spinny")
