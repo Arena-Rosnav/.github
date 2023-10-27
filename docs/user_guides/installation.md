@@ -1,10 +1,23 @@
 # Installation Guide
 
 ## Automatic Installation
-To automatically install Arena-Rosnav and its dependencies, just run our install script:
+To use the automatic installation, you will need `curl`. If you don't have it already installed, you can install it via
+```bash
+sudo apt install curl
+```
+Once you have curl installed, start installing Arena-Rosnav by running:
 ```bash
 curl https://raw.githubusercontent.com/Arena-Rosnav/arena-rosnav/master/install.sh | bash
 ```
+After the script completes, open a **new** terminal and run:
+```bash
+curl https://raw.githubusercontent.com/Arena-Rosnav/arena-rosnav/master/install2.sh | bash
+```
+
+#### Things to note
+ROS and by extension Arena-Rosnav are *big*. You should have at least 30GB of storage available.
+Also, this installation will probably take about half an hour, varying depending on the speed of your internet and machine.
+Arena-Rosnav is only intended to be run on Ubuntu 20.04. If you are intending to run it on a VM, be aware that you need a GPU for certain functions.
 
 ## Advanced Installation
 
