@@ -153,7 +153,7 @@ Remember to always have the poetry shell active and the catkin workspace sourced
 With the activated environment, test your installation by running the command
 
 ```
-roslaunch arena_bringup start_arena.launch pedsim:=true simulator:=gazebo task_mode:=scenario scenario_file:=scenario_2.json map_file:=map_empty local_planner:=teb model:=jackal
+roslaunch arena_bringup start_arena.launch simulator:=gazebo task_mode:=scenario model:=jackal map_file:=map_empty pedsim_waypoint_plugin:=spinny
 ```
 
 This should open gazebo and rviz successfully.
