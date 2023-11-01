@@ -111,7 +111,7 @@ roslaunch arena_bringup start_arena.launch task_mode:=random simulator:=gazebo d
 
 
 ### Factory World
-
+TODO Include gif or video!
 ### RMF Airport Terminal
-
+TODO Include gif or video!
 
