@@ -20,17 +20,17 @@ simulator = GazeboSimulator(namespace)
 
 # Move an Entity in Gazebo
 
--name = "your_entity_name"  # Replace with the name of the entity
--pos = (x, y, angle)  # Replace with the desired target position and orientation
+- name = "your_entity_name"  # Replace with the name of the entity
+- pos = (x, y, angle)  # Replace with the desired target position and orientation
 - The `simulator.move_entity(name, pos)` function is called to move the specified entity to the target position.
 - This function internally communicates with Gazebo's services to update the entity's position and orientation.
 
 # Spawn a New Entity in Gazebo
 
--entity = Entity()
--entity.name = "new_entity"  # Replace with the desired entity name
--entity.position = (x, y, angle)  # Replace with the initial position and orientation
--entity.model = Model()  # Create a Model object and configure it as needed, defining the type of model (URDF or SDF) and the model description
+- entity = Entity()
+- entity.name = "new_entity"  # Replace with the desired entity name
+- entity.position = (x, y, angle)  # Replace with the initial position and orientation
+- entity.model = Model()  # Create a Model object and configure it as needed, defining the type of model (URDF or SDF) and the model description
 - The `simulator.spawn_entity(entity)` function is called to spawn the new entity in Gazebo.
 - This function internally communicates with Gazebo's services to add the entity to the simulation environment. The function returns `True` if the entity was successfully spawned.
 
