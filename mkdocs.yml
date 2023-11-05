@@ -8,6 +8,8 @@ nav:
 
   - User Guides:
       - Installation: "user_guides/installation.md"
+      - Models: "user_guides/models.md"
+      - Task Modes: "user_guides/task_modes.md"
       - Planners: "user_guides/planners_overview.md"
       - Usage: "user_guides/usage.md"
       - Training: "user_guides/training.md"
@@ -28,12 +30,14 @@ nav:
       - Arena Simulation Setup: "packages/arena_simulation_setup.md"
       - Evaluation: "packages/arena_evaluation.md"
       - ROSNavRL: "packages/rosnavrl.md"
+      - pedsim_waypoint_plugin: "packages/pedsim_waypoint_plugin/pedsim_waypoint_plugin.md"
   - World Generation:
       - Introduction: "world_gen/intro.md"
 
   - Tutorials:
       - Add new environment: "tutorials/add_new_environment.md"
       - Train an agent with different observation spaces: "tutorials/train_agent_with_different_observation_spaces.md"
+      - Deploy a robot in different Gazebo Worlds: "tutorials/gazebo_tutorial/gazebo_tut.md"
   
   # - User Guides:
   #     - Installation: "user_guides/installation.md"

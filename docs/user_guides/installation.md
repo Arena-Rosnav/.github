@@ -1,6 +1,27 @@
 # Installation Guide
 
-## Requirements
+## Automatic Installation
+To use the automatic installation, you will need `curl`. If you don't have it already installed, you can install it via
+```bash
+sudo apt install curl
+```
+Once you have curl installed, start installing Arena-Rosnav by running:
+```bash
+curl https://raw.githubusercontent.com/Arena-Rosnav/arena-rosnav/master/install.sh | bash
+```
+After the script completes, open a **new** terminal and run:
+```bash
+curl https://raw.githubusercontent.com/Arena-Rosnav/arena-rosnav/master/install2.sh | bash
+```
+
+#### Things to note
+ROS and by extension Arena-Rosnav are *big*. You should have at least 30GB of storage available.
+Also, this installation will probably take about half an hour, varying depending on the speed of your internet and machine.
+Arena-Rosnav is only intended to be run on Ubuntu 20.04. If you are intending to run it on a VM, be aware that you need a GPU for certain functions.
+
+## Advanced Installation
+
+### Requirements
 
 - ROS: Arena-Rosnav is developed for Ubuntu 20.04. That means, for running Arena Benchmark you need to have [ROS Noetic](http://wiki.ros.org/noetic/Installation) installed.
 - [Poetry](https://python-poetry.org/) and [PyEnv](https://github.com/pyenv/pyenv): we recommend you to use a dependency manager for Python. We use Poetry because its easy to set up and easy to use, but you are open to use any other manager or virtual environment provider.
@@ -78,7 +99,8 @@ rosws update
 You should also install the necessary Python packages. You can do so by first activating the poetry shell and then installing all packages listed in the _pyproject.toml_.
 
 ```bash
-poetry shell && poetry install
+poetry shell
+poetry install
 ```
 
 ## Install additional Packages
@@ -102,13 +124,13 @@ In order to run the trainings process, you need to have our fork of the stable b
 
 ```
 pip install setuptools==57.1.0 psutil==5.9.4 wheel==0.41.2
-cd ../utils/stable-baselines3 && pip install -e .
+cd ../utils-extern/misc/stable-baselines3/ && pip install -e .
 ```
 
 ## Build your workspace
 
 ```
-cd ../../.. && catkin_make
+cd ../../../.. && catkin_make
 ```
 
 !!! note
@@ -131,7 +153,7 @@ Remember to always have the poetry shell active and the catkin workspace sourced
 With the activated environment, test your installation by running the command
 
 ```
-roslaunch arena_bringup start_arena.launch pedsim:=true simulator:=gazebo task_mode:=scenario scenario_file:=scenario_2.json map_file:=map_empty local_planner:=teb model:=jackal
+roslaunch arena_bringup start_arena.launch simulator:=gazebo task_mode:=scenario model:=jackal map_file:=map_empty pedsim_waypoint_plugin:=spinny
 ```
 
 This should open gazebo and rviz successfully.
