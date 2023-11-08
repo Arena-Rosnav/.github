@@ -1,10 +1,23 @@
 # Installation Guide
 
 ## Automatic Installation
-To automatically install Arena-Rosnav and its dependencies, just run our install script:
+To use the automatic installation, you will need `curl`. If you don't have it already installed, you can install it via
+```bash
+sudo apt install curl
+```
+Once you have curl installed, start installing Arena-Rosnav by running:
 ```bash
 curl https://raw.githubusercontent.com/Arena-Rosnav/arena-rosnav/master/install.sh | bash
 ```
+After the script completes, open a **new** terminal and run:
+```bash
+curl https://raw.githubusercontent.com/Arena-Rosnav/arena-rosnav/master/install2.sh | bash
+```
+
+#### Things to note
+ROS and by extension Arena-Rosnav are *big*. You should have at least 30GB of storage available.
+Also, this installation will probably take about half an hour, varying depending on the speed of your internet and machine.
+Arena-Rosnav is only intended to be run on Ubuntu 20.04. If you are intending to run it on a VM, be aware that you need a GPU for certain functions.
 
 ## Advanced Installation
 
@@ -140,7 +153,7 @@ Remember to always have the poetry shell active and the catkin workspace sourced
 With the activated environment, test your installation by running the command
 
 ```
-roslaunch arena_bringup start_arena.launch pedsim:=true simulator:=gazebo task_mode:=scenario scenario_file:=scenario_2.json map_file:=map_empty local_planner:=teb model:=jackal
+roslaunch arena_bringup start_arena.launch simulator:=gazebo task_mode:=scenario model:=jackal map_file:=map_empty pedsim_waypoint_plugin:=spinny
 ```
 
 This should open gazebo and rviz successfully.

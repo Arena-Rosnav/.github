@@ -1,6 +1,6 @@
-# Task Generator
+# Task Generator/ Task Manager
 
-The Task Generator is a critical component of the Arena Rosnav infrastructure. Its primary functions include:
+The Task Manager is a critical component of the Arena Rosnav infrastructure and is an abstraction layer across multiple different simulators (currently Flatland (2D), Gazebo (3D), and Unity (3D). The purpose is to be able to create worlds and scenarios independently from the simulator and it is designed in a way to make integration of new simulators as easy and modular as possible. When implementing and integrating new simulators, it is critical to follow the conventions of the task manager. Therefore, please refer to the technical system design is illustrated in Figure 1. Its primary functions include:
 
 1. **Creating and Managing Obstacles:** This component is responsible for both dynamic and static obstacles within the simulation environment.
 
@@ -9,6 +9,7 @@ The Task Generator is a critical component of the Arena Rosnav infrastructure. I
 3. **Setting Up Robots:** It prepares all the robots for a simulation based on robot setup files.
 
 4. **Reading and Configuring Setup Files:** The Task Generator can read and correctly set up existing configuration files for various simulation parameters.
+
 
 ## Task Modes
 
@@ -42,3 +43,7 @@ The scenario file is a critical component for the "Scenario Mode" of the Task Ge
 
 The robot setup file is essential for configuring the robots participating in the simulation. It contains details about each robot's characteristics, such as its model, sensors, capabilities, and initial settings. This file is used by the Task Generator to set up and configure the robots correctly for a simulation run.
 
+## System Design
+The following Figure, illustrates the low-level system design of the task manager with all classes and how they interconnect. 
+
+![Task Manager System Design-2](../images/system-design/task-manager-system-design-ER.png)
