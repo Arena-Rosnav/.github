@@ -4,6 +4,9 @@
 
 The `pedsim_waypoint_plugin` provides an interface for overriding the default behavior of agents (also: pedestrians, peds, dynamic obstacles) with any other abstract behavior.
 
+### Existing Plugins
+- [PySocialForce](pysocialforce_plugin.md)
+
 ### Architecture
 
 Overriding pedsim calculations is achieved by forwarding the output of the `pedsim_simulator/waypoint_plugin_feedback` service to an additional `pedsim_waypoint_plugin` node (plugin node), which acts as part of a feedback loop and sends physical forces for the actors back to `pedsim_simulator/waypoint_plugin_feedback`.
