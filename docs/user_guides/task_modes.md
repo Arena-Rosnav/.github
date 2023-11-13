@@ -8,3 +8,4 @@ There are six different task modes. Information about the task mode can be found
 - [Staged](task_modes/staged.md)
 - [DynamicRandom](task_modes/dynamic_random.md)
 - [DynamicStaged](task_modes/dynamic_staged.md)
+- [Guided](task_modes/guided.md)
