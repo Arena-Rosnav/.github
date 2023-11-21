@@ -78,6 +78,7 @@ Clone the Arena Benchmark repository in any existing **catkin workspace** or [cr
 ```bash
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
+rosdep update && rosdep install --from-paths src --ignore-src -r -y
 catkin_make
 cd src
 ```
@@ -108,13 +109,12 @@ poetry install
 At last, you need to install a whole bunch of ros packages for running all planners and for other purposes.
 
 ```bash
+rosdep update && rosdep install --from-paths src --ignore-src -r -y
 sudo apt update && sudo apt install -y 
-    libopencv-dev liblua5.2-dev \ 
-    ros-noetic-navigation ros-noetic-teb-local-planner \
-    ros-noetic-mpc-local-planner libarmadillo-dev ros-noetic-nlopt \
-    ros-noetic-turtlebot3-description ros-noetic-turtlebot3-navigation \
-    ros-noetic-lms1xx ros-noetic-velodyne-description ros-noetic-hector-gazebo \
-    ros-noetic-ira-laser-tools \
+    libopencv-dev \ 
+    liblua5.2-dev \ 
+    ros-noetic-nlopt \ 
+    libarmadillo-dev \
     
 ```
 
@@ -161,10 +161,10 @@ This should open gazebo and rviz successfully.
 # Troubleshouting
 If you encounter errors during the build process due to missing packages, add them
 
-# install lua
+<!-- # install lua
 ````
 sudo apt install liblua5.1-0-dev 
-````
+```` -->
 
 # install Ipopt
 ````bash
