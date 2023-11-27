@@ -38,7 +38,7 @@ nav:
       - Add new environment: "tutorials/add_new_environment.md"
       - Train an agent with different observation spaces: "tutorials/train_agent_with_different_observation_spaces.md"
       - Deploy a robot in different Gazebo Worlds: "tutorials/gazebo_tutorial/gazebo_tut.md"
-  
+      - Add new reward functions: "user_guides/reward_functions.md"
   # - User Guides:
   #     - Installation: "user_guides/installation.md"
   #     - Get Started: "user_guides/get_started.md"
