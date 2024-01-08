@@ -14,3 +14,6 @@ The curriculum file consist of multiple defined stages. One stage can be defined
 ```
 
 To use the staged file set the parameter `task_mode/scenario/staged` in `src/arena-rosnav/arena_bringup/configs/task_generator.yaml`.
+
+To change to the next stage open another terminal and enter: `rostopic pub /next_stage std_msgs/Bool true -1`
+For the previous stage use: `rostopic pub /previous_stage std_msgs/Bool true -1`
