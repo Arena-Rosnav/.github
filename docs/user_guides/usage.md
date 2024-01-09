@@ -22,9 +22,9 @@ The launch file takes following parameters:
 | robot_setup_file |                         | string           | Name of the robot setup file you<br /> want to use. The file should be<br /> located in /task-generator/robot_setup/.<br /> This is only used if you want to <br /> start a simulation with multiple <br /> robots. |
 | sfm      | passthrough                   | string             | name of your plugin <br /> to manipulate pedsim movements                                        |
 | agent_name       | value of model argument | string           |                                                                                                                                                                                                                     |
-| tm_robots        | random                  | random, scenario, explore, guided | If scenario: specify scenario path
-| tm_obstacles     | random                  | random, scenario, parametrized    | If scenario: specify scenario path
-| tm_modules       |                         | clear_forbidden_zones, dynamic_map, rviz_ui, staged                                      |   if staged: specify stages config path, if dynamic: specify map_file   |
+| tm_robots        | random                  | random, scenario,<br /> explore, guided | If scenario: specify scenario path
+| tm_obstacles     | random                  | random, scenario,<br /> parametrized    | If scenario: specify scenario path
+| tm_modules       |                         | clear_forbidden_zones,<br /> dynamic_map, rviz_ui, staged                                      |   if staged: specify stages config path,<br /> if dynamic: specify map_file   |
 | visualization    | rviz                    | flatland, rviz   | wether rviz or flatland should be used<br /> for visualization. Using flatland is<br /> only possible when flatland<br /> is selected as environment                                                                |
 | show_rviz        | true                    | bool             | Activates rviz when using gazebo                                                                                                                                                                                    |
 | scenario_file    | test_scenario.json      | string           | Name of the scenario file.<br /> Must be located in<br /> /task-generator/scenarios                                                                                                                                 |
