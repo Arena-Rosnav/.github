@@ -6,7 +6,7 @@ The reward function class contains the logic for calculating the intended reward
 
 Source Code:
 
-- [RewardFunction](<[utils/misc/rl_utils/rl_utils/utils/rewards/reward_function.py](https://github.com/Arena-Rosnav/arena-rosnav/blob/master/utils/misc/rl_utils/rl_utils/utils/rewards/reward_function.py)>)
+- [RewardFunction](https://github.com/Arena-Rosnav/arena-rosnav/blob/master/utils/misc/rl_utils/rl_utils/utils/rewards/reward_function.py)
 - [RewardUnit](https://github.com/Arena-Rosnav/arena-rosnav/blob/master/utils/misc/rl_utils/rl_utils/utils/rewards/reward_units/base_reward_units.py)
 
 ## Custom RewardUnit

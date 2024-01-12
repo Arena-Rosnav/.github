@@ -5,14 +5,17 @@ These are the different task modes for the robots, obstacles and modules. Inform
 ## Robot and Obstacle Task Modes
 
 Robots and obstacles can be assigned the following task modes:
+
 - [Scenario](task_modes/scenario.md)
 - [Random](task_modes/random.md)
 
 Only robots:
+
 - [Guided](task_modes/guided.md)
 - [Explore](task_modes/explore.md)
 
 Only obstacles:
+
 - [Parametrized](task_modes/parametrized.md)
 
 You can dynamically change the task modes using `rosparam set /tm_<obstacles|robots>=...`
