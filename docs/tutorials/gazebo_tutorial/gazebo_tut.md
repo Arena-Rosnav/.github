@@ -13,15 +13,15 @@ This file can be found in the following directory:
 
 | Task Modes  | Settings        | Description      |
 |----------   |----------       |----------        |
-| random      | static, interactive, dynamic       | The random task mode creates static and dynamic obstacles randomly in the world. In the static settings, inside the task generator config file, you can set the maximum and minimum numbers of randomly spawned static objects. The task generator will then create a random number between the minimum and maximum value. In the dynamic settings, you can set maximum and minimum numbers of randomly spawned dynamic agents. The task generator will then create a random number between the minimum and maximum value. In the random task mode, the robot is assigned a random start and goal position. After the robot reaches the goal, a new start and goal pose will be assigned and new static and dynamic obstacles will be placed randomly in the world. The number of desired resets can be set with the desired_resets flag. |
+| random      | static, interactive, dynamic       | The random task mode creates static and dynamic obstacles randomly in the world. <br> In the static settings, inside the task generator config file, you can set the maximum and minimum numbers of randomly spawned static objects. The task generator will then create a random number between the minimum and maximum value. <br> In the dynamic settings, you can set maximum and minimum numbers of randomly spawned dynamic agents. The task generator will then create a random number between the minimum and maximum value. <br>In the random task mode, the robot is assigned a random start and goal position. After the robot reaches the goal, a new start and goal pose will be assigned and new static and dynamic obstacles will be placed randomly in the world. |
 | scenario    | scenario_file                      | The random task mode is designed for evaluation in the first place. In the scenario file dynamic and static obstacles as well as the start and goal position of the robot are defined.                                                                              |
-| staged      | curriculum, starting_index         | The staged task mode is designed for training processes. In general, it behaves like the random task mode. You can set the number of randomly spawned dynamic and static objects. The difference from the random task mode is that there are multiple stages. In each stage, a different number of dynamic and static objects can be set. If the robot successfully completes the first stage, the next stage will be triggered. The amount of obstacles is defined in a curriculum file. |
+| staged      | curriculum, starting_index         | The staged task mode is designed for training processes. In general, it behaves like the random task mode. You can set the number of randomly spawned dynamic and static objects. <br> The difference from the random task mode is that there are multiple stages. In each stage, a different number of dynamic and static objects can be set. If the robot successfully completed the first stage, the next stage will be triggered. <br> The amount of obstacles is defined in a curriculum file. |
 
 #### Worlds
 
 We provide our own worlds:
 
-| <img width="5000" height="5000" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/arena_hospital_large.png"> | <img width="5000" height="5000" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/arena_hospital_small.png"> | <img width="5000" height="5000" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/arena_hawker_centre_1.png"> | 
+| <img width="5000" height="5000" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/arena_hospital_large.png"> | <img width="4000" height="4000" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/arena_hospital_small.png"> | <img width="5000" height="5000" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/arena_hawker_centre_1.png"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: | :--------------------------------------------------------------------: | 
 |                           arena_hospital_large                            |                           arena_hospital_small                            |                           arena_hawker_centre                            |            
 
@@ -29,44 +29,78 @@ We provide our own worlds:
 | :-------------------------------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------------------: |
 |                           arena_nus_com1                           |                     arena_nus_com2                      |                            arena_nus_com3                            |                       
 
+Additionally, we provide many other worlds:
+
+| <img width="10000" height="10000" src="../../../tutorials/gazebo_tutorial/images/other_worlds/aws_hospital.png"> | <img width="5000" height="5000" src="../../../tutorials/gazebo_tutorial/images/other_worlds/aws_small_house.png"> |  
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: |  
+|                           aws_hospital                            |                           aws_house_small                            |                                      
+
+| <img width="3000" height="3000" src="../../../tutorials/gazebo_tutorial/images/other_worlds/aws_small_warehouse.png"> | <img width="7000" height="7000" src="../../../tutorials/gazebo_tutorial/images/other_worlds/factory.png"> |  
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: |  
+|                           aws_warehouse_small                            |                           factory                            | 
+
 ### Arena Hospital Large
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
-![aws_hospital_world](gifs/./arena_hospital_large.gif)
-
-
+![](gifs/arena_gifs/./arena_hospital_large.gif)
 
 ### Arena Hospital Small
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
-![aws_small_warehouse_world](gifs/./arena_hospital_small.gif)
+![](gifs/arena_gifs/./arena_hospital_small.gif)
 
+### AWS Hospital
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
+
+![](gifs/other_worlds_gifs/./aws_hospital_world.gif)
 
 ### Arena Hawker Centre
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
-![aws_small_house_world](gifs/./arena_hawker_centre_1.gif)
-
-
+![](gifs/arena_gifs/./arena_hawker_centre_1.gif)
 
 ### Arena National University Of Singapur COM1 Building
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
-![aws_small_house_world](gifs/./arena_nus_com1.gif)
+![](gifs/arena_gifs/./arena_nus_com1.gif)
 
 ### Arena National University Of Singapur COM2 Building
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
-![aws_small_house_world](gifs/./arena_nus_com2.gif)
+![](gifs/arena_gifs/./arena_nus_com2.gif)
 
 ### Arena National University Of Singapur COM3 Building
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
-![aws_small_house_world](gifs/./arena_nus_com3.gif)
+![](gifs/arena_gifs/./arena_nus_com3.gif)
+
+### AWS Small House
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
+
+![](gifs/other_worlds_gifs/./aws_small_house_world.gif)
+
+### AWS Small Warehouse
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
+
+![](gifs/other_worlds_gifs/./aws_small_warehouse_world.gif)
+
+### AWS Factory
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
+
+![](gifs/other_worlds_gifs/./factory.gif)
+
+
+
+
+
+
