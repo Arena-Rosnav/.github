@@ -18,19 +18,23 @@ On the left sidebar, select the 'Wall' button. Now you can create walls on the c
 After you safe your file, these walls are available as models in gazebo. 
 <br>
 <br>
-![](images/generate_gazebo_worlds/gazebo_4.gif) 
-![](images/generate_gazebo_worlds/gazebo_5.gif) 
+![gif1](gazebo_tutorial/images/generate_gazebo_world/gazebo_4.gif)
+![gif2](gazebo_tutorial/images/generate_gazebo_world/gazebo_5.gif)
+
 
 You can add new models in the following directory: home/user/.gazebo/models
 <br>If you don't have a models folder, create one. Different models are available in our [Gazebo Models Repository](https://github.com/NamTruongTran/Arena-Rosnav-Gazebo-Models). To make the models available in Gazebo you have to put them into the models folder
 <br>
 <br>
-![](images/generate_gazebo_worlds/gazebo_6.gif) 
+=======
+![gif3](gazebo_tutorial/images/generate_gazebo_world/gazebo_6.gif)
+
 
 Safe your world with a .world end tag
 <br>
 <br>
-![](images/generate_gazebo_worlds/gazebo_7.gif) 
+![gif4](gazebo_tutorial/images/generate_gazebo_world/gazebo_7.gif)
+
 
 In order to convert the world into a 2D occupancy grid map, include the gazebo_ros_2Dmap_plugin into the .world file. 
 <br>
