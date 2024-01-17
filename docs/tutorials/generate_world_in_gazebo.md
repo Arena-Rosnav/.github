@@ -8,40 +8,39 @@ The second option is Blender, which provides a lot of flexibility and saves reso
 
 After starting Gazebo, navigate to the 'Edit' option in the top-left tab, and then choose 'Building Editor'. 
 
-<img width="1000" height="500" src="images/generate_gazebo_world/gazebo_1.png">  
-<br>
+![](gazebo_tutorial/images/generate_gazebo_world/gazebo_1.png)
 <br>
 
 On the left sidebar, select the 'Wall' button. Now you can create walls on the checkered area.
 <br>
 <br>
-<img width="1000" height="500" src="images/generate_gazebo_world/gazebo_3.png">     
+![](gazebo_tutorial/images/generate_gazebo_world/gazebo_3.png)     
 
 After you safe your file, these walls are available as models in gazebo. 
 <br>
 <br>
-<img width="1000" height="500" src="images/generate_gazebo_world/gazebo_4.gif"> 
-<img width="1000" height="500" src="images/generate_gazebo_world/gazebo_5.gif"> 
+<img width="1000" height="500" src="gazebo_tutorial/images/generate_gazebo_world/gazebo_4.gif"> 
+<img width="1000" height="500" src="gazebo_tutorial/images/generate_gazebo_world/gazebo_5.gif"> 
 
 You can add new models in the following directory: home/user/.gazebo/models
 <br>
 <br>
-<img width="1000" height="500" src="images/generate_gazebo_world/gazebo_6.gif"> 
+<img width="1000" height="500" src="gazebo_tutorial/images/generate_gazebo_world/gazebo_6.gif"> 
 
 Safe your world with a .world end tag
 <br>
 <br>
-<img width="1000" height="500" src="images/generate_gazebo_world/gazebo_7.gif"> 
+<img width="1000" height="500" src="gazebo_tutorial/images/generate_gazebo_world/gazebo_7.gif"> 
 
 In order to convert the world into a 2D occupancy grid map, include the gazebo_ros_2Dmap_plugin into the .world file. 
 <br>
 <br>
-<img width="1000" height="500" src="images/generate_gazebo_world/gazebo_8.png"> 
+![](gazebo_tutorial/images/generate_gazebo_world/gazebo_8.png)   
 
 Create a test_ws and clone the [gazebo_ros_2Dmap_plugin](https://github.com/marinaKollmitz/gazebo_ros_2Dmap_plugin) repository into the src folder. Next, create a launch file to start the gazebo world.
 <br>
 <br>
-<img width="1000" height="500" src="images/generate_gazebo_world/gazebo_9.png"> 
+![](gazebo_tutorial/images/generate_gazebo_world/gazebo_9.png)   
 
 After you start the launch file, open a second terminal and call the gazebo_ros_2Dmap_plugin service with the following command: 
 <br>

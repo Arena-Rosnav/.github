@@ -21,11 +21,11 @@ This file can be found in the following directory:
 
 We provide our own worlds:
 
-| <img width="150" height="140" src="images/arena_worlds/arena_hospital_large.png"> | <img width="150" height="140" src="images/arena_worlds/arena_hospital_small.png"> | <img width="150" height="140" src="images/arena_worlds/arena_hawker_centre_1.png"> | 
+| <img width="150" height="140" src="../../images/worlds/arena_hospital_large.png"> | <img width="150" height="140" src="../../images/worlds/arena_hospital_small.png"> | <img width="150" height="140" src="../../images/worlds/arena_hawker_centre_1.png"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: | :--------------------------------------------------------------------: | 
 |                           arena_hospital_large                            |                           arena_hospital_small                            |                           arena_hawker_centre                            |            
 
-| <img width="150" height="140" src="images/arena_worlds/COM1_1.png"> | <img width="150" height="140" src="images/arena_worlds/COM2_1.png"> | <img width="150" height="140" src="images/arena_worlds/COM3_1.png"> | 
+| <img width="150" height="140" src="../../images/worlds/COM1_1.png"> | <img width="150" height="140" src="../../images/worlds/COM2_1.png"> | <img width="150" height="140" src="../../images/worlds/COM3_1.png"> | 
 | :-------------------------------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------------------: |
 |                           arena_nus_com1                           |                     arena_nus_com2                      |                            arena_nus_com3                            |                       
 
