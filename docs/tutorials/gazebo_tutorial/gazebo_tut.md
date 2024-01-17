@@ -21,21 +21,21 @@ This file can be found in the following directory:
 
 We provide our own worlds:
 
-| <img width="5000" height="5000" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/arena_hospital_large.png"> | <img width="4000" height="4000" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/arena_hospital_small.png"> | <img width="5000" height="5000" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/arena_hawker_centre_1.png"> | 
+| <img width="250" height="250" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/arena_hospital_large.png"> | <img width="200" height="200" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/arena_hospital_small.png"> | <img width="240" height="240" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/arena_hawker_centre_1.png"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: | :--------------------------------------------------------------------: | 
 |                           arena_hospital_large                            |                           arena_hospital_small                            |                           arena_hawker_centre                            |            
 
-| <img width="5000" height="5000" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/COM1_1.png"> | <img width="5000" height="5000" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/COM2_1.png"> | <img width="5000" height="5000" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/COM3_1.png"> | 
+| <img width="210" height="210" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/COM1_1.png"> | <img width="230" height="230" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/COM2_1.png"> | <img width="200" height="200" src="../../../tutorials/gazebo_tutorial/images/arena_worlds/COM3_1.png"> | 
 | :-------------------------------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------------------: |
 |                           arena_nus_com1                           |                     arena_nus_com2                      |                            arena_nus_com3                            |                       
 
 Additionally, we provide many other worlds:
 
-| <img width="10000" height="10000" src="../../../tutorials/gazebo_tutorial/images/other_worlds/aws_hospital.png"> | <img width="5000" height="5000" src="../../../tutorials/gazebo_tutorial/images/other_worlds/aws_small_house.png"> |  
+| <img width="400" height="400" src="../../../tutorials/gazebo_tutorial/images/other_worlds/aws_hospital.png"> | <img width="280" height="280" src="../../../tutorials/gazebo_tutorial/images/other_worlds/aws_small_house.png"> |  
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: |  
 |                           aws_hospital                            |                           aws_house_small                            |                                      
 
-| <img width="3000" height="3000" src="../../../tutorials/gazebo_tutorial/images/other_worlds/aws_small_warehouse.png"> | <img width="7000" height="7000" src="../../../tutorials/gazebo_tutorial/images/other_worlds/factory.png"> |  
+| <img width="300" height="300" src="../../../tutorials/gazebo_tutorial/images/other_worlds/aws_small_warehouse.png"> | <img width="420" height="420" src="../../../tutorials/gazebo_tutorial/images/other_worlds/factory.png"> |  
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: |  
 |                           aws_warehouse_small                            |                           factory                            | 
 
