@@ -34,7 +34,7 @@ Arena Rosnav is based on ROS. Arena Unity integrates into that and can be seen a
 
 **Service Controller**: Arena Unity implements the standard simulator interface that all simulators of Arena Rosnav have to implement. It exposes SpawnModel, SetModelState and DeleteModel services and also SpawnWalls which is a Arena Unity specific method of loading map layouts (see [dynamic map loading](dynamic_map_loading.md)). The ServiceController holds the logic for the interface to Arena Unity. It also calls the URDF-Importer following SpawnModel request for robots (see [dynamic robot loading](robot_loading.md)).  
   
-**Ped Controller and Obs Controller**: The controller for pedestrians and obstacles are mainly responsible for loading the correct game object model (i.e. encapsulating the logic for spawn model requests). In case of the pedestrian controller, it also manages the state changes (walking, talking, idle) with the subsequent animations and also updating the position and velocity according the received AgentStates messages from Pedsim (see [pedestrian integration](pedestrain_integration.md)).  
+**Ped Controller and Obs Controller**: The controller for pedestrians and obstacles are mainly responsible for loading the correct game object model (i.e. encapsulating the logic for spawn model requests). In case of the pedestrian controller, it also manages the state changes (walking, talking, idle) with the subsequent animations and also updating the position and velocity according the received AgentStates messages from Pedsim (see [pedestrian integration](pedestrian_integration.md)).  
 
 **World Loader**: This script is not yet implmented but is supposed to load different Unity scenes which can be specified during launch on the Arena Rosnav side.   
 
