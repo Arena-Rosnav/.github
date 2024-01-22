@@ -26,4 +26,14 @@ A scenario consists of
 }
 ```
 
-To use the scenario set the parameter `task_mode/scenario/scenario_file` in `src/arena-rosnav/arena_bringup/configs/task_generator.yaml`.
+To use the scenario file set the parameter `task_mode/scenario/scenario_file` in `src/arena-rosnav/arena_bringup/configs/task_generator.yaml` and then enter in the terminal:
+
+```bash
+roslaunch arena_bringup start_arena.launch model:=jackal tm_robots:=scenario tm_obstacles:=scenario
+```
+
+If the robot reached its goal defined in the scenario file the map will be resetted. 
+
+This is the Scenario task mode with the scenario file `default.json`:
+
+![Scenario{}](./gifs/scenario.gif) 
