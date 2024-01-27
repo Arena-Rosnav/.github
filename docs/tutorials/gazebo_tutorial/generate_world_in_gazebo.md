@@ -10,6 +10,12 @@ Note: Start Gazebo always in your terminal.
 
 **How to create a World in gazebo**
 
+Start gazebo with the following command:
+
+```python
+roslaunch arena_bringup start_generate.launch 
+```
+
 After starting Gazebo, navigate to the 'Edit' option in the top-left tab, and then choose 'Building Editor'.  
 <br>
 ![](images/generate_gazebo_worlds/gazebo_1.png)      
@@ -25,30 +31,30 @@ By clicking two times on a wall, the 'Wall Inspector' will open up. Here, you ca
 <br>
 ![](images/generate_gazebo_worlds/gazebo_3.gif)  
 
-If you don't specify a location to save your file, Gazebo will create a folder with the name 'building_editor_models' in your home directory.
-After you save your file, the model will be available in the  'building_editor_models' folder by default.
+If you don't specify a location to save your file, Gazebo will create a folder with the name 'building_editor_models' in your home directory and place your model inside of this folder.
+<br>
+Therefore, change the directory to:
+<br>
+`../arena-simulation-setup/gazebo_models`
 <br>
 <br>
 ![](images/generate_gazebo_worlds/gazebo_4.gif) 
-![](images/generate_gazebo_worlds/gazebo_5.gif) 
+![](images/generate_gazebo_worlds/gazebo_5) 
 
-
-How to add new Models?
+**How to add new Models?**
 <br>
- First go inside of your .bashrc file and add the following command: 
-
-```python
-export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/<user>/<arena_rosnav_ws>/src/utils-extern/gazebo_models
-```
+<br>
 You can add new models in the following directory inside of your arena rosnav workspace:<br>
-`../utils-extern/gazebo_models`
+`../arena-simulation-setup/gazebo_models`
 <br>
 Put your model that your created above inside the *gazebo_models* folder. Now, your model should be available for use. 
 <br>
 <br>
 ![](images/generate_gazebo_worlds/gazebo_9.gif) 
 
-
+**How to save your world?**
+<br>
+<br>
 Safe your world with a .world end tag
 <br>
 <br>
@@ -82,7 +88,7 @@ In order to convert the gazebo world into a 2D occupancy grid map, include the g
 
 In order to create the occupancy grid map, launch the following command:
 
-Note: You have to pass the name of your world as an argument `world_name:=test_world`. Otherwise, a error will occur.
+Note: It is mandatory that you pass the name of your world as an argument (e.g. `world_name:=test_world`). 
 
 ```python
 roslaunch arena_bringup start_generate.launch world_name:=<your_world_name>
@@ -161,8 +167,8 @@ After you finished with your model, save your model as a .obj file. You will get
 <br>
 ![](images/generate_gazebo_worlds/gazebo_21.gif) 
 
-Create a folder in the directory : 
-`utils-extern/gazebo_models/gazebo_models`
+Create a folder for your model in the directory : 
+`../arena-simulation-setup/gazebo_models`
 <br>
 Create a 'meshes' folder, a 'model.config' file and a 'model.sdf' file inside of the new folder that you just created. 
 <br>
@@ -382,6 +388,8 @@ After you start Gazebo with your `.world` file, you should see your model with t
 <br>
 ![](images/generate_gazebo_worlds/gazebo_26.gif) 
 
+Note: If you want to add models to your world, go to the above section '*How to add new models?*'. Then continue with the section '*How to save your world?*'.
+
 **How to create a Occupancy grid map ?**
 
 In order to convert the gazebo world into a 2D occupancy grid map, include the gazebo_ros_2Dmap_plugin into the .world file. Adjust `<map_size_x>` and `<map_size_y>` according to the size of your map.  
@@ -399,7 +407,7 @@ In order to convert the gazebo world into a 2D occupancy grid map, include the g
 
 In order to create the occupancy grid map, launch the following command:
 
-Note: You have to pass the name of your world as an argument (e.g. `world_name:=room2`). Otherwise, a error will occur.
+Note: It is mandatory that you pass the name of your world as an argument (e.g. `world_name:=room2`).
 
 ```python
 roslaunch arena_bringup start_generate.launch world_name:=<your_world_name>
