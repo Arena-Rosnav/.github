@@ -25,7 +25,8 @@ You can dynamically change the task modes using `rosparam set /tm_<obstacles|rob
 There are four module task modes:
 
 - [Clear Forbidden Zones](task_modes/clear_forbidden_zones.md) (Always loaded)
-- [Dynamic Map](task_modes/dynamic_map.md)
 - [RViz UI](task_modes/rviz_ui.md) (Always loaded)
+- [Dynamic Map](task_modes/dynamic_map.md)
 - [Staged](task_modes/staged.md)
+- [Benchmark](task_modes/benchmark.md)
 
