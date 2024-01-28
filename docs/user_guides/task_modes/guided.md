@@ -4,6 +4,8 @@ In this task mode you can manually set a cyclical sequence of goal waypoints for
 
 - Use the `2D Nav Goal` tool to append a goal position to the sequence
 
+- Use the `2D Pose Estimate` tool to reset the robot and the waypoint sequence
+
 The robots stay still and wait until the first goal is published. The robots also share the list of waypoints, but track them individually.
 The goal sequence is tracked in rosparam `/guided_waypoints`.
 
