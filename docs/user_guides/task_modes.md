@@ -30,3 +30,6 @@ There are four module task modes:
 - [Staged](task_modes/staged.md)
 - [Benchmark](task_modes/benchmark.md)
 
+## Add a new task mode
+
+Here is a guide for [adding new task modes](./task_modes/adding_task_modes.md).
