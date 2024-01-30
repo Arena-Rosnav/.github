@@ -73,13 +73,13 @@ sudo apt -y install vim
 
 ## Clone the repository
 
-Clone the Arena Benchmark repository in any existing **catkin workspace** or [create a new workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace).
+Clone the Arena Benchmark repository in any existing **catkin workspace** or [create a new workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace). You also need to have [catkin-tools](https://catkin-tools.readthedocs.io/en/latest/installing.html) installed.
 
 ```bash
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
 rosdep update && rosdep install --from-paths src --ignore-src -r -y
-catkin_make
+catkin build
 cd src
 ```
 then clone the arena-rosnav repo into the src folder
@@ -122,15 +122,15 @@ sudo apt update && sudo apt install -y
 
 In order to run the trainings process, you need to have our fork of the stable baselines 3 library installed.
 
-```
+```bash
 pip install setuptools==57.1.0 psutil==5.9.4 wheel==0.41.2
 cd ../utils-extern/misc/stable-baselines3/ && pip install -e .
 ```
 
 ## Build your workspace
 
-```
-cd ../../../.. && catkin_make
+```bash
+cd ../../../.. && catkin build
 ```
 
 !!! note
@@ -139,7 +139,7 @@ cd ../../../.. && catkin_make
 
 ## Source the build
 
-```
+```bash
 source devel/setup.zsh
 ```
 ## Install local planners
@@ -152,8 +152,8 @@ Remember to always have the poetry shell active and the catkin workspace sourced
 ## Testing
 With the activated environment, test your installation by running the command
 
-```
-roslaunch arena_bringup start_arena.launch simulator:=gazebo task_mode:=scenario model:=jackal map_file:=map_empty
+```bash
+roslaunch arena_bringup start_arena.launch simulator:=gazebo
 ```
 
 This should open gazebo and rviz successfully.
