@@ -12,7 +12,9 @@ nav:
       - Task Modes: "user_guides/task_modes.md"
       - Planners: "user_guides/planners_overview.md"
       - Usage: "user_guides/usage.md"
-      - Training: "user_guides/training.md"
+      - Training:
+        - Training Feature Overview:  "user_guides/training/training.md"
+        - Reward Functions: "user_guides/training/reward_function.md"
 
   - System Design:
       - Overall System Design: "system/system-design.md"
