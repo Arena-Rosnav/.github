@@ -131,6 +131,9 @@ It should be instantiated and utilized by the Gym environment. By passing differ
 
 The reward function is configured using a YAML file. The configuration contains the registry name of the reward units and their parameters. The reward units are applied in the order they are listed in the configuration file.
 When a parameter is not specified in the configuration file, the default value is used. The default values are defined in the [constants file](https://github.com/Arena-Rosnav/arena-rosnav/blob/5e87e3d9b59c72280d0b92e622abb4787643c20d/utils/misc/rl_utils/rl_utils/utils/rewards/constants.py).
+Target directory for the configuration files is: **`../arena-rosnav/arena_bringup/configs/training/reward_functions`**.
+
+The following is an example of a reward function configuration file:
 
 ```yaml
 goal_reached:
