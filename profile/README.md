@@ -6,7 +6,7 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 
 > Please refer to the official documentation to find detailed instructions on how to install and use the _Arena Rosnav_ project. You can find the documentation by following [this](https://arena-rosnav.readthedocs.io/en/latest/) link.
 
-|          Warehouse environment in Gazebo           |          Hospital environment in Gazebo          |
+<!-- |          Warehouse environment in Gazebo           |          Hospital environment in Gazebo          |
 | :------------------------------------------------: | :----------------------------------------------: |
 | <img src="docs/images/gifs/gazebo_simulation.gif"> | <img src="docs/images/gifs/hospital_gazebo.gif"> |
 
@@ -14,7 +14,37 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 
 |                Simulation in Flatland                 |         Multiple agents in one simulation          |
 | :---------------------------------------------------: | :------------------------------------------------: |
-| <img src="docs/images/gifs/flatland_simulation.gif" > | <img src="docs/images/gifs/marl_custom_rviz.gif" > |
+| <img src="docs/images/gifs/flatland_simulation.gif" > | <img src="docs/images/gifs/marl_custom_rviz.gif" > | -->
+
+<h4 style="text-align: center;">Gazebo</h4>
+
+| <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/arena_hospital_small.gif"> | <img src="../docs/tutorials/gazebo_tutorial/new_gifs/arena_hawker_centre.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: | 
+
+| <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/com3.gif"> | <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/aws_house.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: |
+
+<img width="1300" height="300" src="../docs/tutorials/gazebo_tutorial/new_gifs/factory.gif">
+
+<h4 style="text-align: center;">Unity</h4>
+
+| <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/unity_1.gif"> | <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/unity_2.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: | 
+
+| <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/unity_4.gif"> | <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/unity_5.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: |
+
+<img width="1300" height="300" src="../docs/tutorials/gazebo_tutorial/new_gifs/unity_6.gif">
+
+<h4 style="text-align: center;">Flatland</h4>
+
+| <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/flatland_1.gif"> | <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/flatland_2.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: | 
+
+| <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/flatland_4.gif"> | <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/flatland_5.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: |
+
+<img width="1300" height="300" src="../docs/tutorials/gazebo_tutorial/new_gifs/flatland_3.gif">
 
 ### Features
 
