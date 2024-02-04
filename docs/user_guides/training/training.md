@@ -86,7 +86,7 @@ roslaunch arena_bringup visualization_training.launch ns:=sim_1
 
 ## Components
 
-![components](../images/system-design/training-sys.jpg)
+![components](../../images/system-design/training-sys.jpg)
 
 ## Config Parameters
 
@@ -99,7 +99,7 @@ roslaunch arena_bringup visualization_training.launch ns:=sim_1
 | debug_mode            | bool  | Debug mode simulates the multiprocessing in a single process and thus allows for clearer error traceback.  |
 | n_envs                | int   | Number of environments to collect rollouts from.                                                           |
 | no_gpu                | bool  | Don't use the gpu.                                                                                         |
-| task_mode             | str   | Name of the navigation task mode. An overview of the task modes can be found [here](planners_overview.md). |
+| task_mode             | str   | Name of the navigation task mode. An overview of the task modes can be found [here](../planners_overview.md). |
 | n_timesteps           | int   | Number of timesteps to be simulated. A timestep is regarded as an environment step.                        |
 | max_num_moves_per_eps | int   | Maximum number of steps per episode.                                                                       |
 | goal_radius           | float | Radius of the navigation goal.                                                                             |
@@ -124,7 +124,7 @@ roslaunch arena_bringup visualization_training.launch ns:=sim_1
 | architecture_name | str  | Name of the predefined neural network architecture according to the network registry.                               |
 | resume            | str  | Name of the agent to resume training with. The agent has to be located in the "_planners/rosnav/agents_" directory. |
 
-> For a tutorial how to implement new neural network architectures refer to [here](planners_overview.md).
+> For a tutorial how to implement new neural network architectures refer to [here](../planners_overview.md).
 
 #### Observation Space
 
@@ -181,7 +181,7 @@ roslaunch arena_bringup visualization_training.launch ns:=sim_1
 | ---------- | ---- | ----------------------------------------------------------------------------------------------------------------------- |
 | reward_fnc | str  | Name of the file containing the reward function. File has to lie in "_arena-rosnav/training/configs/reward_functions_". |
 
-> For a tutorial how to implement new reward functions refer to [here](planners_overview.md).
+> For a tutorial how to implement new reward functions refer to [here](../planners_overview.md).
 
 #### Proximal Policy Optimizaton
 
