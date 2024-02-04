@@ -144,10 +144,10 @@ As per default, all the encoded observations are flattened and then optionally r
 
 When introducing new observation spaces, the following steps should be taken:
 
-- Make sure, that the necessary data is available in the simulation and that it can be accessed by the `ObservationUnits`.
-- Add the observation unit to the `ObservationManager` and make sure that the data is collected and stored in the observation dictionary.
-- Create a new observation space class that extends the `BaseObservationSpace` class.
+- Make sure, that the necessary data is provided by the simulation.
+- Create a new `ObservationUnit` [<span style="font-size:0.5em;">[Source Code]</span>](https://github.com/Arena-Rosnav/arena-rosnav/blob/bd41d4cebdcd3504b6cbc1111bcaaaa3ec351a20/utils/misc/rl_utils/rl_utils/utils/observation_collector/observation_units/collector_unit.py) retrieving that new particular observation and adding it to the observation dictionary. Add the observation unit to the `ObservationManager` [<span style="font-size:0.5em;">[Source Code]</span>](https://github.com/Arena-Rosnav/arena-rosnav/blob/master/utils/misc/rl_utils/rl_utils/utils/observation_collector/observation_manager.py).
+- Create a new observation space class that extends the `BaseObservationSpace` [<span style="font-size:0.5em;">[Source Code]</span>](https://github.com/Arena-Rosnav/rosnav-rl/blob/dev/rosnav/utils/observation_space/spaces/base_observation_space.py) class.
   - Implement the `get_gym_space` method to define the observation space using the `gym` library.
   - Implement the `encode_observation` method to encode the observation into a numpy array with intended content.
-- Make sure that the `RosnavSpaceManager` retrieves the necessary agent information for your new observation space and provides it to the encoder class.
+- Make sure that the `RosnavSpaceManager`[<span style="font-size:0.5em;">[Source Code]</span>](https://github.com/Arena-Rosnav/rosnav-rl/blob/dev/rosnav/rosnav_space_manager/rosnav_space_manager.py) retrieves the necessary agent information for your new observation space and provides it to the encoder class.
 - When specifying a StableBaselines3 model, add the new observation space class to the `observation_space` parameter of the model.

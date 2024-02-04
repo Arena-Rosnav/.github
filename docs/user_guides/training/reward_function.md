@@ -166,3 +166,7 @@ active_heading_direction:
   r_angle: 0.6
   _on_safe_dist_violation: true
 ```
+
+#### Implementing new RewardUnits
+
+[Click here](../reward_functions.md) to get to a more detailed tutorial on how to implement new `RewardUnits`.
