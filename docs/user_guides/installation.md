@@ -14,12 +14,12 @@ After the script completes, open a **new** terminal and run:
 curl https://raw.githubusercontent.com/Arena-Rosnav/arena-rosnav/master/install2.sh | bash
 ```
 
-#### Things to note
+### Things to note
 ROS and by extension Arena-Rosnav are *big*. You should have at least 30GB of storage available.
 Also, this installation will probably take about half an hour, varying depending on the speed of your internet and machine.
 Arena-Rosnav is only intended to be run on Ubuntu 20.04. If you are intending to run it on a VM, be aware that you need a GPU for certain functions.
 
-## Advanced Installation
+<!-- ## Advanced Installation
 
 ### Requirements
 
@@ -147,7 +147,7 @@ source devel/setup.zsh
 
 Finished! Check out the [Usage](usage.md) to start using Arena Rosnav.
 
-Remember to always have the poetry shell active and the catkin workspace sourced when using Arena Rosnav.
+Remember to always have the poetry shell active and the catkin workspace sourced when using Arena Rosnav. -->
 
 ## Testing
 With the activated environment, test your installation by running the command
@@ -166,7 +166,7 @@ If you encounter errors during the build process due to missing packages, add th
 sudo apt install liblua5.1-0-dev 
 ```` -->
 
-# install Ipopt
+## install Ipopt
 ````bash
 git clone https://github.com/coin-or/Ipopt
 cd Ipopt
