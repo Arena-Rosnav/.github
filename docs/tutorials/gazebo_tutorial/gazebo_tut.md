@@ -41,11 +41,19 @@ Additionally, we provide many other worlds:
 
 ### Arena Hospital Large
 
+```pythom
+roslaunch arena_bringup start_arena.launch simulator:=gazebo map_file:=arena_hospital_large local_planner:=teb model:=jackal tm_robots:=random tm_obstacles:=random
+```
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
 ![](gifs/arena_gifs/./arena_hospital_large.gif)
 
 ### Arena Hospital Small
+
+```pythom
+roslaunch arena_bringup start_arena.launch simulator:=gazebo map_file:=arena_hospital_small local_planner:=teb model:=jackal tm_robots:=random tm_obstacles:=random
+```
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
@@ -53,11 +61,19 @@ Additionally, we provide many other worlds:
 
 ### AWS Hospital
 
+```pythom
+roslaunch arena_bringup start_arena.launch simulator:=gazebo map_file:=hospital local_planner:=teb model:=jackal tm_robots:=random tm_obstacles:=random
+```
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
 ![](gifs/other_worlds_gifs/./aws_hospital_world.gif)
 
 ### Arena Hawker Centre
+
+```pythom
+roslaunch arena_bringup start_arena.launch simulator:=gazebo map_file:=arena_hawker_centre local_planner:=teb model:=jackal tm_robots:=random tm_obstacles:=random
+```
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
@@ -65,11 +81,19 @@ Additionally, we provide many other worlds:
 
 ### Arena National University Of Singapur COM1 Building
 
+```pythom
+roslaunch arena_bringup start_arena.launch simulator:=gazebo map_file:=arena_nus_com1_building local_planner:=teb model:=jackal tm_robots:=random tm_obstacles:=random
+```
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
 ![](gifs/arena_gifs/./arena_nus_com1.gif)
 
 ### Arena National University Of Singapur COM2 Building
+
+```pythom
+roslaunch arena_bringup start_arena.launch simulator:=gazebo map_file:=arena_nus_com2_building local_planner:=teb model:=jackal tm_robots:=random tm_obstacles:=random
+```
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
@@ -77,11 +101,19 @@ Additionally, we provide many other worlds:
 
 ### Arena National University Of Singapur COM3 Building
 
+```pythom
+roslaunch arena_bringup start_arena.launch simulator:=gazebo map_file:=arena_nus_com3_building local_planner:=teb model:=jackal tm_robots:=random tm_obstacles:=random
+```
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
 ![](gifs/arena_gifs/./arena_nus_com3.gif)
 
 ### AWS Small House
+
+```pythom
+roslaunch arena_bringup start_arena.launch simulator:=gazebo map_file:=aws_house local_planner:=teb model:=jackal tm_robots:=random tm_obstacles:=random
+```
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
@@ -89,11 +121,19 @@ Additionally, we provide many other worlds:
 
 ### AWS Small Warehouse
 
+```pythom
+roslaunch arena_bringup start_arena.launch simulator:=gazebo map_file:=small_warehouse local_planner:=teb model:=jackal tm_robots:=random tm_obstacles:=random
+```
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
 ![](gifs/other_worlds_gifs/./aws_small_warehouse_world.gif)
 
 ### AWS Factory
+
+```pythom
+roslaunch arena_bringup start_arena.launch simulator:=gazebo map_file:=factory local_planner:=teb model:=jackal tm_robots:=random tm_obstacles:=random
+```
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 

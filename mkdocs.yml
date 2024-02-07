@@ -12,7 +12,10 @@ nav:
       - Task Modes: "user_guides/task_modes.md"
       - Planners: "user_guides/planners_overview.md"
       - Usage: "user_guides/usage.md"
-      - Training: "user_guides/training.md"
+      - Training:
+        - Training Feature Overview:  "user_guides/training/training.md"
+        - Reward Functions: "user_guides/training/reward_function.md"
+        - Agent Observations: "user_guides/training/observations.md"
 
 
   - Educational:
@@ -44,6 +47,7 @@ nav:
       - Deploy a robot in different Gazebo Worlds: "tutorials/gazebo_tutorial/gazebo_tut.md"
       - Add new reward functions: "user_guides/reward_functions.md"
       - Generate a World in Gazebo: "tutorials/gazebo_tutorial/generate_world_in_gazebo.md"
+      - Create new scenarios: "tutorials/create_scenarios/create_new_scenarios.md"
 
   # - User Guides:
   #     - Installation: "user_guides/installation.md"

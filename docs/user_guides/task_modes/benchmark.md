@@ -8,17 +8,12 @@ The central configuration file can be found in `arena_bringup/configs/benchmark/
 
 An example configuration can look like the following:
 
-```yaml
-suite:
-  config: basic.yaml
-  scale_episodes: 1
-
-contest:
-  config: inter.yaml
-
-general:
-  simulator: flatland
-```
+| Key        | Field           | Type             | Description                                                                     |
+|------------|-----------------|------------------|---------------------------------------------------------------------------------|
+| suite      | config          | String           | suite configuration yaml file to be used                                        |
+|            | scale_episodes  | int              | amount of suite simulation                                                      |
+| contest    | config          | String           | contest configuration yaml file to be used                                      |
+| general    | simulator       | flatland, gazebo | name of the simulator                                                           |
 
 The configuration references a _suite_ and a _contest_, and also specifies general configuration parameters.
 
@@ -29,17 +24,15 @@ They contain a list of stage configurations: a sequence of benchmarking test cas
 
 Each stage is comprised of the following data:
 
-```yaml
-name: <unique name>
-episodes: <number of episodes>
-robot: <robot model>
-map: <map file>
-tm_robots: <robot task mode>
-tm_obstacles: <obstacle task mode>
-config: <task generator config object>
-```
-
-`config` is used to dynamically override the contents of `task_generator.yaml`.
+| Key             | Type          | Description                                                                     |
+|-----------------|---------------|---------------------------------------------------------------------------------|
+| name            | String        | unique name for the stage                                                       |
+| episodes        | int           | amount of episodes (resets)                                                     |
+| robot           | String        | name of the robot you want to simulate. e.g.: [burger, jackal, ...]             |
+| map             | String        | name of the map. The map must be located in  /arena_simulation_setup/maps       |
+| tm_robots       | random, scenario,<br /> explore, guided | robot task mode you want to use                       |
+| tm_obstacles    | random, scenario,<br /> parametrized    | obstacle task mode you want to use                    |
+| config          | Object        | `config` is used to dynamically override the contents of `task_generator.yaml`. |
 
 ##### Contests
 
@@ -48,11 +41,12 @@ They contain a list of planner configurations (contestants) which are benchmarke
 
 Each contestant is comprised of the following data:
 
-```yaml
-name: <unique name>
-local_planner: <local planner name>
-inter_planner: <inter planner name>
-```
+| Key             | Type          | Description                                                                     |
+|-----------------|---------------|---------------------------------------------------------------------------------|
+| name            | String        | unique name for the stage                                                       |
+| local_planner   | String        | name of the local planner you want to use. e.g.: [teb, dwa, mpc,...]            |
+| inter_planner   | String        | name of the inter planner you want to use. e.g.: [burger, jackal, ...]          |
+
 
 #### Execution
 
