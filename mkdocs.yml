@@ -16,6 +16,8 @@ nav:
         - Training Feature Overview:  "user_guides/training/training.md"
         - Reward Functions: "user_guides/training/reward_function.md"
         - Agent Observations: "user_guides/training/observations.md"
+        - Custom Actor-Critic Policy: "user_guides/training/customactorcritic.md"
+
 
   - System Design:
       - Overall System Design: "system/system-design.md"
