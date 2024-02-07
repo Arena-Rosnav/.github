@@ -14,6 +14,10 @@ nav:
       - Usage: "user_guides/usage.md"
       - Training: "user_guides/training.md"
 
+
+  - Educational:
+    - Arena3: "tutorials/educational/arena3.md"
+
   - System Design:
       - Overall System Design: "system/system-design.md"
       - Training Pipeline: "system/training-design.md"
@@ -55,6 +59,7 @@ nav:
   #     - Launching Arena-Rosnav Simulation: "core_functionalities/launch_simulation.md"
   #     - Training an Agent: "core_functionalities/training.md"
   #     - Evaluating Planner Performance: "core_functionalities/evaluation.md"
+
 
 markdown_extensions:
   - admonition
