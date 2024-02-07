@@ -17,10 +17,6 @@ nav:
         - Reward Functions: "user_guides/training/reward_function.md"
         - Agent Observations: "user_guides/training/observations.md"
 
-
-  - Educational:
-    - Arena3: "tutorials/educational/arena3.md"
-
   - System Design:
       - Overall System Design: "system/system-design.md"
       - Training Pipeline: "system/training-design.md"
