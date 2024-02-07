@@ -16,7 +16,7 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 | :---------------------------------------------------: | :------------------------------------------------: |
 | <img src="docs/images/gifs/flatland_simulation.gif" > | <img src="docs/images/gifs/marl_custom_rviz.gif" > | -->
 
-<h4 style="text-align: center;">Unity</h4>
+#### Unity
 
 | <img  src="docs/tutorials/gazebo_tutorial/new_gifs/unity_1.gif"> | <img  src="docs/tutorials/gazebo_tutorial/new_gifs/unity_2.gif"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: | 
@@ -26,7 +26,7 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 
 <img width="1300" height="300" src="docs/tutorials/gazebo_tutorial/new_gifs/unity_6.gif">
 
-<h4 style="text-align: center;">Gazebo</h4>
+#### Gazebo
 
 | <img  src="docs/tutorials/gazebo_tutorial/new_gifs/arena_hospital_small.gif"> | <img src="docs/tutorials/gazebo_tutorial/new_gifs/arena_hawker_centre.gif"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: | 
@@ -36,7 +36,7 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 
 <img width="1300" height="300" src="docs/tutorials/gazebo_tutorial/new_gifs/factory.gif">
 
-<h4 style="text-align: center;">Flatland</h4>
+#### Flatland
 
 | <img  src="docs/tutorials/gazebo_tutorial/new_gifs/flatland_1.gif"> | <img  src="docs/tutorials/gazebo_tutorial/new_gifs/flatland_2.gif"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: | 
@@ -48,7 +48,32 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 
 ### Features
 
-- Integration of [Flatland](https://flatland-simulator.readthedocs.io/en/latest/) to train new agents and [Flatland](https://flatland-simulator.readthedocs.io/en/latest/) and [Gazebo](https://classic.gazebosim.org/) for evaluating existing approaches.
+- Automatic installation script for the arena rosnav environment 
+- 3 Different Simulators including [Unity](#unity), [Gazebo](#gazebo) and [Flatland](#flatland)
+- We offer prebuilt, realistic simulation [environments](#worlds), including offices, hospitals, canteens, warehouses, and much more
+- Dynamic Map Generation including dynamic mazes
+- Variety of Task Modes for robots and pedestrians
+
+  | Task Mode | Short Description | Robots | Obstacles |
+  | --- | --- | --- | --- |
+  | `scenario` | load scenario file | ✓ | ✓ |
+  | `random` | generate random positions | ✓ | ✓ |
+  | `parametrized` | more fine-tuned random | | ✓ |
+  | `guided` | waypoint sequence | ✓ | |
+  | `explore` | explore map | ✓ | |
+
+- Variety of [Robots](#supported-robots) including the go1 quadruped robot
+- Variety of [Planners](#supported-planners) including our own DRL planner `ROSNavRL`
+- Variety of social force models for pedestrians 
+- Pipeline for evaluating approaches and analysing them based on standard metrics with our `Arena Evaluation` package.
+- Pipeline to train planner agents based on reinforcement learning approaches from `stable baselines3`
+- Modular and flexible structure for extension of new functionalities and approaches
+- Fully integrated `Move Base Flex` in our Arena-Rosnav ecosystem
+
+
+
+
+<!-- - Integration of [Flatland](https://flatland-simulator.readthedocs.io/en/latest/) to train new agents and [Flatland](https://flatland-simulator.readthedocs.io/en/latest/) and [Gazebo](https://classic.gazebosim.org/) for evaluating existing approaches.
 - Variety of planners, robots and worlds
 - Pipeline to train planner agents based on reinforcement learning approaches from [stable baselines3](https://github.com/DLR-RM/stable-baselines3.git)
 - [Task generator](packages/task_generator.md) for managing highly dynamic and custom environments
@@ -56,7 +81,7 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 - Pipeline for evaluating approaches and analysing them based on standard metrics with our [Arena Evaluation](packages/arena_evaluation.md) package.
 - Modular structure for extension of new functionalities and approaches
 - Evaluation of multiple robots and planners in the same simulation
-- Dynamic rviz config file creation for visualization
+- Dynamic rviz config file creation for visualization -->
 
 ## Supported Planners
 
@@ -81,6 +106,22 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 |                  _Robotino(rto)_                   |                       _youbot_                        |                        _turtlebot3_waffle_pi_                        |                 _Car-O-Bot4 (cob4)_                 |                       _dingo_                        |
 | :------------------------------------------------: | :---------------------------------------------------: | :------------------------------------------------------------------: | :-------------------------------------------------: | :--------------------------------------------------: |
 | <img width="250" src="docs/images/robots/rto.jpg"> | <img width="250" src="docs/images/robots/youbot.jpg"> | <img width="250"  src="docs/images/robots/turtlebot3_waffle_pi.jpg"> | <img width="250" src="docs/images/robots/cob4.jpg"> | <img width="250" src="docs/images/robots/dingo.jpg"> |
+
+## Supported Worlds
+
+#### Gazebo
+
+|                       Hospital                       |                       Canteen                        |                        Campus                        |                       Factory                        |                       Warehouse                        |
+| :--------------------------------------------------------------: | :---------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: |
+| <img width="250" src="docs/tutorials/gazebo_tutorial/images/arena_worlds/arena_hospital_large.png"> | <img width="250" src="docs/tutorials/gazebo_tutorial/images/arena_worlds/arena_hawker_centre_1.png"> | <img width="250"  src="docs/tutorials/gazebo_tutorial/images/arena_worlds/COM3_1.png"> | <img width="250" src="docs/tutorials/gazebo_tutorial/images/other_worlds/factory.png"> | <img width="250" src="docs/tutorials/gazebo_tutorial/images/other_worlds/aws_small_warehouse.png"> |
+
+#### Unity
+
+<!-- |                       Office                       |                       Canteen                        |                        ...                       |                       ...                       |                       Warehouse                        |
+| :--------------------------------------------------------------: | :---------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: |
+| <img width="250" src="docs/images/robots/turtlebot3-burger.jpg"> | <img width="250" src="docs/images/robots/jackal.jpg"> | <img width="250"  src="docs/images/robots/ridgeback.jpg"> | <img width="250" src="docs/images/robots/agv-ota.png"> | <img width="250" src="docs/images/robots/tiago.jpg"> | -->
+
+
 
 ## Recent Publications
 
