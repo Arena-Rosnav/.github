@@ -88,7 +88,7 @@ In the *obstacles/dynamic* section, you can create dynamic pedestrians, such as 
 Therefore, you can add the waypoints in a random order. Additionally you can provide different names for each pedestrian. 
 <br>
 <br>
-Note: The number of episodes/resets of the scenario can be define in the `task_generator.yaml` file.
+Note: The number of episodes/resets of the scenario can be set in the `task_generator.yaml` file.
 
 
 **Testing**
@@ -100,9 +100,9 @@ roslaunch arena_bringup start_arena.launch map_file:=map_empty model:=jackal sim
 
 After the robot reaches the goal, the scenario will reset. 
 
-<br>
-<br>
-![]() 
+![](../gazebo_tutorial/gifs/other_worlds_gifs/scenario.gif)
+
+
 
 
 

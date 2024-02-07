@@ -62,6 +62,7 @@ nav:
   #     - Training an Agent: "core_functionalities/training.md"
   #     - Evaluating Planner Performance: "core_functionalities/evaluation.md"
 
+
 markdown_extensions:
   - admonition
   - tables
