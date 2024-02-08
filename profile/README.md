@@ -58,8 +58,8 @@ We also offer worksheets which contain tasks and solutions and are a great start
 ### Features
 
 - Automatic installation script for the arena rosnav environment 
-- 3 Different Simulators including [Unity](#unity), [Gazebo](#gazebo) and [Flatland](#flatland)
-- We offer prebuilt, realistic simulation [environments](#worlds), including offices, hospitals, canteens, warehouses, and much more
+- 3 different simulators including [Unity](#unity), [Gazebo](#gazebo) and [Flatland](#flatland)
+- We offer prebuilt, realistic simulation [environments](#supported-worlds), including offices, hospitals, canteens, warehouses, and much more
 - Dynamic Map Generation including dynamic mazes
 - Variety of Task Modes for robots and pedestrians
 
@@ -126,11 +126,9 @@ We also offer worksheets which contain tasks and solutions and are a great start
 
 #### Unity
 
-<!-- |                       Office                       |                       Canteen                        |                        ...                       |                       ...                       |                       Warehouse                        |
+|                       Hospital                       |                       Restaurant                        |                        School                        |                       Japanese Garden                        |                       Warehouse                        |
 | :--------------------------------------------------------------: | :---------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: |
-| <img width="250" src="docs/images/robots/turtlebot3-burger.jpg"> | <img width="250" src="docs/images/robots/jackal.jpg"> | <img width="250"  src="docs/images/robots/ridgeback.jpg"> | <img width="250" src="docs/images/robots/agv-ota.png"> | <img width="250" src="docs/images/robots/tiago.jpg"> | -->
-
-
+| <img width="250" src="docs/images/unity_worlds/hospital.png"> | <img width="250" src="docs/images/unity_worlds/restaurant.png"> | <img width="250"  src="docs/images/unity_worlds/school.png"> | <img width="250" src="docs/images/unity_worlds/japanese_garden.png"> | <img width="250" src="docs/images/unity_worlds/warehouse.jpg"> |
 
 ## Recent Publications
 
