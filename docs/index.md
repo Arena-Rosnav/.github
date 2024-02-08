@@ -6,7 +6,7 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 
 ## Features
 
-- Integration of [Flatland](https://flatland-simulator.readthedocs.io/en/latest/) to train new agents and [Flatland](https://flatland-simulator.readthedocs.io/en/latest/) and [Gazebo](https://classic.gazebosim.org/) for evaluating existing approaches.
+<!-- - Integration of [Flatland](https://flatland-simulator.readthedocs.io/en/latest/) to train new agents and [Flatland](https://flatland-simulator.readthedocs.io/en/latest/) and [Gazebo](https://classic.gazebosim.org/) for evaluating existing approaches. -->
 - Variety of planners, robots and worlds
 - Pipeline to train planner agents based on reinforcement learning approaches from [stable baselines3](https://github.com/DLR-RM/stable-baselines3.git)
 - [Task generator](packages/task_generator.md) for managing highly dynamic and custom environments
@@ -15,8 +15,9 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 - Modular structure for extension of new functionalities and approaches
 - Evaluation of multiple robots and planners in the same simulation
 - Dynamic rviz config file creation for visualization
+- 3 Simulators including Unity, Gazebo and Flatland 
 
-|        Warehouse environment in Gazebo        |
+<!-- |        Warehouse environment in Gazebo        |
 | :-------------------------------------------: |
 | <img src="images/gifs/gazebo_simulation.gif"> |
 
@@ -30,7 +31,64 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 
 |      Multiple agents in one simulation       |
 | :------------------------------------------: |
-| <img src="images/gifs/marl_custom_rviz.gif"> |
+| <img src="images/gifs/marl_custom_rviz.gif"> | -->
+
+## Simulators
+
+<h4 style="text-align: center;">Gazebo</h4>
+
+| <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/arena_hospital_small.gif"> | <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/arena_hawker_centre.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: | 
+
+| <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/com3.gif"> | <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/aws_house.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: |
+
+<img width="700" height="700" src="tutorials/gazebo_tutorial/new_gifs/factory.gif">
+
+<h4 style="text-align: center;">Unity</h4>
+
+| <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/unity_1.gif"> | <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/unity_2.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: | 
+
+| <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/unity_4.gif"> | <img width="800" height="800" src="tutorials/gazebo_tutorial/new_gifs/unity_5.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: |
+
+<img width="700" height="700" src="tutorials/gazebo_tutorial/new_gifs/unity_6.gif">
+
+<h4 style="text-align: center;">Flatland</h4>
+
+| <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/flatland_1.gif"> | <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/flatland_2.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: | 
+
+| <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/flatland_4.gif"> | <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/flatland_5.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: |
+
+<img width="700" height="700" src="tutorials/gazebo_tutorial/new_gifs/flatland_3.gif">
+
+<!-- 
+###### Gazebo
+
+
+| <img width="200" height="200" src="tutorials/gazebo_tutorial/new_gifs/arena_hospital_large.gif"> | <img width="200" height="200" src="tutorials/gazebo_tutorial/new_gifs/arena_hospital_small.gif"> | <img width="200" height="200" src="tutorials/gazebo_tutorial/new_gifs/arena_hawker_centre.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: | :--------------------------------------------------------------------: | 
+
+| <img width="200" height="200" src="tutorials/gazebo_tutorial/new_gifs/com1.gif"> | <img width="200" height="200" src="tutorials/gazebo_tutorial/new_gifs/com2.gif"> | <img width="200" height="200" src="tutorials/gazebo_tutorial/new_gifs/arena_hawker_centre.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: | :--------------------------------------------------------------------: |  
+
+###### Unity
+
+
+| <img width="200" height="200" src="images/gifs/gazebo_simulation.gif"> | <img width="200" height="200" src="images/gifs/hospital_gazebo.gif"> | <img width="200" height="200" src="images/gifs/gazebo_simulation.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: | :--------------------------------------------------------------------: | 
+
+##### Flatland
+
+
+| <img width="200" height="200" src="images/gifs/gazebo_simulation.gif"> | <img width="200" height="200" src="images/gifs/hospital_gazebo.gif"> | <img width="200" height="200" src="images/gifs/gazebo_simulation.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: | :--------------------------------------------------------------------: |  -->
+
+
+
 
 ### Planners
 
@@ -96,18 +154,6 @@ To benchmark the performance of your simulation and visualize your results with 
 | :------------------------------------------------------------: | :-------------------------------------------------------------: |
 |                  _Exemplary qualitative plot_                  |                  _Exemplary quantitative plot_                  |
 
-#### Worlds
 
-We provide the following and many more worlds:
 
-| <img width="150" height="140" src="images/worlds/aws_house.png"> | <img width="150" height="140" src="images/worlds/turtlebot3_house.png"> | <img width="150" height="140" src="images/worlds/small_warehouse.png"> | <img width="150" height="140" src="images/worlds/factory.png"> |
-| :--------------------------------------------------------------: | :---------------------------------------------------------------------: | :--------------------------------------------------------------------: | :------------------------------------------------------------: |
-|                           _aws_house_                            |                           _turtlebot3_house_                            |                           _small_warehouse_                            |                           _factory_                            |
 
-| <img width="150" height="140" src="images/worlds/hospital.jpg"> | <img width="150" height="140" src="images/worlds/exp1.jpg"> | <img width="150" height="140" src="images/worlds/bookstore.jpeg"> | <img width="150" height="140" src="images/worlds/tb_world.jpg"> |
-| :-------------------------------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------------------: | :-------------------------------------------------------------: |
-|                           _hospital_                            |                     _experiment_rooms_                      |                            _bookstore_                            |                       _turtlebot3_world_                        |
-
-| <img width="150" height="140" src="images/worlds/exp2.jpg"> | <img width="150" height="140" src="images/worlds/exp3.jpg"> | <img width="150" height="140" src="images/worlds/exp4.jpg"> |
-| :---------------------------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------------: |
-|                    _experiment_rooms_2_                     |                    _experiment_rooms_3_                     |                    _experiment_rooms_4_                     |

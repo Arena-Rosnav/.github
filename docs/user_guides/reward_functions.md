@@ -19,13 +19,13 @@ To implement a new RewardUnit, you need to define two methods:
 
    - Implement these functions:
 
-     - \_\_init\_\_: This method should initialize all configurable parameters of the reward unit. Whether the RewardUnit should be applied when the safe distance is violated, depends on the specific use case. You should decide based on the requirements of your mechanism.
-     - \_\_call\_\_: This method should implement the main logic for the RewardUnit. Essentially, the logic should alter the reward value of the wrapping RewardFunction and optionally its info dicitonary which in turn can be used in the Gymnasium environment. The base class already implements methods you can fallback to.
+     - `__init__`: This method should initialize all configurable parameters of the reward unit. Whether the RewardUnit should be applied when the safe distance is violated, depends on the specific use case. You should decide based on the requirements of your mechanism.
+     - `__call__`: This method should implement the main logic for the RewardUnit. Essentially, the logic should alter the reward value of the wrapping RewardFunction and optionally its info dicitonary which in turn can be used in the Gymnasium environment. The base class already implements methods you can fallback to.
 
 2. Add the RewardUnit to the Registry
 
-   - Use the @RewardUnitFactory.register("\*unit_name\*") decorator to add your new unit to the registry. The name should be unique and self-explanatory as it is the identifier for the unit.
-   - Add the classname to the \_\_all\_\_ list on the top of the file.
+   - Use the `@RewardUnitFactory.register("*unit_name*")` decorator to add your new unit to the registry. The name should be unique and self-explanatory as it is the identifier for the unit.
+   - Add the classname to the `__all__` list on the top of the file.
 
 **Note**: If you need to access information that isn’t provided by the [ObservationManager](https://github.com/Arena-Rosnav/arena-rosnav/blob/master/utils/misc/rl_utils/rl_utils/utils/observation_collector/observation_manager.py), you can access the `internal_state_info` of the RewardFunction class. There are already methods to add/remove data to/from the internal state dictionary.
 
