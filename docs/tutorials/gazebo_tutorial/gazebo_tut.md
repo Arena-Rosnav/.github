@@ -8,7 +8,7 @@ We create a task generator configuration file to modify various task mode settin
 This file can be found in the following directory:
 
 ```python
-/arena-rosnav/arena_bringup/configs/task_generator.yaml
+arena_bringup/configs/task_generator.yaml
 ```
 
 | Task Modes  | Settings        | Description      |

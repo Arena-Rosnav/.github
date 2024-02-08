@@ -191,7 +191,7 @@ Training script will be terminated
 
 The training script will consider the hyperparameter yaml file which was specified with the `--config` flag. The default configuration file is named `default.yaml` and can be found at:
 
-```bash
+```sh
 ~/catkin_ws/src/arena-rosnav/arena_navigation/arena_local_planner/learning_based/arena_local_planner_drl/configs/hyperparameters/default.json
 ```
 

@@ -2,15 +2,15 @@
 
 ## Automatic Installation
 To use the automatic installation, you will need `curl`. If you don't have it already installed, you can install it via
-```bash
+```sh
 sudo apt install curl
 ```
 Once you have curl installed, start installing Arena-Rosnav by running:
-```bash
+```sh
 curl https://raw.githubusercontent.com/Arena-Rosnav/arena-rosnav/master/install.sh | bash
 ```
 After the script completes, open a **new** terminal and run:
-```bash
+```sh
 curl https://raw.githubusercontent.com/Arena-Rosnav/arena-rosnav/master/install2.sh | bash
 ```
 
@@ -30,7 +30,7 @@ Arena-Rosnav is only intended to be run on Ubuntu 20.04. If you are intending to
 ### Fast zsh-install & setup
 We recommend using zsh. You can install it by just copy pasting this one command:
 
-```bash
+```sh
 sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.2/zsh-in-docker.sh)" -- \
      -p git \
      -p ssh-agent \
@@ -38,7 +38,7 @@ sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1
      -p https://github.com/zsh-users/zsh-completions## Fast zsh-install & setup
 ```
 Afterwards
-```bash
+```sh
      git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
      git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
      vim $HOME/.zshrc
@@ -52,20 +52,20 @@ Set plugins=(pluggin1
 Note there is no comma to seperate between pluggins.
 
 Finally,
-```bash
+```sh
 source $HOME/.zshrc
 ```
 and follow the setup wizard.
 
 Note that you have to install VIM if you dont have it yet:
 
-```bash
+```sh
 sudo apt-get update
 sudo apt-get -y install vim
 ```
 or
 
-```bash
+```sh
 sudo apt update
 sudo apt -y install vim
 ```
@@ -75,7 +75,7 @@ sudo apt -y install vim
 
 Clone the Arena Benchmark repository in any existing **catkin workspace** or [create a new workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace). You also need to have [catkin-tools](https://catkin-tools.readthedocs.io/en/latest/installing.html) installed.
 
-```bash
+```sh
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
 rosdep update && rosdep install --from-paths src --ignore-src -r -y
@@ -84,13 +84,13 @@ cd src
 ```
 then clone the arena-rosnav repo into the src folder
 
-````bash
+````sh
 git clone https://github.com/Arena-Rosnav/arena-rosnav
 ````
 ## Update ROS workspace
 For running Arena Benchmark you need a set of other packages. The majority of them can be installed and cloned directly with ROS. Therefore, you should navigate into the newly cloned repository and run following command:
 
-```bash
+```sh
 cd arena-rosnav
 rosws update
 ```
@@ -99,7 +99,7 @@ rosws update
 
 You should also install the necessary Python packages. You can do so by first activating the poetry shell and then installing all packages listed in the _pyproject.toml_.
 
-```bash
+```sh
 poetry shell
 poetry install
 ```
@@ -108,7 +108,7 @@ poetry install
 
 At last, you need to install a whole bunch of ros packages for running all planners and for other purposes.
 
-```bash
+```sh
 rosdep update && rosdep install --from-paths src --ignore-src -r -y
 sudo apt update && sudo apt install -y 
     libopencv-dev \ 
@@ -122,14 +122,14 @@ sudo apt update && sudo apt install -y
 
 In order to run the trainings process, you need to have our fork of the stable baselines 3 library installed.
 
-```bash
+```sh
 pip install setuptools==57.1.0 psutil==5.9.4 wheel==0.41.2
 cd ../utils-extern/misc/stable-baselines3/ && pip install -e .
 ```
 
 ## Build your workspace
 
-```bash
+```sh
 cd ../../../.. && catkin build
 ```
 
@@ -139,7 +139,7 @@ cd ../../../.. && catkin build
 
 ## Source the build
 
-```bash
+```sh
 source devel/setup.zsh
 ```
 ## Install local planners
@@ -152,7 +152,7 @@ Remember to always have the poetry shell active and the catkin workspace sourced
 ## Testing
 With the activated environment, test your installation by running the command
 
-```bash
+```sh
 roslaunch arena_bringup start_arena.launch simulator:=gazebo
 ```
 
@@ -167,7 +167,7 @@ sudo apt install liblua5.1-0-dev
 ```` -->
 
 ## install Ipopt
-````bash
+````sh
 git clone https://github.com/coin-or/Ipopt
 cd Ipopt
 ./configure

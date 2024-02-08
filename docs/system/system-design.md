@@ -1,7 +1,7 @@
 [Task-manager]: ../images/system-design/task-manager-system-design.jpg "example image"
 
 # System Design 
-Arena-rosnav (arena) is implemented in a modular way with each class being outsourced into a seperate repository (different from the [first version of Arena-rosnav](https://github.com/ignc-research/arena-rosnav-3d)). The core repo is called arena-rosnav, which will install all other necessary modules. Figure 1 visualizes the general system design with all modules of the arena ecosystem. The following subsections, will provide a high-level explanation of each of those modules. For low-level descriptions of all functions and APIs, we refere to the [Packages]() chapter. For instructions on how to work with and/or extend them, the [Tutorials](../tutorials/) chapter provides more detailed explanations. 
+Arena-rosnav (arena) is implemented in a modular way with each class being outsourced into a seperate repository (different from the [first version of Arena-rosnav](https://github.com/ignc-research/arena-rosnav-3d)). The core repository is called arena-rosnav, which will install all other necessary modules. Figure 1 visualizes the general system design with all modules of the arena ecosystem. The following subsections, will provide a high-level explanation of each of those modules. For low-level descriptions of all functions and APIs, we refere to the [Packages]() chapter. For instructions on how to work with and/or extend them, the [Tutorials](../tutorials/) chapter provides more detailed explanations. 
 
 
 
@@ -11,7 +11,7 @@ The task manager is one of the main and most important components of the Arena p
 
 ![Task Manager System Design](../images/system-design/task-manager-system-design.jpg)
 
-The task manager is designed in a way to easiliy integrate new simulators into the arena-rosnav platform by implementing the respective functions and using the API. Therefore, we refer to the technical low-level overview of the system in [Packages/Task-Manager](../packages/task_generator.md) and the tutorial on [How to add a new simulator](../tutorials/add_new_environment.md).
+The task manager is designed in a way to easiliy integrate new simulators into the Arena-Rosnav platform by implementing the respective functions and using the API. Therefore, we refer to the technical low-level overview of the system in [Packages/Task-Manager](../packages/task_generator.md) and the tutorial on [How to add a new simulator](../tutorials/add_new_environment.md).
 
 ## The Map Manager
 The map manager is another important entity to generate worlds and maps across all simulators. More information will follow shortly due Sunday 05.11.23.

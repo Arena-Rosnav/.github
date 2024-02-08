@@ -3,7 +3,7 @@ RL navigation policy trained on and intended for multi-agent systems.
 
 # Usage
 ## This planner can be chosen using the local_planner argument like so:
-```bash
+```sh
 roslaunch arena_bringup start_arena.launch local_planner:=rlca # Make sure that your virtual env/poetry is activated
 ```
 ## For more details regarding usage, please refer to our [documentation](https://arena-rosnav.readthedocs.io/en/latest/user_guides/usage/)

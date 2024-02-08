@@ -11,12 +11,12 @@ cd arena-rosnav # navigate to the arena-rosnav directory
 poetry shell
 ```
 2. Make sure to source the workspace environment
-```bash
+```sh
 cd ../.. # navigate to the catkin_ws directory
 source devel/setup.zsh # if you use bash: source devel/setup.bash 
 ```
 3. Install Python-RVO2
-```bash
+```sh
 roscd sarl_star_ros
 cd ../Python-RVO2
 pip install Cython
@@ -33,7 +33,7 @@ pip install -e .
 ```
 # Usage
 ## This planner can be chosen using the local_planner argument like so:
-```bash
+```sh
 roslaunch arena_bringup start_arena.launch local_planner:=sarl # Make sure that your virtual env/poetry is activated
 ```
 ## For more details regarding usage, please refer to our [documentation](https://arena-benchmark.readthedocs.io/en/latest/user_guides/usage/)

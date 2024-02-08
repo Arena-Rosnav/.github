@@ -1,6 +1,6 @@
 ### Parametrized
 
-The parametrized task acts like the [random task](random.md) but for each obstacle a different amount can be set. The parameters are configured in a xml file in `src/arena-rosnav/arena_bringup/configs/parametrized`.
+The parametrized task acts like the [random task](random.md) but for each obstacle a different amount can be set. The parameters are configured in a xml file in `arena_bringup/configs/parametrized`.
 
 The parameter file looks like this:
 
@@ -22,4 +22,4 @@ The parameter file looks like this:
 
 ```
 
-To use the parametrized file set the parameter `task_mode/scenario/parameterized` in `src/arena-rosnav/arena_bringup/configs/task_generator.yaml`.
+To use the parametrized file set the parameter `task_mode/scenario/parameterized` in `arena_bringup/configs/task_generator.yaml`.

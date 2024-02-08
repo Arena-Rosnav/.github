@@ -6,7 +6,7 @@
 
 To use Arena-Tools, ensure you have Python 3.6 or higher. Install the required Python packages in your virtual environment:
 
-```bash
+```sh
 pip3 install pyqt5 numpy pyyaml lxml scikit-image Pillow scikit-image opencv-python matplotlib
 pip install PyQt5 --upgrade
 ```
@@ -15,7 +15,7 @@ For 2D map to 3D Gazebo world functionality, follow these additional steps:
 
 1. Install `potrace` and `imagemagick` to convert png/pgm images to SVG format:
 
-   ```bash
+   ```sh
    sudo apt-get install potrace imagemagick
    ```
 
@@ -25,7 +25,7 @@ For 2D map to 3D Gazebo world functionality, follow these additional steps:
 
 To start the Arena-Tools GUI and select your desired task, run:
 
-```bash
+```sh
 roscd arena-tools && python arena_tools.py
 ```
 

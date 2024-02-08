@@ -1,5 +1,5 @@
 ## Robots
-A robot named `<robot>` can be used in the simulation by integrating it into the `src/arena-simulation-setup/robot` directory. Create a new subdirectory `<robot>` with the following structure:
+A robot named `<robot>` can be used in the simulation by integrating it into the `arena_simulation_setup/entities/robot` directory. Create a new subdirectory `<robot>` with the following structure:
 
 ```
 <robot>/
@@ -64,4 +64,4 @@ Contains a robot configuration that is read by the planner node, and usually con
 To use and test the robot, start the simulation with `model:=<robot>` set as a command line argument (or use the robot setup configuration file).
 
 ### Robot Repositories
-Robot repositories and stand-alone packages can be integrated in the same way, but have to be added as submodules to the `arena-simulation-setup` repository. _Don't add any repos under `src/arena-simulation/setup/robot/` to the `.rosinstall`_, overlapping repositories are rejected by `rosws`.
+Robot repositories and stand-alone packages can be integrated in the same way, but have to be added to `extern/` as specified by [Contributing](contribute.md).

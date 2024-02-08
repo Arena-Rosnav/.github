@@ -16,7 +16,7 @@ The Task Manager is a critical component of the Arena Rosnav infrastructure and 
 The Task Generator operates in three primary modes, each serving a distinct purpose:
 
 **Staged Mode:**
-   - The staged task mode is designed for the trainings process of arena-rosnav.
+   - The staged task mode is designed for the training process of Arena-Rosnav.
    - In general, it behaves like the random task mode but there are multiple stages between one can switch.
    - Between the stages, the amount of static and dynamic obstacles changes.
    - The amount of obstacles is defined in a curriculum file, the path to said file is a key in the paths parameter.

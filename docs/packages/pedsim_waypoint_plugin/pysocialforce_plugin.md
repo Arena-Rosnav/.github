@@ -10,9 +10,9 @@ Most importantly, it can model group behavior well. It includes different forces
 ## Extending the Plugin
 Another great property is the modularity and the extendability of this plugin. This means, the effect of different forces can be easily made smaller or bigger, subsets of all forces can be used to control the computation of the overall force and new forces can be added. To extend the plugin by a new force, do the following:
 
-1. Initialize your project structure inside the `arena-rosnav` repository by opening `arena-rosnav/utils/ros/rosnodes/pedsim_waypoint_plugin/pedsim_waypoint_plugin` as a workspace.
+1. Initialize your project structure inside the `pedsim_ros` repository by opening `pedsim_agents/pedsim_forces` as a workspace.
 
-2. Create a new force class in `plugins/pysocial1/pysocialforce/forces.py` with the following structure:
+2. Create a new force class in `forcemodels/pysocial/pysocialforce/forces.py` with the following structure:
 
 ```python
 class <your_force_name>Force(Force):

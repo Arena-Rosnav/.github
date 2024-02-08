@@ -11,7 +11,7 @@ The goal sequence is tracked in rosparam `/guided_waypoints`.
 
 e.g.
 
-```bash
+```sh
 roslaunch arena_bringup start_arena.launch model:=jackal tm_robots:=guided
 ```
 

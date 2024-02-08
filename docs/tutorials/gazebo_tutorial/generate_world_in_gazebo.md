@@ -12,7 +12,7 @@ Note: Start Gazebo always in your terminal.
 
 Start gazebo with the following command:
 
-```python
+```sh
 roslaunch arena_bringup start_generate.launch 
 ```
 
@@ -31,11 +31,11 @@ By clicking two times on a wall, the 'Wall Inspector' will open up. Here, you ca
 <br>
 ![](images/generate_gazebo_worlds/gazebo_3.gif)  
 
-If you don't specify a location to save your file, Gazebo will create a folder with the name 'building_editor_models' in your home directory and place your model inside of this folder.
+If you don't specify a location to save your file, Gazebo will create a folder with the name `building_editor_models` in your home directory and place your model inside of this folder.
 <br>
 Therefore, change the directory to:
 <br>
-`../arena-simulation-setup/gazebo_models`
+`arena_simulation_setup/gazebo_models`
 <br>
 <br>
 ![](images/generate_gazebo_worlds/gazebo_4.gif) 
@@ -45,7 +45,7 @@ Therefore, change the directory to:
 <br>
 <br>
 You can add new models in the following directory inside of your arena rosnav workspace:<br>
-`../arena-simulation-setup/gazebo_models`
+`arena_simulation_setup/gazebo_models`
 <br>
 Put your model that your created above inside the *gazebo_models* folder. Now, your model should be available for use. 
 <br>
@@ -60,11 +60,11 @@ Safe your world with a .world end tag
 <br>
 ![](images/generate_gazebo_worlds/gazebo_10.gif)      
 
-Create a folder with the same name as your .world file in the following directory:
+For your world file called `<your_world_name>.world`, create the subdirectory:
 <br>
-`../arena-simulation-setup/worlds`
+`arena_simulation_setup/worlds/<your_world_name>/worlds`
 <br> 
-Next, create a folder with the name 'world' inside the folder you just created. Put your .world file into this folder. Don't forget to do catkin_make in your arena rosnav workspace. 
+and place your .world file there. Don't forget to rebuild your workspace. 
 <br>
 <br>
 ![](images/generate_gazebo_worlds/gazebo_11.gif)       
@@ -74,7 +74,7 @@ Next, create a folder with the name 'world' inside the folder you just created. 
 **How to create a Occupancy grid map ?**
 
 In order to convert the gazebo world into a 2D occupancy grid map, include the gazebo_ros_2Dmap_plugin into the .world file. Adjust `<map_size_x>` and `<map_size_y>` according to the size of your map. 
-```python
+```xml
     <plugin name='gazebo_occupancy_map' filename='libgazebo_2Dmap_plugin.so'>
       <map_resolution>0.1</map_resolution>
       <map_height>0.3</map_height>
@@ -88,15 +88,15 @@ In order to convert the gazebo world into a 2D occupancy grid map, include the g
 
 In order to create the occupancy grid map, launch the following command:
 
-Note: It is mandatory that you pass the name of your world as an argument (e.g. `world_name:=test_world`). 
+Note: It is mandatory that you pass the name of your world as an argument (e.g. `world_name:=<your_world_name>`). 
 
-```python
+```sh
 roslaunch arena_bringup start_generate.launch world_name:=<your_world_name>
 ```
 
 You can close gazebo for now. 
 
-Inside the `../arena-simulation-setup/maps` directory, a folder with the name of your world should be created. The Folder contains the following files:
+Inside `arena_simulation_setup/worlds/<your_world_name>/map/`, a folder with the name of your world must be created. The Folder contains the following files:
 
 - *.pgm File*             : This file is the occupancy grid map.
 - *.yaml File*            : Here you can modify some parameters of the occupancy grid map. 
@@ -107,7 +107,7 @@ Inside the `../arena-simulation-setup/maps` directory, a folder with the name of
 
 Test your world by passing the name of your world as an argument(e.g. `map_file:=test_world`):
 
-```python
+```sh
 roslaunch arena_bringup start_arena.launch map_file:=<your_world_name> simulator:=gazebo model:=jackal local_planner:=teb 
 ```
 <br>
@@ -168,7 +168,7 @@ After you finished with your model, save your model as a .obj file. You will get
 ![](images/generate_gazebo_worlds/gazebo_21.gif) 
 
 Create a folder for your model in the directory : 
-`../arena-simulation-setup/gazebo_models`
+`arena_simulation_setup/gazebo_models`
 <br>
 Create a 'meshes' folder, a 'model.config' file and a 'model.sdf' file inside of the new folder that you just created. 
 <br>
@@ -184,7 +184,7 @@ In the `model.config` file are informations about the maintainer and creator of 
 ```xml
 <?xml version="1.0"?>
 <model>
-  <name>room2</name>
+  <name>your_world_name</name>
   <version>1.0</version>
   <sdf version="1.6">model.sdf</sdf>
 
@@ -194,7 +194,7 @@ In the `model.config` file are informations about the maintainer and creator of 
   </author>
 
   <description>
-    room2 model. 
+    your_world_name model. 
   </description>
 </model>
 ```
@@ -203,14 +203,14 @@ In the `model.sdf` file are settings about the model and the path. Adjust the pa
 ```xml
 <?xml version="1.0" ?>
 <sdf version="1.7">
-  <model name="room2">
+  <model name="your_world_name">
     <static>true</static>
     <link name="floor_1">
       <visual name="visual">
         <pose>0 0 -0.25 0 0 0</pose>   
         <geometry>
           <mesh>
-            <uri>model://room2/meshes/room2.obj</uri>
+            <uri>model://your_world_name/meshes/your_world_name.obj</uri>
           </mesh>
         </geometry>
       </visual>
@@ -218,7 +218,7 @@ In the `model.sdf` file are settings about the model and the path. Adjust the pa
         <pose>0 0 -0.25 0 0 0</pose>   
         <geometry>
           <mesh>
-            <uri>model://room2/meshes/room2.obj</uri>
+            <uri>model://your_world_name/meshes/your_world_name.obj</uri>
           </mesh>
         </geometry>
       </collision>
@@ -237,7 +237,7 @@ map_Kd <your_texture>
 
 In the last step, you have to create a `.world` file in the following directory: 
 <br>
-`arena-simulation-setup/worlds/<your_world>/worlds`
+`arena_simulation_setup/worlds/<your_world_name>/worlds`
 <br>
 <br>
 ![](images/generate_gazebo_worlds/gazebo_25.gif) 
@@ -294,7 +294,7 @@ Copy and paste these lines into you `.world` file:
           <pose>0 0 -0.25 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://room2/meshes/room2.obj</uri>
+              <uri>model://your_world_name/meshes/your_world_name.obj</uri>
             </mesh>
           </geometry>
         </visual>
@@ -302,7 +302,7 @@ Copy and paste these lines into you `.world` file:
           <pose>0 0 -0.25 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>model://room2/meshes/room2.obj</uri>
+              <uri>model://your_world_name/meshes/your_world_name.obj</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -380,7 +380,7 @@ You just have to replace the path of your model and the name of your model:
             </mesh>
           </geometry>
 ```
-After you start Gazebo with your `.world` file, you should see your model with the texture:
+After you start Gazebo with your .world file, you should see your model with the texture:
 <br>
 <br>
 ![](images/generate_gazebo_worlds/gazebo_26_1.png) 
@@ -393,7 +393,7 @@ Note: If you want to add models to your world, go to the above section '*How to 
 **How to create a Occupancy grid map ?**
 
 In order to convert the gazebo world into a 2D occupancy grid map, include the gazebo_ros_2Dmap_plugin into the .world file. Adjust `<map_size_x>` and `<map_size_y>` according to the size of your map.  
-```python
+```xml
     <plugin name='gazebo_occupancy_map' filename='libgazebo_2Dmap_plugin.so'>
       <map_resolution>0.1</map_resolution>
       <map_height>0.3</map_height>
@@ -407,15 +407,15 @@ In order to convert the gazebo world into a 2D occupancy grid map, include the g
 
 In order to create the occupancy grid map, launch the following command:
 
-Note: It is mandatory that you pass the name of your world as an argument (e.g. `world_name:=room2`).
+Note: It is mandatory that you pass the name of your world as an argument (e.g. `world_name:=your_world_name`).
 
-```python
+```sh
 roslaunch arena_bringup start_generate.launch world_name:=<your_world_name>
 ```
 
 You can close gazebo for now. 
 
-Inside the `../arena-simulation-setup/maps` directory, a folder with the name of your world should be created. The Folder contains the following files:
+Inside `arena_simulation_setup/worlds/<your_world_name>/map/`, a folder with the name of your world should be created. The Folder contains the following files:
 
 - *.pgm File*             : This file is the occupancy grid map.
 - *.yaml File*            : Here you can modify some parameters of the occupancy grid map. 
@@ -424,9 +424,9 @@ Inside the `../arena-simulation-setup/maps` directory, a folder with the name of
 
 **Testing**
 
-Test your world by passing the name of your world as an argument(e.g. `map_file:=room2`):
+Test your world by passing the name of your world as an argument(e.g. `map_file:=<your_world_name>`):
 
-```python
+```sh
 roslaunch arena_bringup start_arena.launch map_file:=<your_world_name> simulator:=gazebo model:=jackal local_planner:=teb 
 ```
 <br>

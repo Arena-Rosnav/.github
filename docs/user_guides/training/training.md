@@ -57,7 +57,7 @@ To start a training procedure you need at least two terminals.
 - _num_envs_: Number of parallel environments
 - _map_folder_name_: Name of the map
 
-```bash
+```sh
 roslaunch arena_bringup start_training.launch model:=jackal num_envs:=1 map_folder_name:=map_empty
 ```
 
@@ -67,7 +67,7 @@ roslaunch arena_bringup start_training.launch model:=jackal num_envs:=1 map_fold
 
 - _config_: Name of the config file (has to be in the subdirectory "_arena-rosnav/training/configs_").
 
-```bash
+```sh
 # navigate to the arena-rosnav directory
 cd arena-rosnav
 python training/scripts/train_agent.py
@@ -80,7 +80,7 @@ python training/scripts/train_agent.py
 - _ns_: Namespace of the simulation instance to be visualized.
 - _rviz_file_: Name of the rviz file "_arena_bringup/rviz_". Defaults to "nav_LP".
 
-```bash
+```sh
 roslaunch arena_bringup visualization_training.launch ns:=sim_1
 ```
 
