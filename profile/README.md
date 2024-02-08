@@ -8,10 +8,10 @@ Follow the documentation for details how to use the platform:
 [Documentation](https://arena-rosnav.readthedocs.io/en/latest/)
 
 ### Arena-Education
-For beginners, we also offer worksheets which contain tasks and solutions and are a great starting point for beginners aiming to learn about robotics and the Arena platform:
+We also offer worksheets which contain tasks and solutions and are a great starting point for beginners aiming to learn about robotics and the Arena platform:
 
 [https://edu.arena-rosnav.org/](https://edu.arena-rosnav.org/) \
-[Educational worksheet #1](https://edu.arena-rosnav.org/)
+[Worksheet #1: Installation and First Steps](https://edu.arena-rosnav.org/)
 
 
 
