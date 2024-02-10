@@ -38,3 +38,7 @@ They are activated by providing a comma-delimited list as a value to the `tm_mod
 ```sh
 roslaunch arena_bringup start_arena.launch tm_modules:=dynamic_map,staged
 ```
+
+## Add a new task mode
+
+Here is a guide for [adding new task modes](./task_modes/adding_task_modes.md).

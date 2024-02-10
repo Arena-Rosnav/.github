@@ -8,10 +8,10 @@ Follow the documentation for details how to use the platform:
 [Documentation](https://arena-rosnav.readthedocs.io/en/latest/)
 
 ### Arena-Education
-For beginners, we also offer worksheets which contain tasks and solutions and are a great starting point for beginners aiming to learn about robotics and the Arena platform:
+We also offer worksheets which contain tasks and solutions and are a great starting point for beginners aiming to learn about robotics and the Arena platform:
 
 [https://edu.arena-rosnav.org/](https://edu.arena-rosnav.org/) \
-[Educational worksheet #1](https://edu.arena-rosnav.org/)
+[Worksheet #1: Installation and First Steps](https://edu.arena-rosnav.org/)
 
 
 
@@ -58,8 +58,8 @@ For beginners, we also offer worksheets which contain tasks and solutions and ar
 ### Features
 
 - Automatic installation script for the arena rosnav environment 
-- 3 Different Simulators including [Unity](#unity), [Gazebo](#gazebo) and [Flatland](#flatland)
-- We offer prebuilt, realistic simulation [environments](#worlds), including offices, hospitals, canteens, warehouses, and much more
+- 3 different simulators including [Unity](#unity), [Gazebo](#gazebo) and [Flatland](#flatland)
+- We offer prebuilt, realistic simulation [environments](#supported-worlds), including offices, hospitals, canteens, warehouses, and much more
 - Dynamic Map Generation including dynamic mazes
 - Variety of Task Modes for robots and pedestrians
 
@@ -126,11 +126,9 @@ For beginners, we also offer worksheets which contain tasks and solutions and ar
 
 #### Unity
 
-<!-- |                       Office                       |                       Canteen                        |                        ...                       |                       ...                       |                       Warehouse                        |
+|                       Hospital                       |                       Restaurant                        |                        School                        |                       Japanese Garden                        |                       Warehouse                        |
 | :--------------------------------------------------------------: | :---------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: |
-| <img width="250" src="docs/images/robots/turtlebot3-burger.jpg"> | <img width="250" src="docs/images/robots/jackal.jpg"> | <img width="250"  src="docs/images/robots/ridgeback.jpg"> | <img width="250" src="docs/images/robots/agv-ota.png"> | <img width="250" src="docs/images/robots/tiago.jpg"> | -->
-
-
+| <img width="250" src="docs/images/unity_worlds/hospital.png"> | <img width="250" src="docs/images/unity_worlds/restaurant.png"> | <img width="250"  src="docs/images/unity_worlds/school.png"> | <img width="250" src="docs/images/unity_worlds/japanese_garden.png"> | <img width="250" src="docs/images/unity_worlds/warehouse.jpg"> |
 
 ## Recent Publications
 

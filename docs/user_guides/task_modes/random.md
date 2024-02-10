@@ -2,12 +2,13 @@
 
 #### Obstacles
 
-The random task spawns a random static and dynamic obstacles on every reset. The models for the spawned obstacles are randomly choosen. To change the different models that can be spawned or the amount of spawned static or dynamic obstacles change the parameter `task_mode/random` in `arena_bringup/configs/task_generator.yaml`.
+The random task spawns a variety of static and dynamic obstacles upon each reset, with models chosen randomly. To adjust the types and quantities of obstacles, modify the `task_mode/random` parameter in `src/arena-rosnav/arena_bringup/configs/task_generator.yaml`.
 
 e.g.
 
 ```yaml
 RANDOM:
+  seed: -1
   static:
     min: 0
     max: 0
@@ -22,11 +23,15 @@ RANDOM:
     models: ["actor1"]
 ```
 
-For each obstacle type, users have the flexibility to define the amount of spawnable instances (minimum and maximum amount) and the available models. To specify the amount of obstacles for a specific model, use the [Parametrized](parametrized.md) task mode.
+For each obstacle type, define the range of spawnable instances (minimum and maximum) and the available models. To specify the amount of obstacles for a specific model, refer to the [Parametrized](parametrized.md) task mode.
 
 #### Robot
 
-The random task will create a new robot start and goal position for each task.
+The random task mode generates new start and goal positions for the robot with each task reset.
+
+#### Seed
+
+The seed parameter controls the random seed used for obstacle, robot start, and goal position generation. Providing a seed allows for stable reproduction of tasks. A value of -1 indicates a random seed will be used.
 
 #### Usage
 
