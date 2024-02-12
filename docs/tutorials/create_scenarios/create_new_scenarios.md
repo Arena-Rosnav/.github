@@ -1,6 +1,6 @@
 ## Create New Scenarios
 
-In the scenario file dynamic and static obstacles as well as the start and goal position of the robot are defined. You can find more information in the [User Guides (Task Modes)](user_guides/task_modes.md) section.
+In the scenario file dynamic and static obstacles as well as the start and goal position of the robot are defined. You can find more information in the [User Guides (Task Modes)](/docs/user_guides/task_modes.md) section.
 <br>
 <br>
 Create a new scenario file (`.json`) in the following directory:

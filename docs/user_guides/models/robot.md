@@ -64,4 +64,4 @@ Contains a robot configuration that is read by the planner node, and usually con
 To use and test the robot, start the simulation with `model:=<robot>` set as a command line argument (or use the robot setup configuration file).
 
 ### Robot Repositories
-Robot repositories and stand-alone packages can be integrated in the same way, but have to be added to `extern/` as specified by [Contributing](contribute.md).
+Robot repositories and stand-alone packages can be integrated in the same way, but have to be added to `extern/` as specified by [Contributing](/docs/contribute.md).

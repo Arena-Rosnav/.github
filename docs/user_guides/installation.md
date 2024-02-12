@@ -161,16 +161,18 @@ This should open gazebo and rviz successfully.
 # Troubleshouting
 If you encounter errors during the build process due to missing packages, add them
 
-<!-- # install lua
-````
+<!--
+# install lua
+```sh
 sudo apt install liblua5.1-0-dev 
-```` -->
+```
+-->
 
 ## install Ipopt
-````sh
+```sh
 git clone https://github.com/coin-or/Ipopt
 cd Ipopt
 ./configure
 make
 sudo make install
-````
+```
