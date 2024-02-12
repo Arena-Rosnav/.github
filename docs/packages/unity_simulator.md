@@ -7,7 +7,7 @@ During development it's important to have Unity (2022.3.11f1) set up and open th
 ## Starting
 To start the process you first need to start Arena Rosnav with 
 
-```bash
+```sh
 roslaunch arena_bringup start_arena.launch simulator:=unity model:=burger
 ```
 Right after that you need to start the Unity Simulator in the Editor. (The order isn't really relevant but you need to start both processes shortly after each other).  
@@ -27,7 +27,7 @@ This Script published to `/clock` to synchronize both endpoints.
 Any scene that should be connected to Arena Rosnav should have a component with this Script as a Component.
 
 ### Robot
-The Robot is instantiated from a prefab in the `ServiceController.cs` script upon calling the `/unity/spawn_model` service for the robot. (*Should be implemented with dynamic loading from URDF string from [arena-simulation-setup](https://github.com/voshch/arena-simulation-setup) instead* ).  
+The Robot is instantiated from a prefab in the `ServiceController.cs` script upon calling the `/unity/spawn_model` service for the robot. (*Should be implemented with dynamic loading from URDF string from [arena_simulation_setup](https://github.com/Arena-Rosnav/arena-) instead* ).  
 After instantiating at the initial position the following scripts are added:  
 - **Drive.cs**: Used to handle `/<robot_namespace>/cmd_vel` commands and handling robot movement accordingly  
 - **ROSTransformTreePublisher**: used to publish to `/tf` the transform data of each robots component   

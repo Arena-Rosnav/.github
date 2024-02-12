@@ -4,7 +4,7 @@ The Explore Task Mode shares similarities with the [random task mode](random.md)
 
 e.g.
 
-```bash
+```sh
 roslaunch arena_bringup start_arena.launch model:=jackal tm_robots:=explore tm_obstacles:=scenario
 ```
 

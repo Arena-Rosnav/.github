@@ -1,6 +1,6 @@
 ### Scenario
 
-The scenario task will spawn the static and dynamic obstacles defined in the scenario file. All scenario files are in `src/arena-rosnav/arena_bringup/configs/scenarios`.
+The scenario task will spawn the static and dynamic obstacles defined in the scenario file. Scenario files are world-dependent and are located in `arena_simulation_setup/worlds/<world>/scenarios/`
 
 A scenario consists of 
 ```json
@@ -20,15 +20,13 @@ A scenario consists of
       "start": ["X", "Y", "theta"],
       "goal": ["X", "Y", "theta"]
     }
-  ],
-  "map": "<NAME OF THE MAP>",
-  "resets": "<AMOUNT OF RESETS>"
+  ]
 }
 ```
 
-To use the scenario file set the parameter `task_mode/scenario/scenario_file` in `src/arena-rosnav/arena_bringup/configs/task_generator.yaml` and then enter in the terminal:
+To use the scenario file set the parameter `task_mode/scenario/scenario_file` in `arena_bringup/configs/task_generator.yaml` and then enter in the terminal:
 
-```bash
+```sh
 roslaunch arena_bringup start_arena.launch model:=jackal tm_robots:=scenario tm_obstacles:=scenario
 ```
 

@@ -1,11 +1,11 @@
 
 ## Rosnav - ROS Navigation
 
-**Rosnav** is the official package for ROS Navigation. It includes pretrained neural networks for collision avoidance and infrastructure to run these networks within a ROS context. Rosnav is primarily designed for the **arena-rosnav** environment, where it is both trained and evaluated in 2D and 3D variants.
+**Rosnav** is the official package for ROS Navigation. It includes pretrained neural networks for collision avoidance and infrastructure to run these networks within a ROS context. Rosnav is primarily designed for the Arena-Rosnav environment, where it is both trained and evaluated in 2D and 3D variants.
 
 ### Structure
 
-The Rosnav package encompasses multiple pretrained neural networks for various robots, along with encoders for easy integration into existing systems. Note that it does not provide the full infrastructure for training models; **arena-rosnav** can be used for that purpose.
+The Rosnav package encompasses multiple pretrained neural networks for various robots, along with encoders for easy integration into existing systems. Note that it does not provide the full infrastructure for training models; Arena-Rosnav can be used for that purpose.
 
 ### Architectures
 

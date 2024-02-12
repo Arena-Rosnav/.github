@@ -4,11 +4,11 @@
 
 To start a simulation just launch the `start_arena.launch` file in the _arena_bringup_ package.
 
-```bash
+```sh
 roslaunch arena_bringup start_arena.launch
 ```
 e.g.
-```bash
+```sh
 roslaunch arena_bringup start_arena.launch simulator:=gazebo tm_robots:=scenario tm_obstacles:=random tm_modules:=staged model:=jackal map_file:=map_empty sfm:=spinny
 ```
 

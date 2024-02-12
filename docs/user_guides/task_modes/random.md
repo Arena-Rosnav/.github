@@ -35,7 +35,7 @@ The seed parameter controls the random seed used for obstacle, robot start, and 
 
 #### Usage
 
-```bash
+```sh
 roslaunch arena_bringup start_arena.launch model:=jackal
 ```
 

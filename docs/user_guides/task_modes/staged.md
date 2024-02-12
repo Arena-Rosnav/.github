@@ -1,7 +1,7 @@
 ### Staged
 
 The staged task mode is designed for the trainings process of arena-rosnav. In general, it behaves like the [Random task mode](random.md) but there are multiple stages between one can switch. Between the stages, the amount of static and dynamic obstacles changes. The amount of obstacles is defined in a curriculum
-file, the path to said file is a key in the `paths` parameter. The curriculum files are in `src/arena-rosnav/arena_bringup/training/training_curriculums`. The different models that can be spawned are defined in the parameter `task_mode/random` in `src/arena-rosnav/arena_bringup/configs/task_generator.yaml`.
+file, the path to said file is a key in the `paths` parameter. The curriculum files are in `arena_bringup/training/training_curriculums`. The different models that can be spawned are defined in the parameter `task_mode/random` in `arena_bringup/configs/task_generator.yaml`.
 
 The curriculum file consist of multiple defined stages. One stage can be defined like this:
 
@@ -13,13 +13,13 @@ The curriculum file consist of multiple defined stages. One stage can be defined
   dynamic: 0
 ```
 
-To use the staged file set the parameter `task_mode/scenario/staged` in `src/arena-rosnav/arena_bringup/configs/task_generator.yaml`.
+To use the staged file set the parameter `task_mode/scenario/staged` in `arena_bringup/configs/task_generator.yaml`.
 
 To change to the next stage open another terminal and enter: 
-```bash
+```sh
 rostopic pub /next_stage std_msgs/Bool true -1
 ```
 For the previous stage use: 
-```bash
+```sh
 rostopic pub /previous_stage std_msgs/Bool true -1
 ```

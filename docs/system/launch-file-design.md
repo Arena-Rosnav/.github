@@ -4,7 +4,7 @@ All functionalities are loaded in and started via ROS launch files in xml descri
 ## Testing Mode 
 The following workflow diagram illustrates the launch files and classes that are started when executing a testing run with the command: 
 
-```bash
+```sh
 roslaunch arena_bringup start_arena.launch pedsim:=true simulator:=gazebo task_mode:=scenario scenario_file:=scenario_2.json map_file:=map_empty local_planner:=teb model:=jackal
 ```
 
@@ -13,4 +13,4 @@ roslaunch arena_bringup start_arena.launch pedsim:=true simulator:=gazebo task_m
     <img src="../images/system-design/test-launch.jpg" alt="Testing Launch Design">
 </div>
 
-Inside the arena_bringup folder, start_arena.launch will set all arg and parameters necessary for the simulation and starts gazebo.launch, which will load in the gazebo world and start RVIZ. start_arena.launch will also start the map server, localization and task manager. The taskmanager will then start the other processes.
+`arena_bringup/start_arena.launch` will set all arg and parameters necessary for the simulation and starts `gazebo.launch`, which will load in the gazebo world and start RVIZ. `start_arena.launch` will also start the map server, localization and task manager. The task manager will then start the other processes.

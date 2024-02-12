@@ -52,7 +52,7 @@ Each contestant is comprised of the following data:
 
 The benchmarking process is started using the following command:
 
-```bash
+```sh
 roslaunch arena_bringup start_arena.launch tm_modules:=benchmark
 ```
 

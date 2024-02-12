@@ -1,11 +1,11 @@
 ## Create New Scenarios
 
-In the scenario file dynamic and static obstacles as well as the start and goal position of the robot are defined. You can find more informations in the **User Guides (Task Modes)** section.
+In the scenario file dynamic and static obstacles as well as the start and goal position of the robot are defined. You can find more information in the [User Guides (Task Modes)](user_guides/task_modes.md) section.
 <br>
 <br>
 Create a new scenario file (`.json`) in the following directory:
 <br>
-`../arena-rosnav/arena_bringup/configs/scenario`
+`arena_simulation_setup/worlds/<world_name>/scenarios/`
 
 This is the general structure of the scenario .json file (default.json):
 
@@ -72,8 +72,7 @@ This is the general structure of the scenario .json file (default.json):
       }
     ],
     "interactive": []
-  },
-  "map": "map_empty"
+  }
 }
 
 ```
@@ -94,7 +93,7 @@ Note: The number of episodes/resets of the scenario can be set in the `task_gene
 **Testing**
 
 Command:
-```python
+```sh
 roslaunch arena_bringup start_arena.launch map_file:=map_empty model:=jackal simulator:=gazebo tm_robots:=scenario tm_obstacles:=scenario
 ```
 

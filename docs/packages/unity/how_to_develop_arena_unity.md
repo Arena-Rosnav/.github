@@ -6,13 +6,13 @@ After doing the steps in How to use Arena Unity, you need to install Unity Hub b
 
 **Installing the correct Unity Editor**:  
 For this project, we use the Unity Editor version 2022.3.11f1. To install this version, execute the install-unity-version.sh script  in *\[catkin_ws\]/src/arena-unity* :
-```bash
+```sh
 ./install-unity-version.sh
 ```
 
 Now, you can start developing, by opening the project path *\[catkin_ws\]/src/arena-unity* in the Unity Hub and in your favourite code editor.  
 For development it's easier to test changes in Arena Unity by starting the Unity Simulator fromt the Unity Editor (i.e. simply pressing *play* in the Unity Editor, without having to build it first). If you want to start Arena Unity from within the Editor you can use the argument *development_mode* for the launch command:
-```bash
+```sh
 roslaunch arena_bringup start_arena.launch simulator:=unity task_mode:=scenario model:=jackal development_mode:=true 
 ```
 This will stop Arena Rosnav from running the executable build of Arena Unity but instead waits for you to start it yourself.  

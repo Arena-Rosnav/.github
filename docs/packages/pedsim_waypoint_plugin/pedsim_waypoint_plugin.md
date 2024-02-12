@@ -51,9 +51,9 @@ When an `AgentFeedback` is sent, it latches and overrides the force vector until
 
 ### Writing a WaypointPlugin
 
-1. Initialize your project structure inside the `arena-rosnav` repository by opening `arena-rosnav/utils/ros/rosnodes/pedsim_waypoint_plugin/pedsim_waypoint_plugin` as a workspace.
+1. Initialize your project structure inside the `pedsim-ros` repository by opening `pedsim_agents/pedsim_forcces` as a workspace.
 
-2. Create a subdirectory `<your_plugin_name>` in `plugins`.
+2. Create a subdirectory `<your_plugin_name>` inside `forcemodels`.
 
 3. Create a file `<your_plugin_name>/main.py`.
 
@@ -64,23 +64,23 @@ When an `AgentFeedback` is sent, it latches and overrides the force vector until
 6. Add the following skeleton to your `main.py`:
 
 ```python
-from pedsim_waypoint_plugin.pedsim_waypoint_generator import OutputData, PedsimWaypointGenerator, InputData, WaypointPluginName, WaypointPlugin
-import pedsim_msgs.msg
+from pedsim_agents.pedsim_forces import PedsimForcemodel, ForcemodelName, Forcemodel
+from pedsim_agents.utils import FeedbackDatum, FeedbackData
 
-@PedsimWaypointGenerator.register(WaypointPluginName.<YOUR_PLUGIN_NAME>)
-class Plugin_<your_plugin_name>(WaypointPlugin):
+@PedsimForcemodel.register(ForcemodelName.<YOUR_PLUGIN_NAME>)
+class Plugin_<your_plugin_name>(Forcemodel):
     def __init__(self):
         ...
 
-    def callback(self, data) -> OutputData:
+    def callback(self, data) -> FeedbackData:
         return [pedsim_msgs.msg.AgentFeedback(unforce=True) for agent in data.agents]
 ```
 
-You can now use your plugin by setting the roslaunch argument `pedsim_waypoint_plugin:=<your_plugin_name>`.
+You can now use your plugin by setting the roslaunch argument `sfm:=<your_plugin_name>`.
 
 Example launch:
 ```sh
-roslaunch arena_bringup start_arena.launch simulator:=gazebo task_mode:=scenario model:=jackal map_file:=map_empty pedsim_waypoint_plugin:=spinny
+roslaunch arena_bringup start_arena.launch simulator:=gazebo tm_obstacles:=scenario sfm:=spinny
 ```
 
 Apart from this basic structure, the content of your plugin's folder is free to modify. It is recommended to practice by implementing these rudimentary plugins:

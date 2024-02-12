@@ -8,24 +8,24 @@ For more information about LfLH refer to information presented by the authors at
 
 # Installation
 ## Activate poetry shell
-```bash
+```sh
 cd ~/catkin_ws/src/arena-rosnav # Navigate to your arena-bench location
 poetry shell
 ```
 ## Make sure to source the workspace environment
-```bash
+```sh
 cd ../.. # navigate to the catkin_ws directory
 catkin_make
 source devel/setup.zsh # if you use bash: source devel/setup.bash 
 ```
 ## Install Python dependencies
-```bash
+```sh
 roscd LfH
 pip install -r requirements.txt # Make sure your virtual environment is activated
 ```
 # Usage
 ## This planner can be chosen using the local_planner argument like so:
-```bash
+```sh
 roslaunch arena_bringup start_arena.launch local_planner:=lflh # Make sure that your virtual env/poetry is activated
 ```
 ## For more details regarding usage, please refer to our [documentation](https://arena-rosnav.readthedocs.io/en/latest/user_guides/usage/)
