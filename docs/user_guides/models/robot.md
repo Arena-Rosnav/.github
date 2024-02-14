@@ -1,5 +1,5 @@
 ## Robots
-A robot named `<robot>` can be used in the simulation by integrating it into the `arena_simulation_setup/entities/robot` directory. Create a new subdirectory `<robot>` with the following structure:
+A robot named `<robot>` can be used in the simulation by integrating it into the `simulation_setup/entities/robots/` directory. Create a new subdirectory `<robot>` with the following structure:
 
 ```
 <robot>/
