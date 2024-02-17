@@ -6,7 +6,7 @@ Before making changes to the system, ensure that it is up-to-date by running
 $(cd src/arena/arena-rosnav && git pull)
 vcs import src < src/arena/arena-rosnav/.repos
 rosdep update && rosdep install --from-paths src --ignore-src -r -y
-cd src/arena/arena-rosnav && poetry install && cd ../../..
+$(cd src/arena/arena-rosnav && poetry install)
 ```
 
 ## Contributing to Arena-Rosnav/arena-rosnav
