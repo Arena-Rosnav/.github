@@ -87,7 +87,7 @@ roslaunch arena_bringup start_arena.launch simulator:=gazebo map_file:=arena_nus
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
-![](gifs/arena_gifs/./arena_nus_com1.gif)
+![](gifs/arena_gifs/./arena_nus_com_1.gif)
 
 ### Arena National University Of Singapur COM2 Building
 
@@ -97,7 +97,7 @@ roslaunch arena_bringup start_arena.launch simulator:=gazebo map_file:=arena_nus
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
-![](gifs/arena_gifs/./arena_nus_com2.gif)
+![](gifs/arena_gifs/./arena_nus_com_2.gif)
 
 ### Arena National University Of Singapur COM3 Building
 
@@ -107,7 +107,7 @@ roslaunch arena_bringup start_arena.launch simulator:=gazebo map_file:=arena_nus
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.css">
 
-![](gifs/arena_gifs/./arena_nus_com3.gif)
+![](gifs/arena_gifs/./arena_nus_com_3.gif)
 
 ### AWS Small House
 

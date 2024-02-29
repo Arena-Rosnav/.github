@@ -40,7 +40,7 @@ We also offer worksheets which contain tasks and solutions and are a great start
 | <img  src="docs/tutorials/gazebo_tutorial/new_gifs/arena_hospital_small.gif"> | <img src="docs/tutorials/gazebo_tutorial/new_gifs/arena_hawker_centre.gif"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: | 
 
-| <img  src="docs/tutorials/gazebo_tutorial/new_gifs/com3.gif"> | <img  src="docs/tutorials/gazebo_tutorial/new_gifs/aws_house.gif"> | 
+| <img  src="docs/tutorials/gazebo_tutorial/new_gifs/com_3.gif"> | <img  src="docs/tutorials/gazebo_tutorial/new_gifs/aws_house.gif"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: |
 
 <img width="1300" height="300" src="docs/tutorials/gazebo_tutorial/new_gifs/factory.gif">
