@@ -40,7 +40,7 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 | <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/arena_hospital_small.gif"> | <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/arena_hawker_centre.gif"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: | 
 
-| <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/com3.gif"> | <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/aws_house.gif"> | 
+| <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/com_3.gif"> | <img width="600" height="600" src="tutorials/gazebo_tutorial/new_gifs/aws_house.gif"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: |
 
 <img width="700" height="700" src="tutorials/gazebo_tutorial/new_gifs/factory.gif">
@@ -72,7 +72,7 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 | <img width="200" height="200" src="tutorials/gazebo_tutorial/new_gifs/arena_hospital_large.gif"> | <img width="200" height="200" src="tutorials/gazebo_tutorial/new_gifs/arena_hospital_small.gif"> | <img width="200" height="200" src="tutorials/gazebo_tutorial/new_gifs/arena_hawker_centre.gif"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: | :--------------------------------------------------------------------: | 
 
-| <img width="200" height="200" src="tutorials/gazebo_tutorial/new_gifs/com1.gif"> | <img width="200" height="200" src="tutorials/gazebo_tutorial/new_gifs/com2.gif"> | <img width="200" height="200" src="tutorials/gazebo_tutorial/new_gifs/arena_hawker_centre.gif"> | 
+| <img width="200" height="200" src="tutorials/gazebo_tutorial/new_gifs/com_1.gif"> | <img width="200" height="200" src="tutorials/gazebo_tutorial/new_gifs/com_2.gif"> | <img width="200" height="200" src="tutorials/gazebo_tutorial/new_gifs/arena_hawker_centre.gif"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: | :--------------------------------------------------------------------: |  
 
 ###### Unity
