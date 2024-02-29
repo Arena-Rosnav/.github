@@ -12,12 +12,11 @@ nav:
       - Task Modes: "user_guides/task_modes.md"
       - Planners: "user_guides/planners_overview.md"
       - Usage: "user_guides/usage.md"
-      - Training:
-        - Training Feature Overview:  "user_guides/training/training.md"
-        - Reward Functions: "user_guides/training/reward_function.md"
-        - Agent Observations: "user_guides/training/observations.md"
-        - Custom Actor-Critic Policy: "user_guides/training/customactorcritic.md"
-
+  - Training:
+      - Training Feature Overview: "user_guides/training/training.md"
+      - Reward Functions: "user_guides/training/reward_function.md"
+      - Agent Observations: "user_guides/training/observations.md"
+      - Custom Actor-Critic Policy: "user_guides/training/customactorcritic.md"
 
   - System Design:
       - Overall System Design: "system/system-design.md"
@@ -61,7 +60,6 @@ nav:
   #     - Launching Arena-Rosnav Simulation: "core_functionalities/launch_simulation.md"
   #     - Training an Agent: "core_functionalities/training.md"
   #     - Evaluating Planner Performance: "core_functionalities/evaluation.md"
-
 
 markdown_extensions:
   - admonition
