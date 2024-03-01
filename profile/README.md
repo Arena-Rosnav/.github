@@ -128,7 +128,7 @@ We also offer worksheets which contain tasks and solutions and are a great start
 
 |                       Hospital                       |                       Restaurant                        |                        School                        |                       Japanese Garden                        |                       Warehouse                        |
 | :--------------------------------------------------------------: | :---------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: |
-| <img width="250" src="docs/images/unity_worlds/hospital.png"> | <img width="250" src="docs/images/unity_worlds/restaurant.png"> | <img width="250"  src="docs/images/unity_worlds/school.png"> | <img width="250" src="docs/images/unity_worlds/japanese_garden.png"> | <img width="250" src="docs/images/unity_worlds/warehouse.jpg"> |
+| <img width="250" src="docs/images/unity_worlds/hospital.png"> | <img width="250" src="docs/images/unity_worlds/restaurant.jpg"> | <img width="250"  src="docs/images/unity_worlds/school.png"> | <img width="250" src="docs/images/unity_worlds/japanese_garden.png"> | <img width="250" src="docs/images/unity_worlds/warehouse.jpg"> |
 
 ## Recent Publications
 - [Arena-Web (RSS2023)](https://www.roboticsproceedings.org/rss19/p088.pdf):  Web-based Development and Benchmarking Platform for Autonomous Navigation Approaches
