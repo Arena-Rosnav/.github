@@ -108,6 +108,23 @@ We also offer worksheets which contain tasks and solutions and are a great start
 - and many more (added with Arena 3.0)
 ## Supported Robots
 
+|                       _Quadruped-GO1_                        |                       _Car-O-Bot4 (cob4)_                         |                        _Tiago_                        |                       _Jackal_                       |                       _Agv-Ota_                       |
+| :--------------------------------------------------------------: | :---------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: |
+| <img width="250" src="docs/images/robots/go1.png"> | <img width="250" src="docs/images/robots/cob4.jpg"> | <img width="250" src="docs/images/robots/tiago.jpg"> | <img width="250" src="docs/images/robots/jackal.jpg"> | <img width="250" src="docs/images/robots/agv-ota.png"> |
+
+|                  _Robotino(rto)_                      |                       _Youbot_                        |                         _ridgeback_                        |                 _Turtlebot3_Waffle_pi_                 |                       _Turtlebot3-Burger_                        |
+| :------------------------------------------------: | :---------------------------------------------------: | :------------------------------------------------------------------: | :-------------------------------------------------: | :--------------------------------------------------: |
+| <img width="250" src="docs/images/robots/rto.jpg"> | <img width="250" src="docs/images/robots/youbot.jpg"> | <img width="250"  src="docs/images/robots/ridgeback.jpg"> | <img width="250"  src="docs/images/robots/turtlebot3_waffle_pi.jpg"> | <img width="250" src="docs/images/robots/dingo.jpg"> |
+
+
+
+
+
+
+
+
+
+
 |                       _turtlebot3-burger_                        |                       _jackal_                        |                        _ridgeback_                        |                       _agv-ota_                        |                       _tiago_                        |
 | :--------------------------------------------------------------: | :---------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: |
 | <img width="250" src="docs/images/robots/turtlebot3-burger.jpg"> | <img width="250" src="docs/images/robots/jackal.jpg"> | <img width="250"  src="docs/images/robots/ridgeback.jpg"> | <img width="250" src="docs/images/robots/agv-ota.png"> | <img width="250" src="docs/images/robots/tiago.jpg"> |
