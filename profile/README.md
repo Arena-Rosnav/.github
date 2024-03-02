@@ -94,7 +94,28 @@ We also offer worksheets which contain tasks and solutions and are a great start
 
 ## Supported Planners
 
-- [ROSNavRL](packages/rosnavrl.md): Our own planner based on neural networks.
+| Planner  | Type | Robot | Description | Authors |
+|-------------|-----------|---------|---------------|---------------|
+| **Applr** | Hybrid | Jackal | A hybrid planner combining different approaches for adaptive planning. | [Xiao et al.](https://www.researchgate.net/publication/342184799_APPLD_Adaptive_Planner_Parameter_Learning_from_Demonstration) | 5 |
+| **Cohan**  | Classic | All | A traditional planner focusing on human-aware navigation strategies. | [Singamaneni et al.](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=rWw5YTsAAAAJ&citation_for_view=rWw5YTsAAAAJ:9yKSN-GCB0IC) |
+| **Dragon** | Hybrid | Jackal | A hybrid navigation system designed for dynamic environments. | [Xiao et al.](https://www.researchgate.net/publication/362858861_Autonomous_Ground_Navigation_in_Highly_Constrained_Spaces_Lessons_learned_from_The_BARN_Challenge_at_ICRA_2022) | 
+| **DWA**  | Classic | All | Dynamic Window Approach, a reactive collision avoidance method considering the robot’s dynamics. | [Khatib et al.](https://www.researchgate.net/publication/3113619_Real-Time_Obstacle_Avoidance_for_Fast_Mobile_Robots) | 
+| **TEB** | Classic | All | Timed Elastic Bands, optimizing a global path by considering kinematic and dynamic constraints. | [Rösmann, et al.](https://rst.etit.tu-dortmund.de/storages/rst-etit/r/Global/Paper/Roesmann/2015_Roesmann_ECC.PDF) | 
+| **MPC**  | Classic | All | Model Predictive Control, using a model of the robot’s dynamics to predict and optimize future trajectories. | [Rösmann et al.](https://www.researchgate.net/publication/320281520_Time-Optimal_Nonlinear_Model_Predictive_Control_with_Minimal_Control_Interventions) | 
+| **LFLH** | Hybrid | All | A hybrid planner leveraging both learned and heuristic components for effective navigation. | [Xiao et al.](https://arxiv.org/abs/2011.13112) | 
+| **RLCA**  | Learning | All | Reinforcement Learning Collision Avoidance, using RL for dynamic obstacle avoidance. | [Long et al.](https://arxiv.org/abs/1709.10082) |  
+| **ROSNavRL** | Learning | All | A learning-based approach trained on Arena 2.0 with Reinforcement Learning. | Arena-Rosnav Team | 
+| **Trail**  | Learning | All | A learning-based planner focusing on trail navigation in unstructured environments. | [Xiao et al.](https://www.researchgate.net/publication/362858861_Autonomous_Ground_Navigation_in_Highly_Constrained_Spaces_Lessons_learned_from_The_BARN_Challenge_at_ICRA_2022) | 
+| **Crowdnav** | Learning | All | Focuses on navigating safely and efficiently in crowded environments using machine learning techniques. | [Chen et al.](https://arxiv.org/abs/1809.08835) | 
+| **Sarl**  | Learning | All | Socially Aware Reinforcement Learning, emphasizing social norms in navigation. | [Li et al.](https://www.researchgate.net/publication/338722340_SARL_Deep_Reinforcement_Learning_based_Human-Aware_Navigation_for_Mobile_Robot_in_Indoor_Environments) | 
+| **BRNE** | Game Theory  | Quadruped | Utilizes game theory for decision-making in complex scenarios suitable for quadruped robots. | [Muchen Sun et al.](https://www.academia.edu/100123106/Move_Beyond_Trajectories_Distribution_Space_Coupling_for_Crowd_Navigation?uc-g-sw=108439277) | 
+| **iPlanner**  | Learning | Quadruped | A learning-based planner for complex dynamic situations, suitable for quadruped robots. | [Yang et al.](https://arxiv.org/abs/2302.11434) | 
+| **ArtPlanner** | Learning | Quadruped | A learning-based planner optimized for articulated, quadruped robots. | [Hutter et al.](https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/507668/2021_iros_wellhausen_planner_final_version.pdf?sequence=1) | 
+| **Aggressive**  | Heuristic | All | Employs aggressive strategies for rapid navigation, often in competitive or urgent scenarios. | Arena-Rosnav Team | 
+| **Polite** | Heuristic | All | Prioritizes polite and socially compliant behaviors in navigation. | Arena-Rosnav Team |
+| **Sideways**  | Heuristic | All | Specializes in sideways maneuvers, useful in narrow or constrained spaces. | Arena-Rosnav Team |
+
+<!-- - [ROSNavRL](packages/rosnavrl.md): Our own planner based on neural networks.
 - Dragon: from the [BARN challenge](https://github.com/Arena-Rosnav/dragon)
 - Trail: from the [BARN challenge, TRAIL lab](https://github.com/TempleRAIL/nav-competition-icra2022-drl-vo)
 - Applr: a hybrid approach by [Xuesu et al.](https://arxiv.org/abs/2105.07620)
@@ -105,33 +126,26 @@ We also offer worksheets which contain tasks and solutions and are a great start
 - TEB: a classic approach by [Rösmann et al.](https://github.com/rst-tu-dortmund/teb_local_planner)
 - DWA: the standard ROS local planning approach by [Marder-Eppstein et al.](http://wiki.ros.org/dwa_local_planner)
 - MPC: a classic approach by [Rösmann et al.](https://github.com/rst-tu-dortmund/teb_local_planner)
-- and many more (added with Arena 3.0)
+- and many more (added with Arena 3.0) -->
+
 ## Supported Robots
 
-|                       _Quadruped-GO1_                        |                       _Car-O-Bot4 (cob4)_                         |                        _Tiago_                        |                       _Jackal_                       |                       _Agv-Ota_                       |
+|                       _Quadruped-GO1_                        |                       _Car-O-Bot4 (cob4)_                         |                        _Tiago_                        |                       _Jackal_                       |                       _Robotino(rto)_                       |
 | :--------------------------------------------------------------: | :---------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: |
-| <img width="250" src="docs/images/robots/go1.png"> | <img width="250" src="docs/images/robots/cob4.jpg"> | <img width="250" src="docs/images/robots/tiago.jpg"> | <img width="250" src="docs/images/robots/jackal.jpg"> | <img width="250" src="docs/images/robots/agv-ota.png"> |
+| <img width="250" src="docs/images/robots/go1.png"> | <img width="250" src="docs/images/robots/cob4.jpg"> | <img width="250" src="docs/images/robots/tiago.jpg"> | <img width="250" src="docs/images/robots/jackal.jpg"> | <img width="250" src="docs/images/robots/rto.jpg"> |
 
-|                  _Robotino(rto)_                      |                       _Youbot_                        |                         _ridgeback_                        |                 _Turtlebot3_Waffle_pi_                 |                       _Turtlebot3-Burger_                        |
+|                  _Agv-Ota_                      |                       _Youbot_                        |                         _ridgeback_                        |                 _Turtlebot3_Waffle_pi_                 |                       _Turtlebot3-Burger_                        |
 | :------------------------------------------------: | :---------------------------------------------------: | :------------------------------------------------------------------: | :-------------------------------------------------: | :--------------------------------------------------: |
-| <img width="250" src="docs/images/robots/rto.jpg"> | <img width="250" src="docs/images/robots/youbot.jpg"> | <img width="250"  src="docs/images/robots/ridgeback.jpg"> | <img width="250"  src="docs/images/robots/turtlebot3_waffle_pi.jpg"> | <img width="250" src="docs/images/robots/dingo.jpg"> |
+| <img width="250" src="docs/images/robots/agv-ota.png"> | <img width="250" src="docs/images/robots/youbot.jpg"> | <img width="250"  src="docs/images/robots/ridgeback.jpg"> | <img width="250"  src="docs/images/robots/turtlebot3_waffle_pi.jpg"> | <img width="250" src="docs/images/robots/dingo.jpg"> |
 
 
-
-
-
-
-
-
-
-
-|                       _turtlebot3-burger_                        |                       _jackal_                        |                        _ridgeback_                        |                       _agv-ota_                        |                       _tiago_                        |
+<!-- |                       _turtlebot3-burger_                        |                       _jackal_                        |                        _ridgeback_                        |                       _agv-ota_                        |                       _tiago_                        |
 | :--------------------------------------------------------------: | :---------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: |
 | <img width="250" src="docs/images/robots/turtlebot3-burger.jpg"> | <img width="250" src="docs/images/robots/jackal.jpg"> | <img width="250"  src="docs/images/robots/ridgeback.jpg"> | <img width="250" src="docs/images/robots/agv-ota.png"> | <img width="250" src="docs/images/robots/tiago.jpg"> |
 
 |                  _Robotino(rto)_                   |                       _youbot_                        |                        _turtlebot3_waffle_pi_                        |                 _Car-O-Bot4 (cob4)_                 |                       _dingo_                        |
 | :------------------------------------------------: | :---------------------------------------------------: | :------------------------------------------------------------------: | :-------------------------------------------------: | :--------------------------------------------------: |
-| <img width="250" src="docs/images/robots/rto.jpg"> | <img width="250" src="docs/images/robots/youbot.jpg"> | <img width="250"  src="docs/images/robots/turtlebot3_waffle_pi.jpg"> | <img width="250" src="docs/images/robots/cob4.jpg"> | <img width="250" src="docs/images/robots/dingo.jpg"> |
+| <img width="250" src="docs/images/robots/rto.jpg"> | <img width="250" src="docs/images/robots/youbot.jpg"> | <img width="250"  src="docs/images/robots/turtlebot3_waffle_pi.jpg"> | <img width="250" src="docs/images/robots/cob4.jpg"> | <img width="250" src="docs/images/robots/dingo.jpg"> | -->
 
 ## Supported Worlds
 
