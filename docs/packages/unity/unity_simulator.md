@@ -17,7 +17,7 @@ Get started with these tutorials. If you want to develop Arena Unity, you need t
 Click on the feature names to get more documentation where available.
 
 - [**Robot Drive**](robot_drive.md): The Arena Rosnav navigation stack is publishing *cmd_vel* messages that are applied to the robot in Arena Unity to move the robot.
-- [**Dynamic Map Loading**](dynamic_map_loading.md): For every map of Arena Rosnav, there is not a Unity scene being loaded but rather the map layout through walls within Unity.
+- [**Dynamic Map Loading**](dynamic_map_loading.md): For every map of Arena Rosnav, there isn't a Unity Scene being loaded but rather the map layout through walls within Unity.
 - [**Laser Scan and Dynamic Configuration**](dynamic_configuration.md): The laser scan for each robot is supported and all the parameters (angles, scan rate, resolution, etc.) are configured dynamically.
 - [**RGB-D Sensor**](rgbd_scan.md): The RGB-D sensor gathers RGB and depth data. It was especially complex to implement since Unity doesn't provide support for gathering depth data. 
 - [**Dynamic Robot Loading**](robot_loading.md): We use the URDF-Importer of the Unity Robotics Hub to load robots from URDF files but with modifications to the URDF-Importer.

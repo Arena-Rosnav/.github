@@ -28,15 +28,14 @@ nav:
       - Task Generator: "packages/task_generator.md"
       - Flatland Simulator: "packages/flatland_simulator.md"
       - Gazebo Simulator: "packages/gazebo_simulator.md"
-      - Unity Simulator: "packages/unity/unity_simulator_new.md"
+      - Unity Simulator: "packages/unity/unity_simulator.md"
       - Pedsim Manager: "packages/pedsim_manager.md"
+      - Map Generator: "packages/map_generator.md"
       - Arena Tools: "packages/arena_tools.md"
       - Arena Simulation Setup: "packages/arena_simulation_setup.md"
       - Evaluation: "packages/arena_evaluation.md"
       - ROSNavRL: "packages/rosnavrl.md"
       - pedsim_waypoint_plugin: "packages/pedsim_waypoint_plugin/pedsim_waypoint_plugin.md"
-  - World Generation:
-      - Introduction: "world_gen/intro.md"
 
   - Tutorials:
       - Add new environment: "tutorials/add_new_environment.md"
@@ -45,6 +44,7 @@ nav:
       - Add new reward functions: "user_guides/reward_functions.md"
       - Generate a World in Gazebo: "tutorials/gazebo_tutorial/generate_world_in_gazebo.md"
       - Create new scenarios: "tutorials/create_scenarios/create_new_scenarios.md"
+      - Create new Map Generator: "tutorials/add_map_generator.md"
 
   # - User Guides:
   #     - Installation: "user_guides/installation.md"
