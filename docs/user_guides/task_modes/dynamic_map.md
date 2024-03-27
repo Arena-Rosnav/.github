@@ -12,12 +12,13 @@ roslaunch arena_bringup start_arena.launch map_file:=dynamic_map
 ## Configuration
 
 The Task Mode can be configured via editing `arena-rosnav/arena_bringup/params/map_generator.yaml`. The most relevant configurations include:
-- `algorithm`: Choose between different kinds of algorithms. A list of possible options can be seen [here](/docs/packages/map_generator.md)
-- `map_type`: Choose between different kinds of map generation types of the choposen algorithm. A list of possible options can be seen [here](/docs/packages/map_generator.md)
+
+- `algorithm`/`algorithm_config.map_type`: Choose between different kinds of algorithms and map types. A list of possible options can be seen [here](../../../packages/map_generator#existing-map-generation-algorithms)
+- `map_type`: Choose between different kinds of map generation types of the choposen algorithm. A list of possible options can be seen [here](../../../packages/map_generator#existing-map-generation-algorithms)
 - `width`/`height`: sets the general size of the map
 - `resolution`: the map is defined by a grid. This parameter sets the grid size
 
-There are also some more parameters, which are specific to each map type. Please refer to their respective [documentation](/docs/packages/map_generator.md).
+There are also some more parameters, which are specific to each map type. Please refer to their respective [documentation](../../../packages/map_generator#existing-map-generation-algorithms).
 
 ## Example
 An example configuration looks as follows

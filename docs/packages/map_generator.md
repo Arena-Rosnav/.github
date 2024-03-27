@@ -1,10 +1,10 @@
 # Map Generator
 
-The Map Generator is a Ros Package to generate dynamic maps for the [`dynamic_map` Task Mode](/user_guides/task_modes/dynamic_map/).
+The Map Generator is a Ros Package to generate dynamic maps for the [`dynamic_map` Task Mode](../../user_guides/task_modes/dynamic_map/).
 
 ## System Design
 
-![](/docs/images/system-design/map_generator-sys.png)
+![](../images/system-design/map_generator-sys.png)
 
 ## Requesting a Map
  
@@ -24,3 +24,17 @@ The Map Generator is a Ros Package to generate dynamic maps for the [`dynamic_ma
 | MapDistanceNode  | "/signal_new_distance_map" | Task Generator                |
 | Task Generator   | "/dynamic_map/task_reset"  | Task Generator                |
 | MapGeneratorNode | "/map_obstacles"           | Task Generator > WorldManager |
+
+## Existing Map Generation Algorithms
+Currently implemented algorithms and map types include
+
+- `barn`
+- `rosnav`
+    - `indoor` maze like generation
+    - `outdoor` single objects in open space
+
+- `rosmap`
+    - `indoor` cafe like generation
+    - `outdoor` single objects in open space **without** overlapping 
+    - `warehouse` generation of warehouse environments
+    - `office` generation of office environment
