@@ -3,10 +3,12 @@ A robot named `<robot>` can be used in the simulation by integrating it into the
 
 ```
 <robot>/
-    costmaps/
-        local_costmap_params.yaml
-        global_costmap_params.yaml
-        <planner>_local_planner_params.yaml
+    configs/
+        costmaps/
+            local_costmap_params.yaml
+            global_costmap_params.yaml
+        mbf/
+            <planner>_params.yaml
     launch/
         control.launch
     urdf/
@@ -21,7 +23,7 @@ These files are the bare necessity, they can (and for cleanliness should) be spl
 
 ### costmaps
 The `costmaps` folder contains at least the two required costmap configurations (local/global) which are loaded directly to the parameter server to be used by `costmap_2d`.
-Additionaly, planner-dependent configurations can and should be defined in its respective `<planner>_local_planner_params.yaml` (e.g. `teb_local_planner_params.yaml`). Some planners don't load this configuration file at all, some planners share one configuration file. Always double check `arena_bringup/launch/testing/move_base/move_base_<planner>.launch` if you deviate from the "basic" planners (`teb`, `dwa`, ...).
+Additionaly, planner-dependent configurations can and should be defined in its respective `<planner>_local_planner_params.yaml` (e.g. `teb_local_planner_params.yaml`). Some planners don't load this configuration file at all, some planners share one configuration file. Always double check `arena_simulation_setup/launch/planners/<type>/mbf_<planner>.launch` if you deviate from the "basic" planners (`teb`, `dwa`, ...).
 
 ### launch/control.launch
 
