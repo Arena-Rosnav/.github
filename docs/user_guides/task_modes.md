@@ -21,6 +21,7 @@ The available task modes are:
 | [`parametrized`](task_modes/parametrized.md) | more fine-tuned random | | ✓ |
 | [`guided`](task_modes/guided.md) | waypoint sequence | ✓ | |
 | [`explore`](task_modes/explore.md) | explore map | ✓ | |
+| [`zones`](task_modes/zones.md) | generate positions in zones | ✓ | ✓ |
 
 
 ## Task Modules
