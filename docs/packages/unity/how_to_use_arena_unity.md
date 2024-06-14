@@ -14,3 +14,16 @@ You can run Arena Unity simply by executing the normal launch command and specif
 ```sh
 roslaunch arena_bringup start_arena.launch simulator:=unity 
 ```
+
+**Troubleshooting**:  
+If you see a pink screen in the Arean Unity window when using the example launch command, this is usually down to either of these reasons:
+
+- Gaphics API
+    - Arena Unity requires Vulkan as the Graphics API instead of OpenGL. Vulkan is the default Graphics API when installing Ubuntu. OpenGL is the default Graphics API for Windows. If you run Arena Rosnav in an emulator (e.g. VirtualBox) or WSL, then OpenGL is usually used in the Windows back-end. We are unaware  of a solution for this. We recommend using native Ubuntu.  
+    - Make sure Vulkan is available by running:  
+```sh
+sudo apt install vulkan-tools && vulkaninfo | less 
+```
+
+- GPU Drivers
+    - The automatic installation for Cuda often doesn't work or they are not installed in the Ubuntu installation if you disabled third-party drivers. Either way, we recommend using the [manual installation guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/) to install them.
