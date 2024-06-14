@@ -1,8 +1,8 @@
 ## How to Develop and Extend Arena Unity
-Only running the Unity Simulator without making changes to it is easier since this only requires the correct arena-rosnav branch and the executable build of Arena Unity. But to develop it you need the correct Unity Editor version. For this you will also need to create a Unity account in order to have a Unity license.
+To do development on Arena Unity you need Unity and the correct Unity Editor version. For this you will also need to create a Unity account in order to have a Unity license.
 
 **Getting Unity Hub and a Unity license**:  
-After doing the steps in How to use Arena Unity, you need to install Unity Hub by following the steps in [this manual](https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux) but do not install a Unity Editor yet. You will also need to create a Unity  Account, if you don't already have one, for the Unity license.
+You need to install Unity Hub by following the steps in [this manual](https://docs.unity3d.com/hub/manual/InstallHub.html#install-hub-linux) but do not install a Unity Editor yet. You will also need to create a Unity  Account, if you don't already have one, for the Unity license.
 
 **Installing the correct Unity Editor**:  
 For this project, we use the Unity Editor version 2022.3.11f1. To install this version, execute the install-unity-version.sh script  in *\[catkin_ws\]/src/arena/arena-unity* :
