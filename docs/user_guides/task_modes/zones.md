@@ -37,7 +37,7 @@ The robot will be randomly assigned a role. The roles are also defined in the zo
 | name            | String        | Name for the role                                                               |
 | waypoint in     | [String]      | List of categories in which the waypoints should spawn                          |
 
-The robots behave like the [Explore](./task_modes/explore.md) task mode but their waypoints only spawn in specific zones, which has the specified categories.
+The robots behave like the [Explore](explore.md) task mode but their waypoints only spawn in specific zones, which has the specified categories.
 
 #### Usage
 
