@@ -46,3 +46,9 @@ roscd arena-tools && python arena_tools.py
 - **Flatland Model Editor** is used to create models for Flatland, which is a component of Arena-Rosnav. It enables you to edit basic properties of a body, add polygon and circle footprints, and save models.
 
 - You can load and save models, add bodies, and edit footprints with ease using this tool.
+
+### Zones Editor
+
+- **Zones Editor** is used to create zones.yaml files for different worlds to use the task mode zones. You can load maps, draw create polygons for the zones and modify their categories and add addtional properties.
+
+- Zones files can be saved in YAML format and also exported as PNG. 
