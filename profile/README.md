@@ -17,43 +17,43 @@ We also offer worksheets which contain tasks and solutions and are a great start
 
 <!-- |          Warehouse environment in Gazebo           |          Hospital environment in Gazebo          |
 | :------------------------------------------------: | :----------------------------------------------: |
-| <img src="docs/images/gifs/gazebo_simulation.gif"> | <img src="docs/images/gifs/hospital_gazebo.gif"> |
+| <img src="../docs/images/gifs/gazebo_simulation.gif"> | <img src="../docs/images/gifs/hospital_gazebo.gif"> |
 
 <br/>
 
 |                Simulation in Flatland                 |         Multiple agents in one simulation          |
 | :---------------------------------------------------: | :------------------------------------------------: |
-| <img src="docs/images/gifs/flatland_simulation.gif" > | <img src="docs/images/gifs/marl_custom_rviz.gif" > | -->
+| <img src="../docs/images/gifs/flatland_simulation.gif" > | <img src="../docs/images/gifs/marl_custom_rviz.gif" > | -->
 
 #### Unity
 
-| <img  src="docs/tutorials/gazebo_tutorial/new_gifs/unity_1.gif"> | <img  src="docs/tutorials/gazebo_tutorial/new_gifs/unity_2.gif"> | 
+| <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/unity_1.gif"> | <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/unity_2.gif"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: | 
 
-| <img  src="docs/tutorials/gazebo_tutorial/new_gifs/unity_4.gif"> | <img  src="docs/tutorials/gazebo_tutorial/new_gifs/unity_5.gif"> | 
+| <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/unity_4.gif"> | <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/unity_5.gif"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: |
 
-<img width="1300" height="300" src="docs/tutorials/gazebo_tutorial/new_gifs/unity_6.gif">
+<img width="1300" height="300" src="../docs/tutorials/gazebo_tutorial/new_gifs/unity_6.gif">
 
 #### Gazebo
 
-| <img  src="docs/tutorials/gazebo_tutorial/new_gifs/arena_hospital_small.gif"> | <img src="docs/tutorials/gazebo_tutorial/new_gifs/arena_hawker_centre.gif"> | 
+| <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/arena_hospital_small.gif"> | <img src="../docs/tutorials/gazebo_tutorial/new_gifs/arena_hawker_centre.gif"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: | 
 
-| <img  src="docs/tutorials/gazebo_tutorial/new_gifs/com_3.gif"> | <img  src="docs/tutorials/gazebo_tutorial/new_gifs/aws_house.gif"> | 
+| <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/com_3.gif"> | <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/aws_house.gif"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: |
 
-<img width="1300" height="300" src="docs/tutorials/gazebo_tutorial/new_gifs/factory.gif">
+<img width="1300" height="300" src="../docs/tutorials/gazebo_tutorial/new_gifs/factory.gif">
 
 #### Flatland
 
-| <img  src="docs/tutorials/gazebo_tutorial/new_gifs/flatland_1.gif"> | <img  src="docs/tutorials/gazebo_tutorial/new_gifs/flatland_2.gif"> | 
+| <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/flatland_1.gif"> | <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/flatland_2.gif"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: | 
 
-| <img  src="docs/tutorials/gazebo_tutorial/new_gifs/flatland_4.gif"> | <img  src="docs/tutorials/gazebo_tutorial/new_gifs/flatland_5.gif"> | 
+| <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/flatland_4.gif"> | <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/flatland_5.gif"> | 
 | :--------------------------------------------------------------: | :---------------------------------------------------------------------: |
 
-<img width="1300" height="300" src="docs/tutorials/gazebo_tutorial/new_gifs/flatland_3.gif">
+<img width="1300" height="300" src="../docs/tutorials/gazebo_tutorial/new_gifs/flatland_3.gif">
 
 ### Features
 
@@ -110,11 +110,11 @@ We also offer worksheets which contain tasks and solutions and are a great start
 
 |                       _turtlebot3-burger_                        |                       _jackal_                        |                        _ridgeback_                        |                       _agv-ota_                        |                       _tiago_                        |
 | :--------------------------------------------------------------: | :---------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: |
-| <img width="250" src="docs/images/robots/turtlebot3-burger.jpg"> | <img width="250" src="docs/images/robots/jackal.jpg"> | <img width="250"  src="docs/images/robots/ridgeback.jpg"> | <img width="250" src="docs/images/robots/agv-ota.png"> | <img width="250" src="docs/images/robots/tiago.jpg"> |
+| <img width="250" src="../docs/images/robots/turtlebot3-burger.jpg"> | <img width="250" src="../docs/images/robots/jackal.jpg"> | <img width="250"  src="../docs/images/robots/ridgeback.jpg"> | <img width="250" src="../docs/images/robots/agv-ota.png"> | <img width="250" src="../docs/images/robots/tiago.jpg"> |
 
 |                  _Robotino(rto)_                   |                       _youbot_                        |                        _turtlebot3_waffle_pi_                        |                 _Car-O-Bot4 (cob4)_                 |                       _dingo_                        |
 | :------------------------------------------------: | :---------------------------------------------------: | :------------------------------------------------------------------: | :-------------------------------------------------: | :--------------------------------------------------: |
-| <img width="250" src="docs/images/robots/rto.jpg"> | <img width="250" src="docs/images/robots/youbot.jpg"> | <img width="250"  src="docs/images/robots/turtlebot3_waffle_pi.jpg"> | <img width="250" src="docs/images/robots/cob4.jpg"> | <img width="250" src="docs/images/robots/dingo.jpg"> |
+| <img width="250" src="../docs/images/robots/rto.jpg"> | <img width="250" src="../docs/images/robots/youbot.jpg"> | <img width="250"  src="../docs/images/robots/turtlebot3_waffle_pi.jpg"> | <img width="250" src="../docs/images/robots/cob4.jpg"> | <img width="250" src="../docs/images/robots/dingo.jpg"> |
 
 ## Supported Worlds
 
@@ -122,13 +122,13 @@ We also offer worksheets which contain tasks and solutions and are a great start
 
 |                       Hospital                       |                       Canteen                        |                        Campus                        |                       Factory                        |                       Warehouse                        |
 | :--------------------------------------------------------------: | :---------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: |
-| <img width="250" src="docs/tutorials/gazebo_tutorial/images/arena_worlds/arena_hospital_large.png"> | <img width="250" src="docs/tutorials/gazebo_tutorial/images/arena_worlds/arena_hawker_centre_1.png"> | <img width="250"  src="docs/tutorials/gazebo_tutorial/images/arena_worlds/COM3_1.png"> | <img width="250" src="docs/tutorials/gazebo_tutorial/images/other_worlds/factory.png"> | <img width="250" src="docs/tutorials/gazebo_tutorial/images/other_worlds/aws_small_warehouse.png"> |
+| <img width="250" src="../docs/tutorials/gazebo_tutorial/images/arena_worlds/arena_hospital_large.png"> | <img width="250" src="../docs/tutorials/gazebo_tutorial/images/arena_worlds/arena_hawker_centre_1.png"> | <img width="250"  src="../docs/tutorials/gazebo_tutorial/images/arena_worlds/COM3_1.png"> | <img width="250" src="../docs/tutorials/gazebo_tutorial/images/other_worlds/factory.png"> | <img width="250" src="../docs/tutorials/gazebo_tutorial/images/other_worlds/aws_small_warehouse.png"> |
 
 #### Unity
 
 |                       Hospital                       |                       Restaurant                        |                        School                        |                       Japanese Garden                        |                       Warehouse                        |
 | :--------------------------------------------------------------: | :---------------------------------------------------: | :-------------------------------------------------------: | :----------------------------------------------------: | :--------------------------------------------------: |
-| <img width="250" src="docs/images/unity_worlds/hospital.png"> | <img width="250" src="docs/images/unity_worlds/restaurant.png"> | <img width="250"  src="docs/images/unity_worlds/school.png"> | <img width="250" src="docs/images/unity_worlds/japanese_garden.png"> | <img width="250" src="docs/images/unity_worlds/warehouse.jpg"> |
+| <img width="250" src="../docs/images/unity_worlds/hospital.png"> | <img width="250" src="../docs/images/unity_worlds/restaurant.png"> | <img width="250"  src="../docs/images/unity_worlds/school.png"> | <img width="250" src="../docs/images/unity_worlds/japanese_garden.png"> | <img width="250" src="../docs/images/unity_worlds/warehouse.jpg"> |
 
 ## Recent Publications
 - [Arena-Web (RSS2023)](https://www.roboticsproceedings.org/rss19/p088.pdf):  Web-based Development and Benchmarking Platform for Autonomous Navigation Approaches
