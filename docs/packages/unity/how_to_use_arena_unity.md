@@ -16,7 +16,7 @@ roslaunch arena_bringup start_arena.launch simulator:=unity
 ```
 
 **Troubleshooting**:  
-If you see a pink screen in the Arean Unity window when using the example launch command, this is usually down to either of these reasons:
+If you see a pink screen in the Arena Unity window when using the example launch command, this is usually down to either of these reasons:
 
 - Gaphics API
     - Arena Unity requires Vulkan as the Graphics API instead of OpenGL. Vulkan is the default Graphics API when installing Ubuntu. OpenGL is the default Graphics API for Windows. If you run Arena Rosnav in an emulator (e.g. VirtualBox) or WSL, then OpenGL is usually used in the Windows back-end. We are unaware  of a solution for this. We recommend using native Ubuntu.  
