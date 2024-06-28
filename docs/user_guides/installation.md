@@ -158,7 +158,7 @@ roslaunch arena_bringup start_arena.launch simulator:=gazebo
 
 This should open gazebo and rviz successfully.
 
-# Troubleshouting
+# Troubleshooting
 If you encounter errors during the build process due to missing packages, add them
 
 <!--
