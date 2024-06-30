@@ -27,6 +27,8 @@ This image shows all completely 'Arena Unity'-specific components (in green) wit
 Most important, we implemented a RGBD sensor in Arena Unity to leverage the photo-realsim of Unity with its HD-Renderpipeline. RGB and depth act as independent observations and processing logic was implemented in the Arena Rosnav training pipeline.
 
 #### Enhanced Collision Detection
+![Collision/Safe Dist Sensors](../../images/Collision-Sensor-Arena-Unity.png)
+<sub>3 Collision and Safe Dist Sensors Visually Represented by Spheres</sub>  
 Based on our Arena Unity CollisionSensor (see the CollisionSensor documentation [here]()), we are able to efficiently and accurately detect collisions. During training, we previously relied on an additional designated laser scan to detect whether a collision of the robot with another object took place. Now we can accurately and efficiently detect collisions with the Unity collider component in the back-end. This observation acts as an enhancement to previous collision logic.
 
 #### Pedestrian-specific Safety Distance
