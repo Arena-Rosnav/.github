@@ -21,8 +21,9 @@ Click on the feature names to get more documentation where available.
 - [**Laser Scan and Dynamic Configuration**](dynamic_configuration.md): The laser scan for each robot is supported and all the parameters (angles, scan rate, resolution, etc.) are configured dynamically.
 - [**RGB-D Sensor**](rgbd_scan.md): The RGB-D sensor gathers RGB and depth data. It was especially complex to implement since Unity doesn't provide support for gathering depth data. 
 - [**Dynamic Robot Loading**](robot_loading.md): We use the URDF-Importer of the Unity Robotics Hub to load robots from URDF files but with modifications to the URDF-Importer.
-- **Multi-Agent Simulation**: **(Not implemented)** With the way the robot sensors generate data and the way we control the robots, we are able to support mutli-agent simulations.
 - [**Pedestrian Integration**](pedestrian_integration.md): The pedestrians managed and physically simulated by Pedsim are visualized by Arena Unity, plus supporting different states with their own animations.
+- [**Collision Sensors**](collision_sensor.md): Accurate and efficient collision detection as well as safety distance breach detection, specifically for pedestrians or obstacles.
+- **Multi-Agent Simulation**: **(Not implemented)** With the way the robot sensors generate data and the way we control the robots, we are able to support mutli-agent simulations.
 
 ## System Design
 
