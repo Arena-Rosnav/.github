@@ -1,6 +1,6 @@
 
 
-# Unity Simulator - Arena Unity
+# Arena Unity
 
 Arena Unity, also called Unity Simulator, is our own integration of the Unity Engine into Arena Rosnav. The Unity Simulator has the same core functionalities as Flatland and Gazebo. Among other things, we are able to load maps from Arena Rosnav into a Unity scene where we can spawn pedestrians, obstacles and most importantly the robot itself. This robot in Arena Unity is configured dynamically according to configuration files within Arena Rosnav.  
 This integration was done to train with an RBG-D sensor within the photo-realistic simulation. Next to the photo-realism, it also holds other advantages for training over Gazebo. 
