@@ -86,12 +86,15 @@ The Unity Eninge allows control over the physics engine's speed through a time s
 
 ## Agent Design – ArenaUnityResNet
 
-The ArenaUnityResNet feature extractor addresses the need for a new agent architecture due to the high dimensionality of RGBD data compared to laser data. The key aspects are:
+![Agent Design](../../images/ArenaUnityResNet.drawio.png)
+<sub>Arena Unity ResNet Agent Design for RGBD Data</sub>
+
+Rosnav-RL agent designs consist of a feature extraction part and the policy part (which is implemented in sb3). The ArenaUnityResNet feature extractor addresses the need for a new agent architecture due to the high dimensionality of RGBD data compared to laser data. The key aspects are:
 
 - CNN PPO policy.
 - Feature extractor inspired by "DD-PPO: Learning Near-Perfect PointGoal Navigators from 2.5 Billion Frames".
 - Modular architecture consisting of:
-    - **RGBD Feature Extractor/Backbone**
+    - **Image Backbone/Feature Extractor**
         - ResNet50 was used.
         - Can be interchanged with any ResNet (e.g., ResNet151, SE-ResNeXt50).
     - **Goal Feature Extractor**
@@ -99,7 +102,7 @@ The ArenaUnityResNet feature extractor addresses the need for a new agent archit
 
 ## Observation Integration
 
-Integration of observation spaces in ArenaUnity involves the following steps:
+Integration of observation logic for Arena Unity in the training pipeline involves the following components:
 
 - **Observation Space Integration**
     - Arena Rosnav DRL Agents use feature extractor networks as input for PPO.
