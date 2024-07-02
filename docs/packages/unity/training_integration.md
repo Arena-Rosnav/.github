@@ -14,7 +14,7 @@ Arena Rosnav has a sophisticated training pipeline in place (its main documentat
 - Integrate a "simulation speed" variable to fully leverage compute ressources
 
 ![Arena Unity Training Integration](../../images/Arena-Unity-Training.drawio.png)
-<sub>Area Unity Training Integration Graphic</sub>  
+<sub>Arena Unity Training Integration Graphic</sub>  
 This image shows all completely 'Arena Unity'-specific components (in green) within the Arena Rosnav DRL training pipeline.
 
 ## 'Arena Unity'-specific Observations & Rewards
