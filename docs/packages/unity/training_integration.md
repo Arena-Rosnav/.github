@@ -104,47 +104,45 @@ Rosnav-RL agent designs consist of a feature extraction part and the policy part
 
 Integration of observation logic for Arena Unity in the training pipeline involves the following components:
 
-- **Observation Space Integration**
+- **Observation Spaces**
     - Arena Rosnav DRL Agents use feature extractor networks as input for PPO.
     - Feature extractors are implemented in the rosnav-rl repository, where the observation spaces are also defined.
     - Feature extractor networks' dimensionality is parameterized by the observation spaces.
     - Observation spaces encode dimensionality and encapsulate the encoding process.
         - Collected observation values are encoded into specific formats for input to feature extractors.
 
-- **Unity-Specific Integration**
+- **Unity-Specific Observation Spaces**
     - Added RGBD observation space for Arena Unity.
-    - RGBD space combines RGB image data and Depth image data into a 4x[Image Height]x[Image Width] tensor.
+    - RGBD space encoding combines RGB image data and Depth image data into a 4x[Image Height]x[Image Width] tensor.
 
 - **Observation Collectors**
-    - Managed by the ObservationManager.
+    - Managed by the `ObservationManager`.
     - Handle ROS subscriptions, collection, and preprocessing of observations.
-    - Specific observation collectors for each observation, implemented as ObservationCollectorUnit classes.
-        - Preprocess received messages to obtain observations.
+    - Specific observation collectors for each observation, implemented as `ObservationCollectorUnit` classes.
 
 - **Unity-Specific Observation Collectors**
-    - Implemented collectors for Unity-specific observations:
-        - Collision observation collector.
-        - Image collectors (RGB, Depth).
-            - Use cv_bridge to convert ROS images to numpy arrays.
-        - Safety distance collectors (Obstacle-specific, Pedestrian-specific).
-            - Store flags in CollisionMsg object for safety distance violations/collisions.
+    - Image collectors (RGB, Depth).
+        - Use cv_bridge to convert ROS images to numpy arrays.
+    - Collision observation collector.
+    - Safety distance collectors (Obstacle-specific, Pedestrian-specific).
+        - Store flags from CollisionMsg object for safety distance violations/collisions.
 
 - **Waiting for Observations**
-    - Implemented mechanism to wait for new observations in continuous time.
+    - Implemented mechanism to wait for new observations to support continuous time simulation.
         - Observation values are set as stale after retrieval until a new observation arrives.
-        - Two parameters decide whether to use stale observation values:
-            - "wait_for_obs" (TRUE for Arena Unity simulator).
-            - "up_to_date_required" (observation-specific flag).
+        - Two parameters decide whether to use stale observation values or wait for new ones:
+            - `wait_for_obs` (TRUE for Arena Unity simulator).
+            - `up_to_date_required` (observation-specific flag).
 
 # Reward Integration
 
-Rewards in the training process are organized into modular Reward Units, each rewarding a specific behavior or event. The Unity-specific rewards include:
+Rewards in the training process are organized into modular `RewardUnit` classes, each rewarding a specific behavior or event. The Unity-specific rewards include:
 
 - **Pedestrian Safety Distance & Obstacle Safety Distance**
     - Two separate Reward Units.
     - Reward given if the specified safety distance towards pedestrians/obstacles is breached.
     - Each unit can be set up with specific safety distances and reward values.
-    - Initialization includes a service request to Arena Unity for the attach_safe_dist_sensor service.
+    - Initialization includes a service request to Arena Unity for the `attach_safe_dist_sensor` service.
 
 - **Collision**
-    - Enhanced Collision Reward Unit using Collision observation from Arena Unity's CollisionSensor.
+    - Enhanced Collision `RewardUnit` using Collision observation from Arena Unity's `CollisionSensor`.
