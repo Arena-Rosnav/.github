@@ -12,6 +12,13 @@ Get started with these tutorials. If you want to develop Arena Unity, you need t
 - [**How to Use Arena Unity**](how_to_use_arena_unity.md)
 - [**How to Develop Arena Unity**](how_to_develop_arena_unity.md)
 
+## Training
+
+Arena Unity has been integrated into the training pipeline. It can be used to train DRL agents in the Rosnav-RL repo, like the Flatland Simulator.
+
+- [**How to Train with Arena Unity**](train_with_arena_unity.md)
+- [**Arena Unity Training Integration (Technical Documentation)**](training_integration.md)
+
 ## Features
 
 Click on the feature names to get more documentation where available.
