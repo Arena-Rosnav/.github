@@ -17,7 +17,7 @@ nav:
       - Reward Functions: "user_guides/training/reward_function.md"
       - Agent Observations: "user_guides/training/observations.md"
       - Custom Actor-Critic Policy: "user_guides/training/customactorcritic.md"
-      - Train With Arena Unity: "packages/unity/train_with_arena_unity.md"
+      - Arena Unity Training Guide: "packages/unity/train_with_arena_unity.md"
       - Arena Unity Integration: "packages/unity/training_integration.md"
 
   - System Design:
