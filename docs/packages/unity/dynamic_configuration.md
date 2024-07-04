@@ -1,6 +1,9 @@
 
 # Laser Scan and Dynamic Configuration
 
+![Laser Scan](../../images/Arena-Unity-Laser-Scan.png)
+<sub>Visualization of the Laser Scan Sensor in Arena Unity</sub>
+
 ## Laser Scan Sensor
 
 ### Overview
