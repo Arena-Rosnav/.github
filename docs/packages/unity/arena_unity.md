@@ -1,6 +1,6 @@
 
 
-# Unity Simulator - Arena Unity
+# Arena Unity
 
 Arena Unity, also called Unity Simulator, is our own integration of the Unity Engine into Arena Rosnav. The Unity Simulator has the same core functionalities as Flatland and Gazebo. Among other things, we are able to load maps from Arena Rosnav into a Unity scene where we can spawn pedestrians, obstacles and most importantly the robot itself. This robot in Arena Unity is configured dynamically according to configuration files within Arena Rosnav.  
 This integration was done to train with an RBG-D sensor within the photo-realistic simulation. Next to the photo-realism, it also holds other advantages for training over Gazebo. 
@@ -12,17 +12,25 @@ Get started with these tutorials. If you want to develop Arena Unity, you need t
 - [**How to Use Arena Unity**](how_to_use_arena_unity.md)
 - [**How to Develop Arena Unity**](how_to_develop_arena_unity.md)
 
+## Training
+
+Arena Unity has been integrated into the training pipeline. It can be used to train DRL agents in the Rosnav-RL repo, like the Flatland Simulator.
+
+- [**How to Train with Arena Unity**](train_with_arena_unity.md)
+- [**Arena Unity Training Integration (Technical Documentation)**](training_integration.md)
+
 ## Features
 
 Click on the feature names to get more documentation where available.
 
-- [**Robot Drive**](robot_drive.md): The Arena Rosnav navigation stack is publishing *cmd_vel* messages that are applied to the robot in Arena Unity to move the robot.
+- [**RGB-D Sensor**](rgbd_scan.md): The RGB-D sensor gathers RGB and depth data. It was especially complex to implement since Unity doesn't provide support for gathering depth data.
+- [**Pedestrian Integration**](pedestrian_integration.md): The pedestrians managed and physically simulated by Pedsim are visualized by Arena Unity, plus supporting different states with their own animations.
 - [**Dynamic Map Loading**](dynamic_map_loading.md): For every map of Arena Rosnav, there isn't a Unity Scene being loaded but rather the map layout through walls within Unity.
 - [**Laser Scan and Dynamic Configuration**](dynamic_configuration.md): The laser scan for each robot is supported and all the parameters (angles, scan rate, resolution, etc.) are configured dynamically.
-- [**RGB-D Sensor**](rgbd_scan.md): The RGB-D sensor gathers RGB and depth data. It was especially complex to implement since Unity doesn't provide support for gathering depth data. 
+- [**Collision Sensors**](collision_sensor.md): Accurate and efficient collision detection as well as safety distance breach detection, specifically for pedestrians or obstacles.
 - [**Dynamic Robot Loading**](robot_loading.md): We use the URDF-Importer of the Unity Robotics Hub to load robots from URDF files but with modifications to the URDF-Importer.
+- [**Robot Drive**](robot_drive.md): The Arena Rosnav navigation stack is publishing *cmd_vel* messages that are applied to the robot in Arena Unity to move the robot.
 - **Multi-Agent Simulation**: **(Not implemented)** With the way the robot sensors generate data and the way we control the robots, we are able to support mutli-agent simulations.
-- [**Pedestrian Integration**](pedestrian_integration.md): The pedestrians managed and physically simulated by Pedsim are visualized by Arena Unity, plus supporting different states with their own animations.
 
 ## System Design
 
