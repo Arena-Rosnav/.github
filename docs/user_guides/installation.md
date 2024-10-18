@@ -1,25 +1,22 @@
 # Installation Guide
 
+**Arena4 is intended to run on Ubuntu 22.04 (ROS2 Humble).** Other platforms might work with limited support.
+We additionaly provide a [Dockerfile](https://github.com/voshch/arena-rosnav/blob/humble/installers/Dockerfile) to run Arena4 on different platforms.
+
 ## Automatic Installation
-To use the automatic installation, you will need `curl`. If you don't have it already installed, you can install it via
+
+
+Start installing Arena4 by running:
 ```sh
-sudo apt install curl
-```
-Once you have curl installed, start installing Arena-Rosnav by running:
-```sh
-curl https://raw.githubusercontent.com/Arena-Rosnav/arena-rosnav/master/install.sh | bash
-```
-After the script completes, open a **new** terminal and run:
-```sh
-curl https://raw.githubusercontent.com/Arena-Rosnav/arena-rosnav/master/install2.sh | bash
+curl https://raw.githubusercontent.com/voshch/arena-rosnav/refs/heads/humble/installers/install.sh > install.sh
+bash install.sh
 ```
 
 ### Things to note
-ROS and by extension Arena-Rosnav are *big*. You should have at least 30GB of storage available.
-Also, this installation will probably take about half an hour, varying depending on the speed of your internet and machine.
-Arena-Rosnav is only intended to be run on Ubuntu 20.04. If you are intending to run it on a VM, be aware that you need a GPU for certain functions.
+ROS2 and by extension Arena4 are *big*. ROS2 and Gazebo are compiled in the workspace. This has considerable storage space and compilation time requirements (on the first compilation). See [#Troubleshooting](#troubleshooting) for possible errors.
 
-<!-- ## Advanced Installation
+
+<!-- ## Advanced Installation 
 
 ### Requirements
 
@@ -153,26 +150,31 @@ Remember to always have the poetry shell active and the catkin workspace sourced
 With the activated environment, test your installation by running the command
 
 ```sh
-roslaunch arena_bringup start_arena.launch simulator:=gazebo
+ros2 launch arena_bringup start_arena.launch.py
 ```
 
 This should open gazebo and rviz successfully.
 
+# Development
+The workspace is built with symlinks, modifying existing python files automatically changes the run-time behavior (after relaunching).
+
+For adding/removing files or recompiling C++, **compile only with**
+```sh
+. colcon_build
+```
+in the workspace root. This ensures that the python environment is activated and all build flags are set.
+Arguments passed to `. colcon_build` are passed through to the underlying build command.
+
+
 # Troubleshooting
-If you encounter errors during the build process due to missing packages, add them
 
-<!--
-# install lua
-```sh
-sudo apt install liblua5.1-0-dev 
-```
--->
+## Missing Packages
+If you encounter errors during the build process due to missing packages, add them to the workspace and pull request an updated installer.
 
-## install Ipopt
+## OOM Errors during Compilation
+Gazebo may fail to compile on weaker devices. Limit the CPU and memory usage (for the first full build only) with
 ```sh
-git clone https://github.com/coin-or/Ipopt
-cd Ipopt
-./configure
-make
-sudo make install
+. colcon_build --executor sequential --cmake-args "-j 1"
 ```
+
+Alternatively, temporarily increase the size of your swapfile.
