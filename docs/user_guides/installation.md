@@ -174,7 +174,7 @@ If you encounter errors during the build process due to missing packages, add th
 ## OOM Errors during Compilation
 Gazebo may fail to compile on weaker devices. Limit the CPU and memory usage (for the first full build only) with
 ```sh
-. colcon_build --executor sequential --cmake-args "-j 1"
+. colcon_build --executor sequential --parallel-workers 1
 ```
 
 Alternatively, temporarily increase the size of your swapfile.
