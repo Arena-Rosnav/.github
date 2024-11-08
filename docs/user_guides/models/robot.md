@@ -25,9 +25,9 @@ These files are the bare necessity, they can (and for cleanliness should) be spl
 The `costmaps` folder contains at least the two required costmap configurations (local/global) which are loaded directly to the parameter server to be used by `costmap_2d`.
 Additionaly, planner-dependent configurations can and should be defined in its respective `<planner>_local_planner_params.yaml` (e.g. `teb_local_planner_params.yaml`). Some planners don't load this configuration file at all, some planners share one configuration file. Always double check `arena_simulation_setup/launch/planners/<type>/mbf_<planner>.launch` if you deviate from the "basic" planners (`teb`, `dwa`, ...).
 
-### launch/control.launch
+### launch/control.launch.py
 
-`control.launch` is called from the `arena_bringup/launch/testing/robot.launch` launchfile, which itself is started indirectly by the robot manager. This launch process automatically starts commonly used processes, which means that `control.launch` _should not_:
+`control.launch.py` is called from the `arena_bringup/launch/testing/robot.launch` launchfile, which itself is started indirectly by the robot manager. This launch process automatically starts commonly used processes, which means that `control.launch` _should not_:
 - spawn the robot model in the simulator
 - start a `move_base`-interfacing planner node
 - publish a static transform
