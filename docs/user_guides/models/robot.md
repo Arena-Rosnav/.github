@@ -52,10 +52,6 @@ To this end, the launchfile gets passed a `robot_namespace` argument, which cont
 
 XACRO file compiled on-the-fly into a single `<robot>.urdf` file which is used for spawning the robot into Gazebo.
 
-### yaml/<robot>.yaml
-
-Used to spawn the robot into Flatland. `<robot>.model.yaml` should be a symbolic link to this for extended compatibility with external tools.
-
 ### model_params.yaml
 
 Contains a robot configuration that is read by the planner node, and usually contains reference frame definitions, `move_base` actions, and sensor descriptions.
