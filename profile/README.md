@@ -131,6 +131,7 @@ We also offer worksheets which contain tasks and solutions and are a great start
 | <img width="250" src="../docs/images/unity_worlds/hospital.png"> | <img width="250" src="../docs/images/unity_worlds/restaurant.jpg"> | <img width="250"  src="../docs/images/unity_worlds/school.png"> | <img width="250" src="../docs/images/unity_worlds/japanese_garden.png"> | <img width="250" src="../docs/images/unity_worlds/warehouse.jpg"> |
 
 ## Recent Publications
+- [Arena 3.0 (RSS2024)]([https://www.roboticsproceedings.org/rss19/p088.pdf](https://roboticsproceedings.org/rss20/p074.html)):  Social Navigation Platform
 - [Arena-Web (RSS2023)](https://www.roboticsproceedings.org/rss19/p088.pdf):  Web-based Development and Benchmarking Platform for Autonomous Navigation Approaches
 - [Arena-Rosnav 2.0 (IROS2023)](https://arxiv.org/abs/2302.10023): A Development and Benchmarking Platform for Robot Navigation in Highly Dynamic Environments
 - [Arena-Bench (RA-L+ IROS22)](https://arxiv.org/abs/2206.05728): A Benchmarking Suite for Obstacle Avoidance Approaches in Highly Dynamic Environments
