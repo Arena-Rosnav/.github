@@ -65,7 +65,7 @@ roslaunch arena_bringup start_training.launch model:=jackal num_envs:=1 map_fold
 
 **Training Script Arguments**:
 
-- _config_: Name of the config file (has to be in the subdirectory "_arena-rosnav/training/configs_").
+- _config_: Name of the config file (needs to be located at .../arena-rosnav/arena_bringup/configs/training).
 
 ```bash
 # navigate to the arena-rosnav directory
@@ -236,79 +236,113 @@ roslaunch arena_bringup visualization_training.launch ns:=sim_1
 <summary>Click to open</summary>
 
 ```yaml
-### General
-debug_mode: true
-n_envs: 4
-no_gpu: false
+# CONTAINS THE AGENT CONFIGURATION FOR TRAINING
+resume: false
 
-### General Training
-task_mode: "dynamic_map_staged"
-n_timesteps: 20000000
-max_num_moves_per_eps: 150
-goal_radius: 0.2
+agent_cfg:
+  name: null # agent name (should be unique)
 
-### Training Monitoring
-monitoring:
-  use_wandb: true
-  eval_log: false
-
-### Agent Specs: Training Hyperparameter and Network Architecture
-rl_agent:
-  architecture_name: "AGENT_54"
-  resume: null
-
-  frame_stacking:
-    enabled: true
-    stack_size: 8
-
-  normalize: false
-  laser:
-    full_range_laser: true
-    reduce_num_beams:
-      enabled: true
-      num_beams: 200
-
-  reward_fnc: "rule_13"
-
+  # action space
   action_space:
-    discrete: false
-    custom_discretization:
-      enabled: true
-      buckets_linear_vel: 8
-      buckets_angular_vel: 11
+    is_discrete: false
+    custom_discretization: null
 
-  ppo:
-    batch_size: 120
-    gamma: 0.99
-    n_steps: 1200
-    ent_coef: 0.005
-    learning_rate: 0.0003
-    vf_coef: 0.22
-    max_grad_norm: 0.5
-    gae_lambda: 0.95
-    m_batch_size: 40
-    n_epochs: 3
-    clip_range: 0.22
+  framework:
+    __name__: stable_baselines3  # framework name
+    algorithm: # training algorithm configuration
+      architecture_name: AGENT_5
+      checkpoint: last_model
+      transfer_weights:
+        source_dir: /home/tar/catkin_ws/src/planners/rosnav/agents/AGENT_5
+        source_checkpoint: best_model
+        include: 
+          - .*
+        exclude: null
+      parameters:
+        batch_size: 256  # Number of samples per gradient update
+        clip_range: 0.2  # Clipping parameter for PPO
+        clip_range_vf: null  # Clipping parameter for value function (if None, no clipping)
+        device: auto  # Device to use for training (cpu, cuda, auto)
+        ent_coef: 0.0  # Entropy coefficient for the loss calculation
+        gae_lambda: 0.95  # Lambda for generalized advantage estimation
+        gamma: 0.99  # Discount factor
+        learning_rate:  # Learning rate schedule
+          type: linear  # Type of learning rate schedule (linear, constant, etc.)
+          kwargs:
+            initial_value: 0.001  # Initial learning rate
+            final_value: 0.0001  # Final learning rate
+        max_grad_norm: 0.5  # Maximum norm for gradient clipping
+        n_epochs: 5  # Number of epochs to update the policy
+        n_steps: null  # Number of steps to run for each environment per update
+        normalize_advantage: true  # Whether to normalize advantages
+        sde_sample_freq: -1  # Frequency of sampling for state-dependent exploration (if -1, no sampling)
+        seed: null  # Seed for the random number generator
+        stats_window_size: 100  # Window size for the rolling statistics
+        target_kl: 1.0  # Target KL divergence threshold
+        tensorboard_log: null  # Directory for tensorboard logs (if None, no logging)
+        total_batch_size: 512  # Total batch size for training
+        use_sde: false  # Whether to use state-dependent exploration
+        verbose: 2  # Verbosity level (0: no output, 1: info, 2: debug)
+        vf_coef: 0.22  # Coefficient for the value function loss
+    normalization: null
+      
 
-callbacks:
-  ### Periodic Eval
-  periodic_eval:
-    max_num_moves_per_eps: 250
-    n_eval_episodes: 50
-    eval_freq: 20000
+  # reward function
+  reward:
+    file_name: barn
+    reward_unit_kwargs: null
+    verbose: false # print reward values
 
-  ### Training Curriculum
-  training_curriculum:
-    training_curriculum_file: "barn.yaml"
-    curr_stage: 3
-    threshold_type: "succ"
-    upper_threshold: 0.95
-    lower_threshold: 0.65
+# CONTAINS THE FRAMEWORK CONFIGURATION FOR TRAINING 
+framework_cfg:
+  # currently only Stable-Baselines3 implemented as framework
+  # and PPO as algorithm
 
-  ### Stop Training on Threshold
-  stop_training:
-    threshold_type: "succ"
-    threshold: 0.95
+  # general training configuration
+  general:
+    # in debug_mode no agent directories will be created and no models will be saved
+    # further no wandb logging and fake (simulated) multiprocessing for traceback
+    debug_mode: true
+    goal_radius: 0.5
+    max_num_moves_per_eps: 200
+    n_envs: 2 # number of parallel environments
+    n_timesteps: 4000000
+    no_gpu: false
+    safety_distance: 1.0
+    show_progress_bar: false
+
+  # task modules
+  task:
+    tm_modules: staged
+    tm_obstacles: random
+    tm_robots: random
+
+  monitoring:
+    wandb: true  # weights and biases logging
+    episode_logging:  # display episode statistics (avg. success rate, reward, eps length..)
+      last_n_episodes: 25
+      record_actions: true
+    eval_metrics: false # save evaluation stats during training in log file
+    training_metrics: true  # display training metrics
+
+  callbacks:
+    periodic_evaluation:
+      eval_freq: 1000  # evaluation frequency, evaluation after every n_envs * eval_freq timesteps
+      max_num_moves_per_eps: 200  # max number of steps per episode
+      n_eval_episodes: 10 # number of evaluation episodes
+    stop_training_on_threshold:
+      threshold: 0.9
+      threshold_type: succ  # can be either "succ" (success rate) or "rew" (reward)
+      verbose: 1
+    training_curriculum:
+      current_stage: 0
+      curriculum_file: semantic.yaml
+      lower_threshold: 0.3
+      threshold_type: succ  # can be either "succ" (success rate) or "rew" (reward)
+      upper_threshold: 0.9
+
+  profiling: null
+
 ```
 
 </details>
