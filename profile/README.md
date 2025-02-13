@@ -68,7 +68,7 @@ We also offer worksheets which contain tasks and solutions and are a great start
 ### Features
 
 - Automatic installation script for the arena rosnav environment 
-- 3 different simulators including [Unity](#unity), [Gazebo](#gazebo) and [Flatland](#flatland)
+- 4 different simulators including [Isaac](#isaac), [Unity](#unity), [Gazebo](#gazebo) and [Flatland](#flatland)
 - We offer prebuilt, realistic simulation [environments](#supported-worlds), including offices, hospitals, canteens, warehouses, and much more
 - Dynamic Map Generation including dynamic mazes
 - Variety of Task Modes for robots and pedestrians
@@ -115,7 +115,7 @@ We also offer worksheets which contain tasks and solutions and are a great start
 - TEB: a classic approach by [Rösmann et al.](https://github.com/rst-tu-dortmund/teb_local_planner)
 - DWA: the standard ROS local planning approach by [Marder-Eppstein et al.](http://wiki.ros.org/dwa_local_planner)
 - MPC: a classic approach by [Rösmann et al.](https://github.com/rst-tu-dortmund/teb_local_planner)
-- and many more (added with Arena 3.0)
+- and many more (added with Arena 3.0 (2024), Arena 5.0 (2025))
 ## Supported Robots
 
 |                       _turtlebot3-burger_                        |                       _jackal_                        |                        _ridgeback_                        |                       _agv-ota_                        |                       _tiago_                        |
