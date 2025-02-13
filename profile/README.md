@@ -25,6 +25,16 @@ We also offer worksheets which contain tasks and solutions and are a great start
 | :---------------------------------------------------: | :------------------------------------------------: |
 | <img src="../docs/images/gifs/flatland_simulation.gif" > | <img src="../docs/images/gifs/marl_custom_rviz.gif" > | -->
 
+#### Isaac Sim
+
+| <img  src="../docs/images/worlds/Video_hospital.gif"> | <img  src="../docs/images/worlds/multiwarehouse.gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: | 
+
+| <img  src="../docs/images/worlds/Level_4ver2.gif"> | <img  src="../docs/images/worlds/hospital-birdswyeview (video-converter.com).gif"> | 
+| :--------------------------------------------------------------: | :---------------------------------------------------------------------: |
+
+<img width="850" height="300" src="../docs/images/worlds/multiwarehouse.gif">
+
 #### Unity
 
 | <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/unity_1.gif"> | <img  src="../docs/tutorials/gazebo_tutorial/new_gifs/unity_2.gif"> | 
