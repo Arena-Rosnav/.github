@@ -7,12 +7,13 @@ Follow the documentation for details how to use the platform:
 
 [Documentation](https://arena-rosnav.readthedocs.io/en/latest/)
 
+<!--
 ### Arena-Education
 We also offer worksheets which contain tasks and solutions and are a great starting point for beginners aiming to learn about robotics and the Arena platform:
 
 [https://edu.arena-rosnav.org/](https://edu.arena-rosnav.org/) \
 [Worksheet #1: Installation and First Steps](https://edu.arena-rosnav.org/)
-
+-->
 
 
 <!-- |          Warehouse environment in Gazebo           |          Hospital environment in Gazebo          |
