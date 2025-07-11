@@ -1,17 +1,17 @@
-# Welcome to the Arena Rosnav docs!
+# Welcome to the Arena 4.0 docs!
 
 [Arena Rosnav](https://github.com/Arena-Rosnav/arena-rosnav) is a set of tools for training and evaluating of navigational algorithms for obstacle avoidance. Arena Rosnav is modular and flexible and allows to easily integrate new environments and planners, as well as running existing planners and models in predefined benchmark scenarios and evaluating the performance with ease. Next to the planners and environments we offer a wide variety of different robots and worlds for your use.
 
-Arena Rosnav offers a complete evaluation pipeline for benchmarking the performance of robots and planners based on standard metrics, and a trainings pipeline for navigational models based on DRL and PPO. With this pipeline our own DRL planner [ROSNavRL](packages/rosnavrl.md) was created.
+Arena Rosnav offers a complete evaluation pipeline for benchmarking the performance of robots and planners based on standard metrics, and a trainings pipeline for navigational models based on DRL and PPO. With this pipeline our own DRL planner ROSNavRL was created.
 
 ## Features
 
 <!-- - Integration of [Flatland](https://flatland-simulator.readthedocs.io/en/latest/) to train new agents and [Flatland](https://flatland-simulator.readthedocs.io/en/latest/) and [Gazebo](https://classic.gazebosim.org/) for evaluating existing approaches. -->
 - Variety of planners, robots and worlds
 - Pipeline to train planner agents based on reinforcement learning approaches from [stable baselines3](https://github.com/DLR-RM/stable-baselines3.git)
-- [Task generator](packages/task_generator.md) for managing highly dynamic and custom environments
-- Our own DRL planner [ROSNavRL](packages/rosnavrl.md)
-- Pipeline for evaluating approaches and analysing them based on standard metrics with our [Evaluation](packages/arena_evaluation.md) package.
+- Task Generator for managing highly dynamic and custom environments
+- Our own DRL planner ROSNavRL.
+- Pipeline for evaluating approaches and analysing them based on standard metrics with our Evaluation package.
 - Modular structure for extension of new functionalities and approaches
 - Evaluation of multiple robots and planners in the same simulation
 - Dynamic rviz config file creation for visualization
@@ -89,7 +89,7 @@ Arena Rosnav offers a complete evaluation pipeline for benchmarking the performa
 
 
 
-
+<!-- 
 ### Planners
 
 Planners are essential packages and control the robot, which is simulated in the environments.
@@ -144,11 +144,11 @@ For training:
 For evaluation:
 
 - [Flatland](https://flatland-simulator.readthedocs.io/en/latest/index.html)
-- [Gazebo](https://classic.gazebosim.org/)
+- [Gazebo](https://classic.gazebosim.org/) -->
 
 ### Evaluation
 
-To benchmark the performance of your simulation and visualize your results with qualitative and quantitative plots like in the example below, see the documentation [here](packages/arena_evaluation.md)
+To benchmark the performance of your simulation and visualize your results with qualitative and quantitative plots like in the example below, use Arena-Evaluation.
 
 | <img width="600" height=350 src="images/qualitative_plot.png"> | <img width="650" height=350 src="images/quantitativ_plots.png"> |
 | :------------------------------------------------------------: | :-------------------------------------------------------------: |

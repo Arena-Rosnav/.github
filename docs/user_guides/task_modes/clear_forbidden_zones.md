@@ -1,3 +1,0 @@
-### Clear Forbidden Zones
-
-The Clear Forbidden Zones task mode is a persistent component that is consistently loaded. Whenever a new obstacle is spawned, it creates a forbidden zone, restricting the possibility of spawning another obstacle within its confines. This mechanism helps maintain a structured and obstacle-free environment. With this task mode, after every reset, all previously established forbidden zones are systematically cleared. This ensures a clean slate for obstacle spawning and encourages flexibility in the placement of subsequent obstacles.

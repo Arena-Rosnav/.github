@@ -1,15 +1,47 @@
 # Publications
-The Arena-Rosnav Platform and its extensions have been incrementally developed and published through a number of publications.
- 
-## [Arena Rosnav (IROS 2021, Praque, Czech)](https://ieeexplore.ieee.org/document/9636226/authors#authors)
+The Arena Platform and its extensions have been incrementally developed and published through a number of publications.
+
+## [Arena 4.0 (ICRA 2024, Atlanta, USA)](https://arxiv.org/abs/2409.12471)
 
 ```
-@inproceedings{kastner2021arena,
-  title={Arena-Rosnav: Towards Deployment of Deep-Reinforcement-Learning-Based Obstacle Avoidance into Conventional Autonomous Navigation Systems},
-  author={K{\"a}stner, Linh and Buiyan, Teham and Jiao, Lei and Le, Tuan Anh and Zhao, Xinlin and Shen, Zhengcheng and Lambrecht, Jens},
-  booktitle={2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  pages={6456--6463},
-  organization={IEEE}
+@inproceedings{
+  arena:rosnav4.0,
+  title={Arena 4.0: A Comprehensive ROS2 Development, Benchmarking Platform for Human-centric Navigation Using Generative-Model-based Environment Generation},
+  author={Volodymyr Shcherbyna, Linh Kästner, Diego Diaz, Huu Giang Nguyen, Maximilian Ho-Kyoung Schreff, Tim Lenz, Jonas Kreutz, Ahmed Martban, Huajian Zeng, Harold Soh},
+  year={2024},
+}
+```
+
+## [Arena 3.0 (RSS 2024, Delft, Netherlands)](https://arxiv.org/abs/2406.00837)
+
+```
+@inproceedings{
+  arena:rosnav3.0,
+  title={Demonstrating Arena 3.0: Advancing Social Navigation in Collaborative and Highly Dynamic Environments},
+  author={Linh Kästner, Volodymyr Shcherbyna, Huajian Zeng, Tuan Anh Le, Maximilian Ho-Kyung Schreff, Halid Osmaev, Nam Truong Tran, Diego Diaz, Jan Golebiowski, Harold Soh, Jens Lambrecht}, booktitle={Robotics: Science and Systems},
+  year={2024},
+}
+```
+
+## [Arena-Rosnav 2.0 (IROS 2023, Detroit, USA)](https://arxiv.org/abs/2302.10023)
+
+```
+@article{kastner2023arena,
+  title={Arena-Rosnav 2.0: A Development and Benchmarking Platform for Robot Navigation in Highly Dynamic Environments},
+  author={K{\"a}stner, Linh and Carstens, Reyk and Zeng, Huajian and Kmiecik, Jacek and Le, Tuan Anh and Bhuiyan, Teham and Meinardus, Boris and Lambrecht, Jens},
+  journal={arXiv preprint arXiv:2302.10023},
+  year={2023}
+}
+```
+
+## [Arena Web (R:SS 2023, Daegu, Korea)](https://www.roboticsproceedings.org/rss19/p088.pdf)
+
+```
+@article{kastner2023arena,
+  title={Arena-Web--A Web-based Development and Benchmarking Platform for Autonomous Navigation Approaches},
+  author={K{\"a}stner, Linh and Carstens, Reyk and Liebig, Christopher and Shcherbyna, Volodymyr and Nahrworld, Lena and Lee, Subhin and Lambrecht, Jens},
+  journal={arXiv preprint arXiv:2302.02898},
+  year={2023}
 }
 ```
 
@@ -26,33 +58,20 @@ The Arena-Rosnav Platform and its extensions have been incrementally developed a
   year={2022},
   publisher={IEEE}
 }
+```
+
+## [Arena Rosnav (IROS 2021, Praque, Czech Republic)](https://ieeexplore.ieee.org/document/9636226/authors#authors)
 
 ```
-## [Arena Web (R:SS 2023, Daegu, Korea)](https://www.roboticsproceedings.org/rss19/p088.pdf)
-
-```
-@article{kastner2023arena,
-  title={Arena-Web--A Web-based Development and Benchmarking Platform for Autonomous Navigation Approaches},
-  author={K{\"a}stner, Linh and Carstens, Reyk and Liebig, Christopher and Shcherbyna, Volodymyr and Nahrworld, Lena and Lee, Subhin and Lambrecht, Jens},
-  journal={arXiv preprint arXiv:2302.02898},
-  year={2023}
+@inproceedings{kastner2021arena,
+  title={Arena-Rosnav: Towards Deployment of Deep-Reinforcement-Learning-Based Obstacle Avoidance into Conventional Autonomous Navigation Systems},
+  author={K{\"a}stner, Linh and Buiyan, Teham and Jiao, Lei and Le, Tuan Anh and Zhao, Xinlin and Shen, Zhengcheng and Lambrecht, Jens},
+  booktitle={2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={6456--6463},
+  organization={IEEE}
 }
-
-
 ```
 
-## [Arena-Rosnav 2.0 (IROS 2023, Detroit, USA)](https://arxiv.org/abs/2302.10023)
-
-```
-@article{kastner2023arena,
-  title={Arena-Rosnav 2.0: A Development and Benchmarking Platform for Robot Navigation in Highly Dynamic Environments},
-  author={K{\"a}stner, Linh and Carstens, Reyk and Zeng, Huajian and Kmiecik, Jacek and Le, Tuan Anh and Bhuiyan, Teham and Meinardus, Boris and Lambrecht, Jens},
-  journal={arXiv preprint arXiv:2302.10023},
-  year={2023}
-}
-
-
-```
 
 # Publications on Specific Extensions
 We also published a number of extensions and functionalities such as the All-in-one planner as seperate publications. Here is a list of the most relevant publications so far:

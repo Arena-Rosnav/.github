@@ -1,4 +1,4 @@
-# Arena Rosnav Documentation
+# Arena 4.0 Documentation
 
 ## Installation
 
@@ -16,7 +16,7 @@ mkdocs serve
 
 ## Style Guide
 
-- The proper name of the project is Arena-Rosnav and should not be stylized.
+- The proper name of the project is Arena and should not be stylized.
 - Stylize other proper nouns and trademarks as _emphasized_ text.
 - Stylize paths, file names, and parameters as simple `quote blocks`.
 - Reference locations relative to their parent package when possible. Otherwise specify paths relative to the workspace root.
