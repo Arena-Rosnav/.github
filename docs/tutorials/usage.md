@@ -17,7 +17,7 @@ The build is performed as a symlink install and may lead to issues when moving/d
 To start a simulation just launch the `arena.launch` file in the `arena_bringup` package.
 
 ```sh
-ros2 launch arena_bringup arena.launch sim:=gazebo
+ros2 launch arena_bringup arena.launch.py sim:=gazebo
 ```
 
 The launch file takes following parameters:
