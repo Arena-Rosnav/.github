@@ -13,7 +13,7 @@ sudo apt install curl
 ```
 Once you have curl installed, start installing Arena-Rosnav by running:
 ```sh
-curl https://raw.githubusercontent.com/Arena-Rosnav/arena-rosnav/humble/install.sh > install.sh
+curl https://raw.githubusercontent.com/Arena-Rosnav/arena-rosnav/humble/installers/install.sh > install.sh
 bash install.sh
 ```
 
