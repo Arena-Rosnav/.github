@@ -16,7 +16,7 @@ A world folder must contain the following structure:
 
 #### Generating Worlds
 
-You can automatically generato worlds using `arena-tools`:
+You can automatically generate worlds using `arena-tools`:
 
 `ros2 run arena_simulation_setup generate_world`
 
