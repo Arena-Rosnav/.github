@@ -8,13 +8,10 @@ A world folder must contain the following structure:
 <world_name>/
     map/
         map.png
-        map.world.yaml
         map.yaml
-        obstacles.yaml
-        walls.yaml
-        zones.yaml
     scenarios/
         default.json
+    world.yaml
 ```
 
 #### Generating Worlds
